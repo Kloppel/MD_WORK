@@ -1,0 +1,23 @@
+#ignore folders with installations, installation TARs, as well as quicksave data
+.ipynb_checkpoints/
+.vscode/
+charmm/
+NAMD_Git-2021-09-21_Linux-x86_64-multicore-CUDA/
+TARs/
+vmd-1.9.3/
+charmming_parser/
+charmm/
+JOVAN_COURSE/
+CHARMM_TUTORIAL/
+kb2plus_package/
+kb2plus_package.tar.gz
+*.dcd
+Jovan_old/
+Constraint-Relaxation/
+Velocity-Rescaling/
+Example1/
+Example2/
+Example3/
+Example4/
+testing-site/
+CCO-starters/

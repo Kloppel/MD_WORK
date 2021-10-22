@@ -1,0 +1,132 @@
+#############################################################
+## JOB DESCRIPTION                                         ##
+#############################################################
+
+# Minimization and Equilibration of
+# CcO in a membrane in a Water Box
+
+
+#############################################################
+## ADJUSTABLE PARAMETERS                                   ##
+#############################################################
+
+structure         cco.psf.xplor
+coordinates       cco.pdb
+set outputname     cco_heated
+
+firsttimestep      0
+extendedSystem   2gsm_md_membrane.restart.xsc # for newstart from lipid-equilibration
+
+#############################################################
+## SIMULATION PARAMETERS                                   ##
+#############################################################
+
+# Input
+paraTypeCharmm	    on
+parameters          par_all22_prot_plus_heme_and_Cu.inp 
+parameters          par_all36_lipid.prm 
+
+# Force-Field Parameters
+dielectric	    1.0;# Value of the dielectric constant (added)
+exclude             scaled1-4   ;# Exclude/scale local (along the sequence)
+1-4scaling          1.0;# Scale factor for (i,i+4) EL interactions
+cutoff              12.0;# In PME, cutoff dictates the separation between long and short range forces and doesnt simply turn off interactions. 
+ switching           on		;# Energy Switch VdW interactions and partition EL into local and non-local contributions
+switchdist          10.0;# distance at which to activate switching function for van der Waals (and electrostatic in sph. cut.)
+pairlistdist        13.5;# CUTNB in charmm
+
+
+# Integrator Parameters
+timestep            2.0;# 
+#nonbondedFreq       1	;# timesteps between nonbonded evaluation. Positive integer factor of fullElectFrequency.
+fullElectFrequency  2	;# number of timesteps between full electrostatic evaluations Acceptable Values. positive integer factor of stepspercycle
+#margin             0.0 ;# Extra distance used in selecting patches
+stepspercycle       10	;# INBFRQ in charmm, Frequency of updating Verlet list (in integration steps) Def. 20
+### SETTLE
+rigidBonds all 		;# Use SHAKE on solute (and SETTLE on water according to useSettle)
+useSettle on		;#Apply SETTLE (implemented for water)
+rigidTolerance 0.00001	;# Desired accuracy in maintaining SHAKEed bond lengths
+rigidIterations 100;# Maximum number of SHAKE iterations
+
+
+
+
+### Particle Mesh Ewald
+PME on ;# Use PME for electrostatic calculation - USe only factors of 2,3,5
+#PMEGridSizeX 100
+#PMEGridSizeY 100
+#PMEGridSizeZ 100
+PMETolerance 0.000001;
+PMEInterpOrder 4 ;
+PMEGridSpacing      1.0
+
+
+
+
+# Constant Temperature Control
+langevin            on    ;# do langevin dynamics
+langevinDamping     1     ;# damping coefficient (gamma) of 5/ps
+langevinTemp        323
+langevinHydrogen    off    ;# dont couple langevin bath to hydrogens
+wrapWater on  	# Are water molecules translated back to the unit cell (purely cosmetic option, has no effect on simulations
+wrapAll on     # Are other molecules such as proteins translated back
+#margin 5 # enlarge error acceptance for membrane
+
+# Constant Pressure Control (variable volume)
+useGroupPressure      yes ;# needed for rigidBonds
+useFlexibleCell       yes  # changed for membrane
+useConstantRatio       yes  # changed for membrane
+
+langevinPiston        on #on
+langevinPistonTarget  1.01325 ;#  in bar -> 1 atm
+langevinPistonPeriod  200.  # changed from 100 for membrane
+langevinPistonDecay   50.
+langevinPistonTemp    323
+
+
+# Output
+outputName          $outputname
+
+restartfreq         10000;
+dcdfreq             5000
+xstFreq             5000
+outputEnergies      5000
+outputPressure      5000
+
+
+#############################################################
+## EXTRA PARAMETERS                                        ##
+#############################################################
+
+#############################################################
+## HARMONIC CONSTRAINTS                                     ##
+#############################################################
+
+#halte alle Atome constrained außer Hs
+constraints     on
+consRef         namd_cons_for_heat.pdb #namd_cons_for_heat.pdb
+consKFile       namd_cons_for_heat.pdb #namd_cons_for_heat.pdb
+consKCol        B
+
+#############################################################
+## EXECUTION SCRIPT                                        ##
+#############################################################
+
+# Minimization
+minimize            500 #500
+reinitvels          323
+
+
+# Heating (total 50 ps)
+#set IHTFRQ 500
+#set TEMINC 6
+
+
+# START
+# Langevin dynamics (heating)
+constraintScaling 0.70
+run 5000.0
+
+# Langevin dynamics (heating)
+constraintScaling 0.50
+run 5000.0
