@@ -1,0 +1,72 @@
+# integrator params
+numsteps            10000
+timestep            2.0
+
+# initial config-------------------------------------------------------
+extendedSystem      ../min/min.xsc
+wrapAll             on
+
+# initial config
+coordinates        ../min/min.coor
+velocities         ../min/min.vel
+
+# output params--------------------------------------------------------
+outputname         heat
+binaryoutput       off
+DCDFILE            heat.dcd
+XSTFILE            heat.xst
+DCDfreq            500
+XSTfreq            500
+outputEnergies     250
+outputTiming       5000
+
+# force field params----------------------------------------------------
+paraTypeCharmm     on
+structure          ../namd.psf
+parameters         ../mbhnibsi36.prm
+exclude            scaled1-4
+1-4scaling         1.0
+switching          on
+switchdist         10.0
+cutoff             12.0
+pairlistdist       13.5
+margin             1.0
+stepspercycle      1
+nonbondedFreq      1
+fullElectFrequency 1
+rigidBonds         all
+rigidTolerance     1.0e-8
+rigidDieOnError    off
+rigidIterations	   1000
+
+# temp control-----------------------------------------------------------
+langevin              on
+langevinDamping        1
+langevinTemp         300
+langevinHydrogen      no
+
+# set constraints--------------------------------------------------------
+fixedAtoms        on
+fixedAtomsForces  off
+fixedAtomsFile    ../namd_heat.pdb
+fixedAtomsCol     O
+
+constraints     on
+consRef         ../namd_heat.pdb
+consKFile       ../namd_heat.pdb
+consKCol        B
+
+# extended electrostatics------------------------------------------------
+PME                yes
+PMEGridSizeX       102
+PMEGridSizeY       121
+PMEGridSizeZ       93
+
+# Langevin dynamics (heating)
+constraintScaling 0.70
+run 5000
+
+# Langevin dynamics (heating)
+constraintScaling 0.50
+run 5000
+
