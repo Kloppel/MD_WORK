@@ -1,0 +1,180 @@
+#############################################################
+#############################################################
+######################### DESCRIPTION #######################
+#############################################################
+#############################################################
+# Production Run of
+# cco in a Water Box
+#############################################################
+######             ADJUSTABLE PARAMETERS               ######
+#############################################################
+structure         ../cco.psf.xplor
+coordinates       ../cco.pdb
+binvelocities   ../cco_heated.vel
+bincoordinates  ../cco_heated.coor
+# remove temperature $temperature command below
+# remove manual perodic boundary definition
+# and margin!
+# and timesteps! -> 5 more ns
+set temperature    323
+set outputname     cco_prod
+firsttimestep      100
+extendedSystem  ../cco_heated.xsc  # for newstart from lipid-equilibration
+#############################################################
+######               SIMULATION PARAMETERS           ########
+#############################################################
+# Input
+paraTypeCharmm	    on
+parameters          ../par_all22_prot_plus_heme_and_Cu.inp
+parameters          ../par_all36_lipid.prm
+#############################################################
+######               FORCE FIELD PARAMS              ########
+#############################################################
+dielectric	    1.0		;# Value of the dielectric constant (added)
+exclude             scaled1-4   ;# Exclude/scale local (along the sequence)
+1-4scaling          1.0		;# Scale factor for (i,i+4) EL interactions
+cutoff              12.0		;# In PME, cutoff dictates the separation between long and short range forces and doesnt simply turn off interactions.
+switching           on		;# Energy Switch VdW interactions and partition EL into local and non-local contributions
+switchdist          10.0		;# distance at which to activate switching function for van der Waals (and electrostatic in sph. cut.)
+pairlistdist        13.5	;# CUTNB in charmm
+#############################################################
+######                INTEGRATOR PARAMS                ######
+#############################################################
+timestep            2	;
+#nonbondedFreq       1	;# timesteps between nonbonded evaluation. Positive integer factor of fullElectFrequency.
+fullElectFrequency  2	;# number of timesteps between full electrostatic evaluations Acceptable Values. 
+#positive integer factor of stepspercycle
+#margin             1.0 ;# Extra distance used in selecting patches
+stepspercycle       10	;
+# INBFRQ in charmm, Frequency of updating Verlet list (in integration steps) Def. 20
+#############################################################
+######                  SETTLE/SHAKE                   ######
+#############################################################
+rigidBonds all 		;# Use SHAKE on solute (and SETTLE on water according to useSettle)
+useSettle on		;#Apply SETTLE (implemented for water)
+rigidTolerance 0.00001	;# Desired accuracy in maintaining SHAKEed bond lengths
+rigidIterations 100	;# Maximum number of SHAKE iterations
+#############################################################
+######               PARTICLE MESH EWALD               ######
+#############################################################
+#PME off
+PME on ;
+# Use PME for electrostatic calculation - USe only factors of 2,3,5
+#PMEGridSizeX 100
+#PMEGridSizeY 100
+#PMEGridSizeZ 100
+##ischrgd=1, ;
+# NAMD doesnt force neutralization of char_charge
+#PMETolerance 0.000001 ;# Def 1E-6
+#PMEInterpOrder 4 ;# Def 4 (cubic+1)
+PMEGridSpacing      1.0
+#############################################################
+######              CONSTANT TEMP CONTROL              ######
+#############################################################
+langevin            on    ;# do langevin dynamics
+langevinDamping     1     ;# damping coefficient (gamma) of 5/ps
+langevinTemp        323
+langevinHydrogen    off    ;# dont couple langevin bath to hydrogens
+#############################################################
+######          PERIODIC BOUNDARY CONDITIONS           ######
+#############################################################
+# this block defines periodic boundary conditions
+#cellBasisVector1  100.0    0.     0.	
+# Direction of the x basis vector for a unit cell
+#cellBasisVector2    0.   100.0    0.	
+# Direction of the y basis vector for a unit cell
+#cellBasisVector3    0.     0.   118.4	
+# Direction of the z basis vector for a unit cell
+#cellOrigin          0.     0.     0.	
+# Position of the unit cell center
+wrapWater on  
+# Are water molecules translated back to the unit cell (purely cosmetic option, has no effect on simulations
+wrapAll on    # Are other molecules such as proteins translated back
+#margin 5 # enlarge error acceptance for membrane
+#############################################################
+######            CONSTANT PRESSURE CONTROL            ######
+######                (VARIABLE VOLUME)                ######
+#############################################################
+useGroupPressure      yes ;# needed for rigidBonds
+useFlexibleCell       yes  # changed for membrane
+useConstantRatio       yes  # changed for membrane
+langevinPiston        on
+langevinPistonTarget  1.01325 ;
+#  in bar -> 1 atm
+langevinPistonPeriod  200.  
+# changed from 100 for membrane
+langevinPistonDecay   50.
+langevinPistonTemp    $temperature
+#############################################################
+######                                                 ######
+######                     OUTPUT                      ######
+######                                                 ######
+#############################################################
+outputName          $outputname
+restartfreq         50000 ;
+#500steps = every 1ps
+dcdfreq             10
+xstFreq             10
+outputEnergies      10
+outputPressure      10
+#############################################################
+######               EXTRA PARAMETERS                  ######
+#############################################################
+
+#############################################################
+######                                                 ######
+######                    RUN                          ######
+######                                                 ######
+#############################################################
+#Description: Specifies whether or not harmonic constraints are
+#active. If it is set to off, then no harmonic constraints are
+#computed.
+#If it is set to on, then harmonic constraints are calculated using
+#the values specified by the parameters consref, conskfile, conskcol,
+#and consexp.
+#constraints on
+#Description: PDB file to use for reference positions for harmonic
+#constraints. Each atom that has an active constraint will be
+#constrained
+#about the position specified in this file.
+#consref /scratch/scratch/awoelke/md_cco/membrane/solvate/cco_3hb3_in_water.pdb
+#Description: PDB file to use for force constants for harmonic constraints.
+#conskfile /scratch/scratch/awoelke/md_cco/membrane/solvate/min_constrains.pdb
+#Description: Column of the PDB file to use for the harmonic
+#constraint force constant. This parameter may specify any of the
+#floating point
+#fields of the PDB file, either X, Y, Z, occupancy, or beta-coupling
+#(temperature-coupling). Regardless of which column is used, a value of
+#0
+#indicates that the atom should not be constrained. Otherwise, the
+#value specified is used as the force constant for that atoms
+#restraining potential
+#Acceptable Values: X, Y, Z, O, or B
+#conskcol O
+#Description: The harmonic constraint energy function is multiplied
+#by this parameter, making it possible to gradually turn off
+#constraints during
+#equilibration. This parameter is used only if constraints is set to on.
+#constraintScaling 20.0
+#############################################################
+######                   FIX ATOMS                     ######
+#############################################################
+#Description: Specifies whether or not fixed atoms are present.
+#fixedAtoms on
+#Description: Specifies whether or not forces between fixed atoms are calculated. This option is required to turn fixed atoms off in the middle
+#of a simulation. These forces will affect the pressure calculation, and you should leave this option off when using constant pressure if the
+#coordinates of the fixed atoms have not been minimized. The use of constant pressure with significant numbers of fixed atoms is not recommended.
+#fixedAtomsForces off
+#Description: PDB file to use for the fixed atom flags for each atom. If this parameter is not specified, then the PDB file specified by coordinates
+#is used.
+#fixedAtomsFile /scratch/scratch/awoelke/md_cco/membrane/solvate/min_constrains.pdb
+#Description: Column of the PDB file to use for the containing fixed atom parameters for each atom. The coefficients can be read from any floating point
+#column of the PDB file. A value of 0 indicates that the atom is not fixed.
+#Acceptable Values: X, Y, Z, O, or B
+#Default Value: O
+#fixedAtomsCol O
+#############################################################
+######               EXECUTION SCRIPT                  ######
+#############################################################
+#START
+ run 100 ; 
