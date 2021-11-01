@@ -1,3 +1,7 @@
+from helpers.py import helpers
+from organizer.py import organizer
+from NAMD.py import NAMD
+
 class MDA():
     def empty_universe(n_atoms):
         #check if n_atoms is a correct datatype

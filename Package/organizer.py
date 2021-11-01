@@ -1,3 +1,7 @@
+from helpers.py import helpers
+from MDA.py import MDA
+from NAMD.py import NAMD
+
 class organizer():
     def create_folders_prod(run):
         path_text = f'prod{run}/'
@@ -59,13 +63,9 @@ class organizer():
                 shutil.move(f'prod{run}/{mol_name}.{ending}', f'res/{mol_name}_{run}.{ending}')
         return
     
-    #def concatenate(steps_per_run, number_of_runs):
-    #    #call bash script concatenating all files
-    #    subprocess.call("concat.sh")
-    #    return
-#
-    #def delete_folders(run):
-    #    if os.path.exists(f'prod{run}/'):
-    #        os.removedirs(f'prod{run}/')
-    #    return
+
+    def delete_folders(run):
+        if os.path.exists(f'prod{run}/'):
+            os.removedirs(f'prod{run}/')
+        return
     
