@@ -1,7 +1,3 @@
-from organizer.py import organizer
-from MDA.py import MDA
-from NAMD.py import NAMD
-
 class helpers():
     def zip_data_with_labels(reduced, labels):
         rd_dcd = reduced[:, :end1]  

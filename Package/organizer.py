@@ -1,7 +1,3 @@
-from helpers.py import helpers
-from MDA.py import MDA
-from NAMD.py import NAMD
-
 class organizer():
     def create_folders_prod(run):
         path_text = f'prod{run}/'

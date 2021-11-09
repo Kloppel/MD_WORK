@@ -1,7 +1,3 @@
-from helpers.py import helpers
-from organizer.py import organizer
-from MDA.py import MDA
-
 #class NAMD also entails CHARMM executables
 class NAMD():
     def create_executables(model_text, filename, ending):
