@@ -1,4 +1,4 @@
-import kb2plus_package
+#import kb2plus_package
 class MDA():
     def empty_universe(n_atoms):
         #check if n_atoms is a correct datatype
@@ -54,6 +54,9 @@ class MDA():
         return universe
 
     def tile_universe(universe, n_x, n_y, n_z):
+        #tile universe creates copies of the universe and tiles the threedimensional space with the universes
+        #it creates for every angström of displacement in every direction another universe identical to the first one and then 
+        #merges all of them
         box = universe.dimensions[:3]
         copied = []
         for x in range(n_x):
@@ -107,6 +110,8 @@ class MDA():
         #on-the-fly version of aligning protein structures, so that memory is saved.
         #takes a universe object, the object in MDAnalysis in which all simulated/created molecules live, the space, 
         #and time if it's a time-series file
+        import MDAnalysis as mda
+        import mda.transformations as trans
         transforms = [trans.unwrap(),
                     trans.center_in_box(),
                     trans.wrap()]
