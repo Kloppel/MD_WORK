@@ -31,5 +31,6 @@ hole2-ApacheLicense-2.2.005-Linux-x86_64.tar.gz
 hole2/
 Pr_prdh/
 !Pr_prdh/debug.ipynb
+!Pr_prdh/Package/
 PF_prdh_2/
 CcO_Jesse/
