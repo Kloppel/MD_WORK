@@ -37,7 +37,7 @@ pairlistdist        13.5;# CUTNB in charmm
 
 
 # Integrator Parameters
-timestep            2.0;# 
+timestep            100;# 
 #nonbondedFreq       1	;# timesteps between nonbonded evaluation. Positive integer factor of fullElectFrequency.
 fullElectFrequency  2	;# number of timesteps between full electrostatic evaluations Acceptable Values. positive integer factor of stepspercycle
 #margin             0.0 ;# Extra distance used in selecting patches
@@ -66,7 +66,7 @@ PMEGridSpacing      1.0
 # Constant Temperature Control
 langevin            on    ;# do langevin dynamics
 langevinDamping     1     ;# damping coefficient (gamma) of 5/ps
-langevinTemp        323
+langevinTemp        300
 langevinHydrogen    off    ;# dont couple langevin bath to hydrogens
 wrapWater on  	# Are water molecules translated back to the unit cell (purely cosmetic option, has no effect on simulations
 wrapAll on     # Are other molecules such as proteins translated back
@@ -81,17 +81,17 @@ langevinPiston        on #on
 langevinPistonTarget  1.01325 ;#  in bar -> 1 atm
 langevinPistonPeriod  200.  # changed from 100 for membrane
 langevinPistonDecay   50.
-langevinPistonTemp    323
+langevinPistonTemp    300
 
 
 # Output
 outputName          $outputname
 
-restartfreq         10000;
-dcdfreq             5000
-xstFreq             5000
-outputEnergies      5000
-outputPressure      5000
+restartfreq         500;
+dcdfreq             10
+xstFreq             10
+outputEnergies      10
+outputPressure      10
 
 
 #############################################################
@@ -114,19 +114,20 @@ consKCol        B
 
 # Minimization
 minimize            500 #500
-reinitvels          323
+reinitvels          300
 
 
 # Heating (total 50 ps)
 #set IHTFRQ 500
 #set TEMINC 6
 
+VELOCITY RESCALING
+for {set i 6} {$i <= $temperature} {incr i $TEMINC } {
+    langevinTemp $i
+    reinitvels $i
+    run $IHTFRQ
+}
 
 # START
 # Langevin dynamics (heating)
-constraintScaling 0.70
-run 5000.0
-
-# Langevin dynamics (heating)
-constraintScaling 0.50
-run 5000.0
+#constraintScaling 
