@@ -1,0 +1,183 @@
+OPEN READ UNIT 42 CARD NAME "/scratch/scratch/jdragelj/CHARMM_TOPPAR/top_alw.inp"
+READ rtf CARD UNIT 42
+close unit 42
+
+OPEN READ UNIT 42 CARD NAME "/scratch/scratch/jdragelj/CHARMM_TOPPAR/top_all36_lipid.rtf"
+READ rtf CARD UNIT 42 APPEND
+close unit 42
+
+OPEN READ UNIT 42 CARD NAME "/scratch/scratch/jdragelj/CHARMM_TOPPAR/top_all36_cgenff.rtf"
+READ rtf CARD UNIT 42 APPEND
+close unit 42
+
+
+OPEN READ UNIT 42 CARD NAME "/scratch/scratch/jdragelj/CHARMM_TOPPAR/par_all22_prot_plus_heme_and_Cu.inp"
+READ PARAMETERS UNIT 42 CARD
+close unit 42
+
+OPEN READ UNIT 42 CARD NAME "/scratch/scratch/jdragelj/CHARMM_TOPPAR/par_all36_lipid.prm"
+READ PARAMETERS UNIT 42 CARD APPEND
+close unit 42
+
+OPEN READ UNIT 42 CARD NAME "/scratch/scratch/jdragelj/CHARMM_TOPPAR/par_all36_cgenff.prm"
+READ PARAMETERS UNIT 42 CARD APPEND
+close unit 42
+
+
+stream "/scratch/scratch/jdragelj/CHARMM_TOPPAR/toppar_charmm_FLU/toppar_fluorescin_p2.str
+
+!read coordinates
+
+read sequence coor name "KetteA" resid
+GENERATE  ACHAIN SETUP
+read coor card name "KetteA"
+
+
+read sequence coor name "KetteB" resid
+GENERATE BCHAIN SETUP
+read coor card name "KetteB" append
+
+!for C-termini
+IC PARA
+IC FILL PRESERVE
+IC BUILD
+
+read sequence coor name "HemA3" resid
+GENERATE EHEMEA3 SETUP
+read coor card name "HemA3" append
+
+read sequence coor name "HemA" resid
+GENERATE GHEMEA SETUP
+read coor card name "HemA" append
+
+read sequence coor name "Metalle" resid
+GENERATE METAL SETUP
+read coor card name "Metalle" append
+
+read sequence coor name "Hydroxyl" resid
+GENERATE FEOH SETUP
+read coor card name "Hydroxyl" append
+
+read sequence coor name "water_cu" resid
+GENERATE HOHCU SETUP
+read coor card name "water_cu" append
+
+read sequence coor name "membrane" resid
+GENERATE MEMBRANE SETUP
+read coor card name "membrane" append
+
+read sequence coor name "fluorescein" resid
+GENERATE  FLUR SETUP
+read coor card name "fluorescein" append
+
+!flu patch
+PATCH FCYS ACHAIN 299 FLUR 1 SETUP
+
+
+
+!Patches
+
+!Sulfur bridge
+PATCH DISU ACHAIN 66 ACHAIN 80 SETUP
+
+!Protonation patches
+PATCH GLUP ACHAIN 278 SETUP ! in some other cases was used GLUE, but GLUP more appropriate ?!
+PATCH LSN ACHAIN 354 SETUP
+PATCH ASPP ACHAIN 399 SETUP
+PATCH GLUP ACHAIN 481 SETUP
+
+
+!generate angles and dihedrals
+AUTOGENERATE ANGLES DIHEDRALS
+
+!charge patches
+PATCH AHE3 GHEMEA 2  ACHAIN 94 ACHAIN  413 SETUP
+PATCH CA21 METAL 2 METAL 3 BCHAIN 181 BCHAIN 216 BCHAIN 218 BCHAIN 220 BCHAIN 224 BCHAIN 227 SETUP
+PATCH CB4 METAL 1 ACHAIN 325 ACHAIN 326 HOHCU 1 ACHAIN 280 ACHAIN 276 SETUP
+PATCH A3H3 EHEMEA3 2 ACHAIN 411 FEOH 1 SETUP
+
+!bonds towards heme and copper
+PATCH PHEM  ACHAIN 411  EHEMEA3 2 SETUP
+PATCH PHEM  ACHAIN  94 GHEMEA 2 SETUP
+PATCH PHE2  ACHAIN 413 GHEMEA 2 SETUP
+PATCH EISE  FEOH 1 EHEMEA3 2 SETUP
+
+PATCH CUBP METAL 1 ACHAIN 276 ACHAIN 325 ACHAIN 326 HOHCU 1 SETUP
+PATCH CUAP METAL 2 METAL 3 BCHAIN 181 BCHAIN 216 BCHAIN 218 BCHAIN 220 BCHAIN 224 BCHAIN 227 SETUP
+
+
+!read water coordinates
+
+read sequence coor resid name "H2OA"
+GENERATE PAH2O SETUP noangle nodihedral
+read coor card name "H2OA" append
+
+read sequence coor resid name "H2OB"
+GENERATE QBH2O SETUP noangle nodihedral
+read coor card name "H2OB" append
+
+read sequence coor resid name "mem_water"
+GENERATE SWAT SETUP noangle nodihedral
+read coor card name "mem_water" append
+
+read sequence coor resid name "waterbox"
+GENERATE WAT SETUP noangle nodihedral
+read coor card name "waterbox" append
+
+
+!make hydrogen
+hbuild
+
+delete atom sele .byres. (((segid FLUR) .around. 2.8) .and. (segid SWAT .or. segid WAT .or. segid PAH2O .or. segid QBH2O)) end
+
+OPEN WRITE UNIT 08 CARD NAME "cco_flu.crd"
+WRITE COORDINATES UNIT 08 CARD
+CLOSE UNIT 08
+
+OPEN WRITE UNIT 08 CARD NAME "cco_flu.pdb"
+WRITE COORDINATES UNIT 08 PDB
+CLOS UNIT 08
+
+OPEN WRITE UNIT 08 CARD NAME "cco_and_water.psf.xplor"
+WRITE PSF XPLOR UNIT 08 CARD
+CLOS UNIT 08
+
+OPEN WRITE UNIT 08 CARD NAME "cco_and_water.psf"
+WRITE PSF UNIT 08 CARD
+CLOS UNIT 08
+
+
+calc XSIZ = 91.6697 
+calc YSIZ = 91.6697 
+calc ZSIZ = 129.4680 
+
+set 1 XSIZ
+set 2 YSIZ
+set 3 ZSIZ
+define SOLUTE sele all .and. .not. (segid SWAT .or. segid WAT .or. segid PAH2O .or. segid QBH2O) end
+!open read unit 18 card name "/scratch/scratch/tmeyer/CHARMM_NAMD/charmm/image-trans.img"
+!read image unit 18 card
+CRYST DEFINE ORTHO @XSIZ @YSIZ @ZSIZ 90. 90. 90.
+CRYST BUILD CUTOFF 15
+IMAGe BYREs XCEN 0.0 YCEN 0.0 ZCEN 0.0 SELEct .NOT. SOLUTE END
+IMAGe BYSEg XCEN 0.0 YCEN 0.0 ZCEN 0.0 SELEct SOLUTE END
+close unit 18
+
+CONS FIX SELE all .and. .not. (segid SWAT .or. segid WAT .or. segid PAH2O .or. segid QBH2O) end
+MINI SD NSTEP 100 TOLG 0.1
+MINI ABNR NSTEP 200 TOLG 0.01
+
+CONS FIX SELE all .and. .not. (segid SWAT .or. segid WAT .or. segid PAH2O .or. segid QBH2O .or. segid FLUR .or. (segid ACHAIN .and. resid 299)) end
+MINI SD NSTEP 100 TOLG 0.1
+MINI ABNR NSTEP 200 TOLG 0.01
+
+OPEN WRITE UNIT 08 CARD NAME "cco_and_water.crd"
+WRITE COORDINATES UNIT 08 CARD
+CLOSE UNIT 08
+
+OPEN WRITE UNIT 08 CARD NAME "cco_and_water.pdb"
+WRITE COORDINATES UNIT 08 PDB
+CLOS UNIT 08
+
+
+stop

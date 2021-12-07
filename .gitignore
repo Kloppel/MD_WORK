@@ -13,6 +13,7 @@ NAMD_Git-2021-09-21_Linux-x86_64-multicore-CUDA/
 PF_prdh_2/
 Pr_prdh/
 vmd-1.9.3/
+benchmark_cuda0.ipynb
 
 #exclude large filetypes like dcd trajectory files
 *.dcd
