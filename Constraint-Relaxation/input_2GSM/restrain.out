@@ -1,0 +1,34 @@
+Info) VMD for LINUXAMD64, version 1.9.3 (November 30, 2016)
+Info) http://www.ks.uiuc.edu/Research/vmd/                         
+Info) Email questions and bug reports to vmd@ks.uiuc.edu           
+Info) Please include this reference in published work using VMD:   
+Info)    Humphrey, W., Dalke, A. and Schulten, K., `VMD - Visual   
+Info)    Molecular Dynamics', J. Molec. Graphics 1996, 14.1, 33-38.
+Info) -------------------------------------------------------------
+Info) Multithreading available, 4 CPUs detected.
+Info)   CPU features: SSE2 AVX AVX2 FMA 
+Info) Free system memory: 4289MB (54%)
+Info) No CUDA accelerator devices available.
+Info) Dynamically loaded 2 plugins in directory:
+Info) /usr/local/lib/vmd/plugins/LINUXAMD64/molfile
+psfplugin) Detected a Charmm PSF file
+psfplugin) Detected a Charmm PSF EXTEnded file
+Info) Using plugin psf for structure file cco_and_water.psf
+Info) Analyzing structure ...
+Info)    Atoms: 115578
+Info)    Bonds: 115633
+Info)    Angles: 97437  Dihedrals: 101277  Impropers: 2467  Cross-terms: 787
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 26875
+Info)    Waters: 25883
+Info)    Segments: 12
+Info)    Fragments: 26081   Protein: 2   Nucleic: 0
+Info) Using plugin pdb for coordinates from file cco_and_water.pdb
+Info) Finished with coordinate file cco_and_water.pdb.
+0
+atomselect0
+atomselect1
+atomselect2
+Info) Opened coordinate file namd_cons_for_heat.pdb for writing.
+Info) Finished with coordinate file namd_cons_for_heat.pdb.
+vmd > 

@@ -1,37 +1,27 @@
 #ignore folders with installations, installation TARs, as well as quicksave data
 .ipynb_checkpoints/
 .vscode/
+ba3/
 charmm/
-NAMD_Git-2021-09-21_Linux-x86_64-multicore-CUDA/
-TARs/
-vmd-1.9.3/
-charmming_parser/
-charmm/
-JOVAN_COURSE/
 CHARMM_TUTORIAL/
+charmming_parser/
+dowserplusplus/
+hole2/
 kb2plus_package/
-kb2plus_package.tar.gz
+mgltools_x86_64Linux2_1.5.7/
+NAMD_Git-2021-09-21_Linux-x86_64-multicore-CUDA/
+PF_prdh_2/
+Pr_prdh/
+vmd-1.9.3/
+
+#exclude large filetypes like dcd trajectory files
 *.dcd
-Jovan_old/
-Constraint-Relaxation/
-Velocity-Rescaling/
-Example1/
-Example2/
-Example3/
-Example4/
-testing-site/
-CCO-starters/
+
+#exclude folders of heating types
+#Constraint-Relaxation/
+#Velocity-Rescaling/
+
+#exclude key files
+.gitignore
 key_github
 key_github.pub
-dowserplusplus.tar.gz
-mgltools_x86_64Linux2_1.5.7.tar.gz
-dowserplusplus/
-mgltools_x86_64Linux2_1.5.7/
-hole2-ApacheLicense-2.2.005-Linux-x86_64.tar.gz
-hole2/
-Pr_prdh/
-!Pr_prdh/debug.ipynb
-!Pr_prdh/Package/
-PF_prdh_2/
-CcO_Jesse/
-ba3/
