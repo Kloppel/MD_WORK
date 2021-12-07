@@ -21,7 +21,7 @@ vmd-1.9.3/
 #Constraint-Relaxation/
 #Velocity-Rescaling/
 
-#exclude key files
+#exclude key files for working github connection and git history
 .gitignore
 key_github
 key_github.pub
