@@ -9,20 +9,20 @@ import kbp2
 # full filepath of the PDB file that will be used for titration
 # IMPORTANT NOTE: Karlsberg2+ replaces water molecules with a dielectric medium of eps = 80
 # IMPORTANT NOTE: Please remove (crystal) water molecules before titration
-pdb_filename = '../kb2plus_package/test_example/4pti.pdb1'
+pdb_filename = '4pti.pdb1'
 # working idrectory where all files related to titration will be made
-workdir = '<user folder of choice unrelated to the package>'
+workdir = 'test/'
 
 # premade list that will append the toplogy files needed for CHARMM27 to build the protein structure
 top = []
-top.append('../kb2plus_package/test_example/toppar27/top.inp')
+top.append('toppar27/top.inp')
 # files patches.rtf, sb_pat.rtf are needed for any Karlsberg2+ run with CHARMM27 force field
-top.append('../kb2plus_package/test_example/toppar27/patches.rtf')
-top.append('../kb2plus_package/test_example/toppar27/sb_pat.rtf')
+top.append('toppar27/patches.rtf')
+top.append('toppar27/sb_pat.rtf')
 par = []
-par.append('../kb2plus_package/test_example/toppar27/par.inp')
+par.append('toppar27/par.inp')
 # files patches.prm is needed for any Karlsberg2+ run with CHARMM27 force field
-par.append('../kb2plus_package/test_example/toppar27/patches.prm')
+par.append('toppar27/patches.prm')
 
 # modelling decision given in a certain format
 # in this case, water can be renamed to TIP3 with 'rename' or kept as HOH with 'keep'
@@ -87,7 +87,7 @@ kbp2_set.preopt = {'carb_oxi_relax': True, \
 kbp2_set.tapbs_bin = 'LD_LIBRARY_PATH=../kb2plus_package/lib_fort_gnu ../kb2plus_package/bin/tapbs_1.3_cav_enere'
 # 2. binary file for CHARMM
 # replace with a full path
-kbp2_set.charmm_bin = "<charmm binary filepath>"
+kbp2_set.charmm_bin = "../kb2plus_package/charmm/"
 # 3. binary file for software APBS (computing conformation energy)
 # replace with a full path
 kbp2_set.apbs_bin    = "../kb2plus_package/bin/apbs"
