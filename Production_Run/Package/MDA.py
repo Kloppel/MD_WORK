@@ -1,25 +1,30 @@
 #import kb2plus_package
 class MDA():
-    def empty_universe(n_atoms):
+    def empty_universe(n_residues):
+        import MDAnalysis as mda
         #check if n_atoms is a correct datatype
-        if n_atoms is None:
+        if n_residues is None:
             raise TypeError
-        if isinstance(n_atoms, int) is False:
+        if isinstance(n_residues, int) is False:
             raise TypeError
+        if n_residues%3==0:
+            print('Assuming non-specified residues are all water molecules.')
         #create empty universe with a maximum number of atoms n_atoms
-        universe = mda.Universe.empty(n_atoms=n_atoms, trajectory=True)
+        universe = mda.Universe.empty(n_atoms=n_residues*3, trajectory=True)
         #desired output, when calling universe object:
         #<Universe with (n_atoms) atoms>
         return universe
     
     def create_waterverse(waters, **kwargs):
+        import numpy as np
+        import MDAnalysis as mda
         print('filling universe with water.')
         n_residues = waters
         n_atoms = n_residues * 3
         resindices = np.repeat(range(n_residues), 3)
         assert len(resindices) == n_atoms
         segindices = [0] * n_residues
-        waterverse = MDA.empty_universe(n_atoms=n_atoms)
+        waterverse = MDA.empty_universe(n_residues=n_residues)
         waterverse.add_TopologyAttr('name', ['O', 'H1', 'H2']*n_residues)
         waterverse.add_TopologyAttr('type', ['O', 'H', 'H']*n_residues)
         waterverse.add_TopologyAttr('resname', ['SOL']*n_residues)

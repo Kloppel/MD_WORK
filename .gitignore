@@ -2,12 +2,13 @@
 .ipynb_checkpoints/
 .vscode/
 ba3/
+bench/
 charmm/
 CHARMM_TUTORIAL/
 charmming_parser/
 dowserplusplus/
 hole2/
-kb2plus_package/
+Karlsberg/
 mgltools_x86_64Linux2_1.5.7/
 NAMD_Git-2021-09-21_Linux-x86_64-multicore-CUDA/
 PF_prdh_2/
