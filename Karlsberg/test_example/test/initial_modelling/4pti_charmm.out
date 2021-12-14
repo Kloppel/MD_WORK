@@ -1,0 +1,682 @@
+1
+                 Chemistry at HARvard Macromolecular Mechanics
+                (CHARMM) - Free Version 46b1     August 15, 2021                
+                                   bde556660                                    
+       Copyright(c) 1984-2020  President and Fellows of Harvard College
+                              All Rights Reserved
+        Current operating system: Linux-5.11.0-41-generic(x86_64)@london        
+                 Created on 12/14/21 at 12:31:46 by user: pbuser      
+
+            Maximum number of ATOMS:    360720, and RESidues:      120240
+ RDTITL>  
+ RDTITL> No title read.
+
+      ***** LEVEL  1 WARNING FROM <RDTITL> *****
+      ***** Title expected.
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+  
+ CHARMM>     
+  
+ CHARMM>    dimension chsize 999999
+Size      Original         New
+MAXA        360720      999999
+MAXB        360720      999999
+MAXT        721440     1999998
+MAXP       1082160     2999997
+MAXIMP      180360      499999
+MAXNB        90180      249999
+MAXPAD      360720      999999
+MAXRES      120240      333333
+MAXSEG       45090      124999
+MAXATC        1400
+MAXCB         3000
+MAXCT        50000
+MAXCP        20000
+MAXCI         1200
+MAXCH         6400
+MAXCN       502503
+MAXCRT      120240      333333
+  
+ CHARMM>    read rtf card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top.inp"
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top.inp::
+ MAINIO> Residue topology file being read from unit  90.
+ TITLE> *>>>>>>>>CHARMM22 ALL-HYDROGEN TOPOLOGY FILE FOR PROTEINS <<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>> AND NUCLEIC ACIDS <<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> *>>>>> INCLUDES PHI, PSI CROSS TERM MAP (CMAP) CORRECTION <<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>>>>   JULY, 2004    <<<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> * ALL COMMENTS TO ADM JR. VIA THE CHARMM WEB SITE: WWW.CHARMM.ORG
+ TITLE> *               PARAMETER SET DISCUSSION FORUM
+ TITLE> *
+ **** WARNING from RTFRDR **** The total charge of the residue, 5PO3,  -2.1800000,
+ does not equal the expected charge,  -2.0000000.
+          PRES DELB         0.00
+ There were   1 warning(s) from RTFRDR.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    read rtf card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.rtf" append
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.rtf::
+ MAINIO> Residue topology file being read from unit  90.
+ TITLE> * SPECIFIC REFERENCE CHARGE STATES
+ TITLE> * BY GERNOT KIESERITZKY 2006
+ TITLE> *
+ **** WARNING from RTFRDR **** The total charge of the residue, CT1N,  -0.7300000,
+ does not equal the expected charge,   0.0000000.
+ There were   1 warning(s) from RTFRDR.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    read rtf card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/sb_pat.rtf" append
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/sb_pat.rtf::
+ MAINIO> Residue topology file being read from unit  90.
+ TITLE> * SALT BRIDGE OPENING PATCHES INVERTING
+ TITLE> * BY JOVAN DRAGELJ 2014
+ TITLE> *
+ **** WARNING from RTFRDR **** The total charge of the residue, EPPS,   0.8200000,
+ does not equal the expected charge,   1.0000000.
+          PRES DPPS         1.00
+ **** WARNING from RTFRDR **** The total charge of the residue, DPPS,   0.8200000,
+ does not equal the expected charge,   1.0000000.
+          PRES LYSS        -1.00
+ **** WARNING from RTFRDR **** The total charge of the residue, LYSS,  -1.3100000,
+ does not equal the expected charge,  -1.0000000.
+          PRES ARGS        -1.00
+ **** WARNING from RTFRDR **** The total charge of the residue, ARGS,  -1.3800000,
+ does not equal the expected charge,  -1.0000000.
+          PRES HSPS        -1.00
+ **** WARNING from RTFRDR **** The total charge of the residue, HSPS,  -1.1800000,
+ does not equal the expected charge,  -1.0000000.
+          PRES TYRS   1.00
+ **** WARNING from RTFRDR **** The total charge of the residue, NTES,  -1.3100000,
+ does not equal the expected charge,  -1.0000000.
+ There were   6 warning(s) from RTFRDR.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    read para card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par.inp"
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par.inp::
+
+          PARAMETER FILE BEING READ FROM UNIT 90
+ TITLE> *>>>>> CHARMM22 ALL-HYDROGEN PARAMETER FILE FOR PROTEINS <<<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>> AND NUCLEIC ACIDS <<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> *>>>>> INCLUDES PHI, PSI CROSS TERM MAP (CMAP) CORRECTION <<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>>>> DECEMBER, 2003 <<<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> * ALL COMMENTS TO ADM JR. VIA THE CHARMM WEB SITE: WWW.CHARMM.ORG
+ TITLE> *               PARAMETER SET DISCUSSION FORUM
+ TITLE> *
+ PARMIO> NONBOND, HBOND lists and IMAGE atoms cleared.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    read para card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.prm" append
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.prm::
+
+          PARAMETER FILE BEING READ FROM UNIT 90
+ TITLE> * ADDITIONAL PARAMETERS FOR SPECIAL RESIDUES
+ TITLE> * GERNOT KIESERITZKY
+ TITLE>  
+ PARMIO> NONBOND, HBOND lists and IMAGE atoms cleared.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>     
+  
+ CHARMM>    read sequence coor name "4pti_in_A.crd" resid
+ VOPEN> Attempting to open::4pti_in_A.crd::
+ MAINIO> Sequence information being read from unit  90.
+ TITLE> 454  EXT
+ RDTITL> No title read.
+
+          RESIDUE SEQUENCE --    58 RESIDUES
+          ARG PRO DPP PHE CYS LEU EPP PRO PRO TYR THR GLY PRO CYS LYS ALA ARG ILE ILE ARG 
+          TYR PHE TYR ASN ALA LYS ALA GLY LEU CYS GLN THR PHE VAL TYR GLY GLY CYS ARG ALA 
+          LYS ARG ASN ASN PHE LYS SER ALA EPP DPP CYS MET ARG THR CYS GLY GLY ALA 
+ ***** Message from SEQRDR ***** THE SYSTEM CONTAINS  8 TITRATABLE GROUPS
+ THE USER MUST PREDETERMINE THE PROTONATION STATE THROUGH THE SEQUENCE AND RTF
+ HIS -  0  HSD -  0  HSE -  0  HSP -  0  ASP -  0  GLU -  0  LYS -  4  TYR -  4
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    generate setup A first NTER last CTER
+ THE PATCH 'NTER' WILL BE USED FOR THE FIRST RESIDUE
+ THE PATCH 'CTER' WILL BE USED FOR THE LAST  RESIDUE
+ GENPSF> Segment   1 has been generated. Its identifier is A.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =       58
+         Number of atoms         =      906   Number of groups     =      273
+         Number of bonds         =      917   Number of angles     =     1642
+         Number of dihedrals     =     2420   Number of impropers  =      141
+         Number of cross-terms   =       52
+         Number of HB acceptors  =       79   Number of HB donors  =      120
+         Number of NB exclusions =        0   Total charge =    6.00000
+  
+ CHARMM>     
+  
+ CHARMM>    patch disu A 5 A 55
+ ATOM  A    5    CYS  HG1  AND ALL REFERENCES TO IT DELETED.
+ ATOM  A    55   CYS  HG1  AND ALL REFERENCES TO IT DELETED.
+
+ Message from MAPIC: Atom numbers are changed.
+ DELTIC:         2 bonds deleted
+ DELTIC:         2 angles deleted
+ DELTIC:         6 dihedrals deleted
+ DELTIC:         2 donors deleted
+ PATCH: Check angles and dihedrals autogenerated.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =       58
+         Number of atoms         =      904   Number of groups     =      273
+         Number of bonds         =      916   Number of angles     =     1640
+         Number of dihedrals     =     2414   Number of impropers  =      141
+         Number of cross-terms   =       52
+         Number of HB acceptors  =       79   Number of HB donors  =      118
+         Number of NB exclusions =        0   Total charge =    6.00000
+  
+ CHARMM>    patch disu A 14 A 38
+ ATOM  A    14   CYS  HG1  AND ALL REFERENCES TO IT DELETED.
+ ATOM  A    38   CYS  HG1  AND ALL REFERENCES TO IT DELETED.
+
+ Message from MAPIC: Atom numbers are changed.
+ DELTIC:         2 bonds deleted
+ DELTIC:         2 angles deleted
+ DELTIC:         6 dihedrals deleted
+ DELTIC:         2 donors deleted
+ PATCH: Check angles and dihedrals autogenerated.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =       58
+         Number of atoms         =      902   Number of groups     =      273
+         Number of bonds         =      915   Number of angles     =     1638
+         Number of dihedrals     =     2408   Number of impropers  =      141
+         Number of cross-terms   =       52
+         Number of HB acceptors  =       79   Number of HB donors  =      116
+         Number of NB exclusions =        0   Total charge =    6.00000
+  
+ CHARMM>    patch disu A 30 A 51
+ ATOM  A    30   CYS  HG1  AND ALL REFERENCES TO IT DELETED.
+ ATOM  A    51   CYS  HG1  AND ALL REFERENCES TO IT DELETED.
+
+ Message from MAPIC: Atom numbers are changed.
+ DELTIC:         2 bonds deleted
+ DELTIC:         2 angles deleted
+ DELTIC:         6 dihedrals deleted
+ DELTIC:         2 donors deleted
+ PATCH: Check angles and dihedrals autogenerated.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =       58
+         Number of atoms         =      900   Number of groups     =      273
+         Number of bonds         =      914   Number of angles     =     1636
+         Number of dihedrals     =     2402   Number of impropers  =      141
+         Number of cross-terms   =       52
+         Number of HB acceptors  =       79   Number of HB donors  =      114
+         Number of NB exclusions =        0   Total charge =    6.00000
+  
+ CHARMM>     
+  
+ CHARMM>    AUTOgenerate ANGLes DIHEdrals
+ AUTOGEN: All angles are removed and regenerated.
+ AUTOGEN: All dihedrals are removed and regenerated.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =       58
+         Number of atoms         =      900   Number of groups     =      273
+         Number of bonds         =      914   Number of angles     =     1634
+         Number of dihedrals     =     2407   Number of impropers  =      141
+         Number of cross-terms   =       52
+         Number of HB acceptors  =       79   Number of HB donors  =      114
+         Number of NB exclusions =        0   Total charge =    6.00000
+  
+ CHARMM>     
+  
+ CHARMM>    read coor card name "4pti_in_A.crd"
+ VOPEN> Attempting to open::4pti_in_A.crd::
+          SPATIAL COORDINATES BEING READ FROM UNIT 90
+ TITLE> 454  EXT
+ RDTITL> No title read.
+ ** WARNING ** After reading, there are no coordinates for selected atom:     2     1 ARG      HT1     
+ ** WARNING ** After reading, there are no coordinates for selected atom:     3     1 ARG      HT2     
+ ** WARNING ** After reading, there are no coordinates for selected atom:     4     1 ARG      HT3     
+ ** WARNING ** After reading, there are no coordinates for selected atom:     6     1 ARG      HA      
+ ** WARNING ** After reading, there are no coordinates for selected atom:     8     1 ARG      HB1     
+ ** WARNING ** After reading, there are no coordinates for selected atom:     9     1 ARG      HB2     
+ ** WARNING ** After reading, there are no coordinates for selected atom:    11     1 ARG      HG1     
+ ** WARNING ** After reading, there are no coordinates for selected atom:    12     1 ARG      HG2     
+ ** WARNING ** After reading, there are no coordinates for selected atom:    14     1 ARG      HD1     
+ ** WARNING ** After reading, there are no coordinates for selected atom:    15     1 ARG      HD2     
+
+ ** A total of   446 selected atoms have no coordinates
+ *** LEVEL  2 WARNING *** BOMLEV IS    0
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>     
+  
+ CHARMM>    ic para
+  
+ CHARMM>    ic build
+  
+ CHARMM>     
+  
+ CHARMM>    hbuild
+
+      ***** LEVEL  4 WARNING FROM <GTHBUI> *****
+      ***** Zero selection specified
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+  
+ CHARMM>     
+  
+ CHARMM>    NBONDS EPS 4
+
+ NONBOND OPTION FLAGS: 
+     ELEC     VDW      ATOMs    CDIElec  SHIFt    VATOm    VSWItch 
+     BYGRoup  NOEXtnd  NOEWald 
+ CUTNB  = 14.000 CTEXNB =999.000 CTONNB = 10.000 CTOFNB = 12.000
+ CGONNB =  0.000 CGOFNB = 10.000
+ WMIN   =  1.500 WRNMXD =  0.500 E14FAC =  1.000 EPS    =  4.000
+ NBXMOD =      5
+ There are        0 atom  pairs and        0 atom  exclusions.
+ There are        0 group pairs and        0 group exclusions.
+ <MAKINB> with mode   5 found   2548 exclusions and   2363 interactions(1-4)
+ <MAKGRP> found    818 group exclusions.
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR   258616 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+   194385 ATOM PAIRS WERE FOUND FOR ATOM LIST
+     7656 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+  
+ CHARMM>    cons fix select .not. (  (type OE*)  .or. (type OD*)  .or. hydrogens )   end
+ SELRPN>    442 atoms have been selected out of    900
+  
+ CHARMM>    minimize sd nsteps 1000 tolg 0.1
+
+ NONBOND OPTION FLAGS: 
+     ELEC     VDW      ATOMs    CDIElec  SHIFt    VATOm    VSWItch 
+     BYGRoup  NOEXtnd  NOEWald 
+ CUTNB  = 14.000 CTEXNB =999.000 CTONNB = 10.000 CTOFNB = 12.000
+ CGONNB =  0.000 CGOFNB = 10.000
+ WMIN   =  1.500 WRNMXD =  0.500 E14FAC =  1.000 EPS    =  4.000
+ NBXMOD =      5
+ There are   194385 atom  pairs and     4911 atom  exclusions.
+ There are        0 group pairs and      818 group exclusions.
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR   258616 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+   144663 ATOM PAIRS WERE FOUND FOR ATOM LIST
+     7449 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+
+
+ STEEPD> An energy minimization has been requested.
+
+ NSTEP  =         1000   NPRINT =           10
+ STEP   =    0.0200000   TOLFUN =    0.0000000
+ TOLGRD =    0.1000000   TOLSTP =    0.0000000
+
+MINI MIN: Cycle      ENERgy      Delta-E         GRMS    Step-size
+MINI INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+MINI EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>        0  -2456.56087      0.00000     13.54918      0.02000
+MINI INTERN>       39.79741    195.55375     65.93429     74.01904     28.05900
+MINI EXTERN>       39.01305  -2898.93742      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       10  -2745.99989    289.43902      2.98337      0.00373
+MINI INTERN>        6.30255     79.45862     24.69424     70.89742      7.98369
+MINI EXTERN>      -35.03886  -2900.29754      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       20  -2777.11192     31.11204      1.22017      0.00167
+MINI INTERN>        9.03134     62.53032     16.23586     70.35283      5.07774
+MINI EXTERN>      -40.01669  -2900.32332      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       30  -2792.46942     15.35750      0.98700      0.00180
+MINI INTERN>        8.57578     53.70836     13.70200     69.61227      3.96963
+MINI EXTERN>      -41.46647  -2900.57099      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       40  -2800.27728      7.80786      2.33565      0.00193
+MINI INTERN>        8.96682     50.09502     12.05796     68.54206      3.40482
+MINI EXTERN>      -42.54480  -2900.79916      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       50  -2806.52262      6.24533      0.51871      0.00087
+MINI INTERN>        7.14446     47.01300     12.29157     67.59013      2.84181
+MINI EXTERN>      -42.33191  -2901.07168      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       60  -2809.74591      3.22329      0.82927      0.00093
+MINI INTERN>        6.70648     46.23467     12.18666     66.68301      2.51500
+MINI EXTERN>      -42.83352  -2901.23821      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+ UPDECI: Nonbond update at step        67
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR   258616 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+   144513 ATOM PAIRS WERE FOUND FOR ATOM LIST
+     7491 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+MINI>       70  -2811.74659      2.00068      0.91568      0.00100
+MINI INTERN>        6.39190     45.73871     12.37777     66.04475      2.29136
+MINI EXTERN>      -43.24861  -2901.34247      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       80  -2813.48763      1.74104      0.31094      0.00045
+MINI INTERN>        7.10613     45.65384     11.49711     65.62295      2.16297
+MINI EXTERN>      -44.26420  -2901.26642      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       90  -2814.61079      1.12317      0.27412      0.00048
+MINI INTERN>        6.99020     45.51056     11.52019     65.31418      2.08681
+MINI EXTERN>      -44.75979  -2901.27294      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      100  -2815.52608      0.91529      0.42194      0.00052
+MINI INTERN>        7.09078     45.43736     11.40051     65.08824      2.04281
+MINI EXTERN>      -45.35567  -2901.23010      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      110  -2816.24263      0.71655      0.47087      0.00056
+MINI INTERN>        7.09369     45.32641     11.38199     64.94365      2.02281
+MINI EXTERN>      -45.82200  -2901.18917      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      120  -2816.86120      0.61857      0.18399      0.00025
+MINI INTERN>        6.62712     45.07958     11.78716     64.85278      2.01171
+MINI EXTERN>      -46.02850  -2901.19106      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      130  -2817.29783      0.43663      0.17076      0.00027
+MINI INTERN>        6.64391     44.98961     11.76886     64.79598      2.00648
+MINI EXTERN>      -46.36250  -2901.14016      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      140  -2817.66686      0.36903      0.20824      0.00029
+MINI INTERN>        6.63136     44.89287     11.79365     64.75689      2.00249
+MINI EXTERN>      -46.65387  -2901.09026      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      150  -2817.95336      0.28650      0.37850      0.00031
+MINI INTERN>        6.65158     44.79544     11.82073     64.73173      1.99915
+MINI EXTERN>      -46.91313  -2901.03886      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      160  -2818.21372      0.26037      0.45861      0.00033
+MINI INTERN>        6.65728     44.72296     11.84180     64.71616      1.99437
+MINI EXTERN>      -47.15801  -2900.98829      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      170  -2818.48678      0.27305      0.12635      0.00015
+MINI INTERN>        6.57059     44.70791     11.84940     64.70860      1.98601
+MINI EXTERN>      -47.36134  -2900.94794      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      180  -2818.63276      0.14598      0.48800      0.00038
+MINI INTERN>        6.64190     44.61819     11.87464     64.70617      1.98176
+MINI EXTERN>      -47.55891  -2900.89652      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      190  -2818.86327      0.23051      0.11023      0.00017
+MINI INTERN>        6.55380     44.60972     11.87998     64.70712      1.97197
+MINI EXTERN>      -47.72771  -2900.85815      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      200  -2819.02935      0.16608      0.22696      0.00019
+MINI INTERN>        6.55534     44.57281     11.89268     64.71200      1.96182
+MINI EXTERN>      -47.91439  -2900.80960      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      210  -2819.18005      0.15070      0.15826      0.00020
+MINI INTERN>        6.54498     44.53088     11.90604     64.71902      1.95336
+MINI EXTERN>      -48.06757  -2900.76676      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+
+ STEEPD> Minimization exiting with gradient tolerance ( 0.1000000) satisfied.
+
+STPD MIN: Cycle      ENERgy      Delta-E         GRMS    Step-size
+STPD INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+STPD EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ ----------       ---------    ---------    ---------    ---------    ---------
+STPD>      218  -2819.27484      0.09479      0.09380      0.00018
+STPD INTERN>        6.54004     44.50334     11.91401     64.72494      1.94752
+STPD EXTERN>      -48.16647  -2900.73823      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+  
+ CHARMM>    minimize abnr nsteps 5000 tolg 0.01
+
+ NONBOND OPTION FLAGS: 
+     ELEC     VDW      ATOMs    CDIElec  SHIFt    VATOm    VSWItch 
+     BYGRoup  NOEXtnd  NOEWald 
+ CUTNB  = 14.000 CTEXNB =999.000 CTONNB = 10.000 CTOFNB = 12.000
+ CGONNB =  0.000 CGOFNB = 10.000
+ WMIN   =  1.500 WRNMXD =  0.500 E14FAC =  1.000 EPS    =  4.000
+ NBXMOD =      5
+ There are   144513 atom  pairs and     4911 atom  exclusions.
+ There are        0 group pairs and      818 group exclusions.
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR   258616 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+   144494 ATOM PAIRS WERE FOUND FOR ATOM LIST
+     7488 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+
+
+ ABNER> An energy minimization has been requested.
+
+ EIGRNG =    0.0005000   MINDIM =            5
+ NPRINT =           10   NSTEP  =         5000
+ PSTRCT =    0.0000000   SDSTP  =    0.0200000
+ STPLIM =    1.0000000   STRICT =    0.1000000
+ TOLFUN =    0.0000000   TOLGRD =    0.0100000
+ TOLITR =          100   TOLSTP =    0.0000000
+ FMEM   =    0.0000000
+MINI MIN: Cycle      ENERgy      Delta-E         GRMS    Step-size
+MINI INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+MINI EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>        0  -2819.27484      0.09479      0.09380      0.00000
+MINI INTERN>        6.54004     44.50334     11.91401     64.72494      1.94752
+MINI EXTERN>      -48.16647  -2900.73823      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       10  -2819.69697      0.42213      1.56178      0.03456
+MINI INTERN>        7.02308     43.39160     12.91381     65.23483      1.82167
+MINI EXTERN>      -50.17356  -2899.90839      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       20  -2820.58124      0.88427      0.24690      0.00882
+MINI INTERN>        6.40263     44.19853     12.14453     65.12128      1.79354
+MINI EXTERN>      -50.24401  -2899.99774      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       30  -2820.84909      0.26784      0.11748      0.00512
+MINI INTERN>        6.79308     43.70986     12.17028     65.03942      1.74569
+MINI EXTERN>      -50.18309  -2900.12433      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       40  -2821.12653      0.27744      0.14238      0.00496
+MINI INTERN>        6.48440     44.12239     12.12998     65.04380      1.75428
+MINI EXTERN>      -50.37424  -2900.28715      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       50  -2821.23727      0.11074      0.07208      0.00288
+MINI INTERN>        6.71945     43.90154     12.07439     65.06837      1.75661
+MINI EXTERN>      -50.40720  -2900.35044      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       60  -2821.25236      0.01509      0.02643      0.00101
+MINI INTERN>        6.69558     43.86493     12.12598     65.09949      1.76033
+MINI EXTERN>      -50.48944  -2900.30924      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       70  -2821.26139      0.00903      0.02490      0.00097
+MINI INTERN>        6.71869     43.79692     12.15646     65.13031      1.76383
+MINI EXTERN>      -50.56028  -2900.26732      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       80  -2821.27140      0.01001      0.02932      0.00094
+MINI INTERN>        6.69071     43.85620     12.12162     65.18779      1.76521
+MINI EXTERN>      -50.72298  -2900.16996      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       90  -2821.28199      0.01059      0.04755      0.00152
+MINI INTERN>        6.71713     43.77977     12.15364     65.17611      1.75684
+MINI EXTERN>      -50.81680  -2900.04868      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      100  -2821.28937      0.00738      0.02553      0.00088
+MINI INTERN>        6.71339     43.79778     12.13847     65.16309      1.75889
+MINI EXTERN>      -50.84605  -2900.01495      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      110  -2821.29420      0.00483      0.01496      0.00051
+MINI INTERN>        6.71367     43.81938     12.12631     65.14286      1.76075
+MINI EXTERN>      -50.82613  -2900.03103      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      120  -2821.30195      0.00775      0.02525      0.00083
+MINI INTERN>        6.73824     43.78694     12.13863     65.10976      1.76847
+MINI EXTERN>      -50.80286  -2900.04113      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      130  -2820.48151     -0.82044      1.30767      0.00318
+MINI INTERN>        5.46550     42.94856     14.94772     65.30709      1.80666
+MINI EXTERN>      -51.36640  -2899.59064      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      140  -2821.19627      0.71476      0.73689      0.00675
+MINI INTERN>        6.19735     42.86297     13.67487     65.26150      1.79604
+MINI EXTERN>      -51.38135  -2899.60766      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      150  -2821.43610      0.23982      0.41420      0.00969
+MINI INTERN>        6.96773     43.43430     12.19314     65.21382      1.78427
+MINI EXTERN>      -51.36289  -2899.66647      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      160  -2821.23602     -0.20008      1.09641      0.02260
+MINI INTERN>        7.46073     43.83853     11.62684     65.19709      1.78336
+MINI EXTERN>      -51.58218  -2899.56038      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+ UPDECI: Nonbond update at step       162
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR   258616 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+   144487 ATOM PAIRS WERE FOUND FOR ATOM LIST
+     7486 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+MINI>      170  -2821.46682      0.23080      0.87653      0.01874
+MINI INTERN>        7.44888     43.19322     12.06215     65.18811      1.78378
+MINI EXTERN>      -51.57320  -2899.56977      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      180  -2821.71164      0.24482      0.17599      0.00531
+MINI INTERN>        6.81324     43.50890     12.18602     65.18713      1.78529
+MINI EXTERN>      -51.63948  -2899.55274      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      190  -2821.78134      0.06970      0.09718      0.00309
+MINI INTERN>        6.90936     43.25342     12.29260     65.17150      1.78027
+MINI EXTERN>      -51.65226  -2899.53624      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      200  -2821.80816      0.02682      0.31172      0.00498
+MINI INTERN>        7.05855     43.71693     11.79241     65.15492      1.77589
+MINI EXTERN>      -51.91241  -2899.39445      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      210  -2822.10903      0.30087      0.19250      0.00610
+MINI INTERN>        6.74626     43.07830     12.57116     65.17452      1.80172
+MINI EXTERN>      -52.13027  -2899.35073      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      220  -2822.27307      0.16404      0.28566      0.00778
+MINI INTERN>        7.21995     42.84290     12.31047     65.20601      1.80983
+MINI EXTERN>      -52.27624  -2899.38599      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      230  -2822.62662      0.35355      0.21921      0.00931
+MINI INTERN>        6.65930     42.91056     12.71703     65.27681      1.84184
+MINI EXTERN>      -52.55824  -2899.47392      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      240  -2822.74754      0.12093      0.21673      0.00641
+MINI INTERN>        7.16102     42.85308     12.30543     65.30277      1.84110
+MINI EXTERN>      -52.54455  -2899.66639      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      250  -2822.83545      0.08791      0.04972      0.00224
+MINI INTERN>        6.97985     43.06344     12.19307     65.32711      1.83493
+MINI EXTERN>      -52.47328  -2899.76056      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      260  -2822.86119      0.02574      0.03959      0.00130
+MINI INTERN>        7.04719     42.91201     12.29133     65.29801      1.82976
+MINI EXTERN>      -52.46910  -2899.77040      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      270  -2822.90127      0.04007      0.07504      0.00349
+MINI INTERN>        7.13343     42.91663     12.18790     65.32146      1.82872
+MINI EXTERN>      -52.37940  -2899.91000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      280  -2822.94369      0.04242      0.03410      0.00181
+MINI INTERN>        7.13880     42.86862     12.24925     65.32235      1.83536
+MINI EXTERN>      -52.26913  -2900.08894      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      290  -2822.96957      0.02588      0.04045      0.00175
+MINI INTERN>        7.14446     42.85148     12.28600     65.32786      1.83345
+MINI EXTERN>      -52.25282  -2900.16000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+ UPDECI: Nonbond update at step       291
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR   258616 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+   144484 ATOM PAIRS WERE FOUND FOR ATOM LIST
+     7485 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+MINI>      300  -2822.95539     -0.01418      0.33061      0.00188
+MINI INTERN>        6.80088     42.67445     12.87356     65.37241      1.80169
+MINI EXTERN>      -52.32334  -2900.15503      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      310  -2823.01464      0.05925      0.15045      0.00243
+MINI INTERN>        7.20850     42.86897     12.20923     65.35303      1.81591
+MINI EXTERN>      -52.33134  -2900.13894      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      320  -2823.04557      0.03093      0.12476      0.00235
+MINI INTERN>        7.23145     42.90152     12.14245     65.36795      1.81532
+MINI EXTERN>      -52.37608  -2900.12818      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      330  -2823.05551      0.00994      0.02975      0.00082
+MINI INTERN>        7.10905     42.83052     12.30618     65.37172      1.82031
+MINI EXTERN>      -52.38930  -2900.10399      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+
+ ABNER> Minimization exiting with gradient tolerance ( 0.0100000) satisfied.
+
+ABNR MIN: Cycle      ENERgy      Delta-E         GRMS    Step-size
+ABNR INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+ABNR EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ ----------       ---------    ---------    ---------    ---------    ---------
+ABNR>      338  -2823.05666      0.00115      0.00762      0.00032
+ABNR INTERN>        7.09117     42.86108     12.29077     65.36648      1.82530
+ABNR EXTERN>      -52.40978  -2900.08169      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+  
+ CHARMM>     
+  
+ CHARMM>    ioformat exten
+ MISCOM> Expanded I/O format is used.
+  
+ CHARMM>    write coord pdb name "4pti_out.pdb"
+ VOPEN> Attempting to open::4pti_out.pdb::
+ RDTITL> WRITE COORD CARD NAME "4pti_out.crd"
+ RDTITL> No title read.
+  Write CHARMM-pdb format
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    write coord card name "4pti_out.crd"
+ VOPEN> Attempting to open::4pti_out.crd::
+ RDTITL> WRITE PSF CARD NAME "4pti_out.psf"
+ RDTITL> No title read.
+ VCLOSE: Closing unit   90 with status "KEEP"
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    write psf card name "4pti_out.psf"
+ VOPEN> Attempting to open::4pti_out.psf::
+ RDTITL> WRITE PSF XPLOR CARD NAME "4pti_out.xplor.psf"
+ RDTITL> No title read.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    write psf xplor card name "4pti_out.xplor.psf"
+ VOPEN> Attempting to open::4pti_out.xplor.psf::
+ RDTITL>  
+ RDTITL> No title read.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    stop
+$$$$$$  New timer profile $$$$$
+      NBONDS                          0.01 Other:            0.00
+   List time                       0.01 Other:            0.00
+         Electrostatic & VDW             1.68 Other:            0.00
+      Nonbond force                   1.68 Other:            0.00
+         Bond energy                     0.00 Other:            0.00
+         Angle energy                    0.03 Other:            0.00
+         Dihedral energy                 0.05 Other:            0.00
+         Restraints energy               0.00 Other:            0.00
+      INTRNL energy                   0.09 Other:            0.00
+   Energy time                     1.78 Other:            0.01
+ Total time                      1.97 Other:            0.19
+
+                    NORMAL TERMINATION BY NORMAL STOP
+                    MOST SEVERE WARNING WAS AT LEVEL  2
+
+                    $$$$$ JOB ACCOUNTING INFORMATION $$$$$
+                     ELAPSED TIME:     1.97  SECONDS 
+                         CPU TIME:     1.97  SECONDS 

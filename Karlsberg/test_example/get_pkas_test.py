@@ -11,18 +11,18 @@ import kbp2
 # IMPORTANT NOTE: Please remove (crystal) water molecules before titration
 pdb_filename = '4pti.pdb1'
 # working idrectory where all files related to titration will be made
-workdir = 'test/'
+workdir = '/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/test/'
 
 # premade list that will append the toplogy files needed for CHARMM27 to build the protein structure
 top = []
-top.append('toppar27/top.inp')
+top.append('/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top.inp')
 # files patches.rtf, sb_pat.rtf are needed for any Karlsberg2+ run with CHARMM27 force field
-top.append('toppar27/patches.rtf')
-top.append('toppar27/sb_pat.rtf')
+top.append('/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.rtf')
+top.append('/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/sb_pat.rtf')
 par = []
-par.append('toppar27/par.inp')
+par.append('/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par.inp')
 # files patches.prm is needed for any Karlsberg2+ run with CHARMM27 force field
-par.append('toppar27/patches.prm')
+par.append('/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.prm')
 
 # modelling decision given in a certain format
 # in this case, water can be renamed to TIP3 with 'rename' or kept as HOH with 'keep'
@@ -59,9 +59,9 @@ if not os.path.exists(workdir):
 # pH7 is usually enough for enzymes we usually investigate as it is their active pH value
 # NOTE: comment out the PACs you want to exclude
 protocol = []
-protocol.append((-10, 'open_sb_acids'))
+#protocol.append((-10, 'open_sb_acids'))
 protocol.append((  7, 'h_min'))
-protocol.append(( 20, 'open_sb_bases'))
+#protocol.append(( 20, 'open_sb_bases'))
 kbp2_set.protocol = protocol
 
 # structure (PDB file) is set for the titration
@@ -84,16 +84,17 @@ kbp2_set.preopt = {'carb_oxi_relax': True, \
 # Binary filepath definitions:
 # 1. binary file for software TAPBS (computing protonation energy)
 # replace with a full path
-kbp2_set.tapbs_bin = 'LD_LIBRARY_PATH=../kb2plus_package/lib_fort_gnu ../kb2plus_package/bin/tapbs_1.3_cav_enere'
+kbp2_set.tapbs_bin = 'LD_LIBRARY_PATH=/home/pbuser/Desktop/PhD_WORK/TARs/kb2plus_package/lib_fort_gnu /home/pbuser/Desktop/PhD_WORK/TARs/kb2plus_package/bin/tapbs_1.3_cav_enere'
+#kbp2_set.tapbs_bin = '/home/pbuser/Desktop/PhD_WORK/TARs/kb2plus_package/bin/tapbs_1.3_cav_enere'
 # 2. binary file for CHARMM
 # replace with a full path
-kbp2_set.charmm_bin = "../kb2plus_package/charmm/"
+kbp2_set.charmm_bin = "/home/pbuser/Desktop/PhD_WORK/MD_WORK/charmm/bin/charmm"
 # 3. binary file for software APBS (computing conformation energy)
 # replace with a full path
-kbp2_set.apbs_bin    = "../kb2plus_package/bin/apbs"
+kbp2_set.apbs_bin    = "kb2plus_package/bin/apbs"
 # 4. binary file for software TAPBS (computing electrostatic part of conformation energy)
 # replace with a full path
-kbp2_set.coulomb_bin = "../kb2plus_package/bin/coulomb"
+kbp2_set.coulomb_bin = "kb2plus_package/bin/coulomb"
 
 # IMPORTANT NOTE: Binary for software Kalrsberg (Monte-Carlo algorithm) is hard coded in the module karlsberg.py
 # IMPORTANT NOTE: Replace the line:

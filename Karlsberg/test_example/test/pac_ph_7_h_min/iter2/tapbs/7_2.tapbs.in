@@ -1,0 +1,50 @@
+pqr 7_2.pqr
+sites 7_2.sites
+output 7_2
+
+
+
+
+                                 
+#writemap
+
+bcfl sdh
+pdie 4                                 
+sdie 80                                 
+temperature 300
+ion -1.0 0.1 2.0
+ion 1.0 0.1 2.0
+
+srfm mol
+srad 1.4
+sdens 3
+chgm spl2
+
+dimension_of_protein_grid 65 65 65     
+spacing_of_protein_grid 2.112 2.112 2.112 
+center_of_protein_grid oncent
+
+dimension_of_protein_grid 65 65 65     
+spacing_of_protein_grid 1 1 1
+center_of_protein_grid oncent
+
+dimension_of_protein_grid 97 97 97     
+spacing_of_protein_grid 0.25 0.25 0.25
+center_of_protein_grid onsite
+
+dimension_of_model_grid 97 97 97       
+spacing_of_model_grid 1 1 1
+center_of_model_grid onsite
+
+dimension_of_model_grid 97 97 97       
+spacing_of_model_grid 0.25 0.25 0.25
+center_of_model_grid onsite
+
+
+errtol 1E-6
+# this works most of the time (i haven't encountered any problem so far, but note that the APBS default is 255)
+itmax 4
+presmooth 2
+postsmooth 2
+iinfo 0
+    

@@ -1,0 +1,28 @@
+Log file for pka calculation for the structure pti 
+
+# Setup: 
+-pdb_file:4pti.pdb1
+-workdir:/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/test/
+-topology:
+ /home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top.inp
+ /home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.rtf
+ /home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/sb_pat.rtf
+-parameters:
+ /home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par.inp
+ /home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.prm
+-yaml:/home/pbuser/Desktop/PhD_WORK/TARs/kb2plus_package/lib/python2.7/site-packages/kbp2/additional_files/titratable.yaml
+-protocol:
+ (7, 'h_min')
+-preopt:
+ carb_oxi_relax: True
+ init_die_4: True
+-salt_bridge_cutoff:4
+
+# Starting inital modelling 
+ -Preoptimization: Minimization of carobxylic oxigens will be done 
+ -Preoptimization: Dielectric constant will be set to 4  
+Structure preparation (initial modelling) is done! 
+
+# Pac run for 7 h_min 
+Conformational energy will not be calculated. 
+Final results are combined, the pKa computation is done! 

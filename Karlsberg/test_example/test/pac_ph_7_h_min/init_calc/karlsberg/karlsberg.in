@@ -1,0 +1,28 @@
+conformation /home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/test/pac_ph_7_h_min/init_calc/tapbs/init_calc.pkint /home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/test/pac_ph_7_h_min/init_calc/tapbs/init_calc.g 0.00 kJ/mol
+
+
+output kb
+
+full_scans 2500
+reduced_scans 10000
+reduced_set_tolerance 0.1
+conformation_moves_per_scan 1
+tempering_moves_per_scan 1
+
+correlation_limit 0.1
+max_correlation_time 100
+
+pH_start   -10.0 
+pH_end     20.0 
+pH_incr    0.5 
+redox_start 0
+redox_end   0
+redox_incr 25
+
+
+temperature 300
+
+min_int_pairs 2.5 pK
+min_int_triples 5.0 pK
+
+seed 123456 

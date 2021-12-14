@@ -1,0 +1,3119 @@
+Hello user pbuser on host london.
+
+This is Karlsberg release 2.0.
+Karlsberg was written 1999-2005 by Björn Rabenstein
+(rabe@chemie.fu-berlin.de).
+Karlsberg comes with ABSOLUTELY NO WARRANTY. It is free software, and you
+are welcome to redistribute it under certain conditions. See file COPYING
+being part of this program package for details.
+
+Here's the time and date of starting the job:
+  Local time: Tue Dec 14 12:33:06 2021
+  GMT       : Tue Dec 14 11:33:06 2021
+
+I'm parsing stdin.
+Your input is the following:
+
+   1: conformation /home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/test/pac_ph_7_h_min/init_calc/tapbs/init_calc.pkint /home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/test/pac_ph_7_h_min/init_calc/tapbs/init_calc.g 0.00 kJ/mol
+   2: 
+   3: 
+   4: output kb
+   5: 
+   6: full_scans 2500
+   7: reduced_scans 10000
+   8: reduced_set_tolerance 0.1
+   9: conformation_moves_per_scan 1
+  10: tempering_moves_per_scan 1
+  11: 
+  12: correlation_limit 0.1
+  13: max_correlation_time 100
+  14: 
+  15: pH_start   -10.0 
+  16: pH_end     20.0 
+  17: pH_incr    0.5 
+  18: redox_start 0
+  19: redox_end   0
+  20: redox_incr 25
+  21: 
+  22: 
+  23: temperature 300
+  24: 
+  25: min_int_pairs 2.5 pK
+  26: min_int_triples 5.0 pK
+  27: 
+  28: seed 123456 
+
+I've finished parsing stdin.
+
+Seed of the random number generator is 123456.
+
+Temperature for conversion of pH and pK values into energy is 300K.
+
+Reading file '/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/test/pac_ph_7_h_min/init_calc/tapbs/init_calc.pkint'...
+...ready! (read 20 sites)
+
+Reading file '/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/test/pac_ph_7_h_min/init_calc/tapbs/init_calc.g'...
+...ready!
+
+Conformational reference energy of conformation #1 corrected by 0 kJ/mol to 0 kJ/mol.
+
+I will do sampling at the following temperature(s): 300K 
+
+*** Starting calculation for pH -10.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 4932 single moves at 300K were accepted
+    - acceptance is 9.48%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19203 single moves at 300K were accepted
+    - acceptance is 48.01%
+
+Average energies for 300.00K:
+    - the average energy is  -1308.22 kJ/mol.
+    - the second momentum is 1711429.84 (kJ/mol)^2.
+    - the variance is        0.26 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-10.00_0.00mV_300K
+
+*** Starting calculation for pH -9.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 4949 single moves at 300K were accepted
+    - acceptance is 9.52%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19196 single moves at 300K were accepted
+    - acceptance is 47.99%
+
+Average energies for 300.00K:
+    - the average energy is  -1276.62 kJ/mol.
+    - the second momentum is 1629753.13 (kJ/mol)^2.
+    - the variance is        0.26 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-9.50_0.00mV_300K
+
+*** Starting calculation for pH -9.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 5042 single moves at 300K were accepted
+    - acceptance is 9.70%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19155 single moves at 300K were accepted
+    - acceptance is 47.89%
+
+Average energies for 300.00K:
+    - the average energy is  -1245.03 kJ/mol.
+    - the second momentum is 1550094.03 (kJ/mol)^2.
+    - the variance is        0.27 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-9.00_0.00mV_300K
+
+*** Starting calculation for pH -8.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 4968 single moves at 300K were accepted
+    - acceptance is 9.55%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19288 single moves at 300K were accepted
+    - acceptance is 48.22%
+
+Average energies for 300.00K:
+    - the average energy is  -1213.44 kJ/mol.
+    - the second momentum is 1472440.49 (kJ/mol)^2.
+    - the variance is        0.26 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-8.50_0.00mV_300K
+
+*** Starting calculation for pH -8.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 4895 single moves at 300K were accepted
+    - acceptance is 9.41%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19217 single moves at 300K were accepted
+    - acceptance is 48.04%
+
+Average energies for 300.00K:
+    - the average energy is  -1181.85 kJ/mol.
+    - the second momentum is 1396781.18 (kJ/mol)^2.
+    - the variance is        0.26 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-8.00_0.00mV_300K
+
+*** Starting calculation for pH -7.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 5008 single moves at 300K were accepted
+    - acceptance is 9.63%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19194 single moves at 300K were accepted
+    - acceptance is 47.98%
+
+Average energies for 300.00K:
+    - the average energy is  -1150.26 kJ/mol.
+    - the second momentum is 1323103.48 (kJ/mol)^2.
+    - the variance is        0.27 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-7.50_0.00mV_300K
+
+*** Starting calculation for pH -7.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 4884 single moves at 300K were accepted
+    - acceptance is 9.39%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 18991 single moves at 300K were accepted
+    - acceptance is 47.48%
+
+Average energies for 300.00K:
+    - the average energy is  -1118.68 kJ/mol.
+    - the second momentum is 1251446.17 (kJ/mol)^2.
+    - the variance is        0.26 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-7.00_0.00mV_300K
+
+*** Starting calculation for pH -6.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 5009 single moves at 300K were accepted
+    - acceptance is 9.63%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19234 single moves at 300K were accepted
+    - acceptance is 48.09%
+
+Average energies for 300.00K:
+    - the average energy is  -1087.08 kJ/mol.
+    - the second momentum is 1181750.78 (kJ/mol)^2.
+    - the variance is        0.27 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-6.50_0.00mV_300K
+
+*** Starting calculation for pH -6.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 5038 single moves at 300K were accepted
+    - acceptance is 9.69%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19195 single moves at 300K were accepted
+    - acceptance is 47.99%
+
+Average energies for 300.00K:
+    - the average energy is  -1055.50 kJ/mol.
+    - the second momentum is 1114080.27 (kJ/mol)^2.
+    - the variance is        0.27 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-6.00_0.00mV_300K
+
+*** Starting calculation for pH -5.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 5102 single moves at 300K were accepted
+    - acceptance is 9.81%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19063 single moves at 300K were accepted
+    - acceptance is 47.66%
+
+Average energies for 300.00K:
+    - the average energy is  -1023.90 kJ/mol.
+    - the second momentum is 1048380.58 (kJ/mol)^2.
+    - the variance is        0.26 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-5.50_0.00mV_300K
+
+*** Starting calculation for pH -5.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 4990 single moves at 300K were accepted
+    - acceptance is 9.60%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19253 single moves at 300K were accepted
+    - acceptance is 48.13%
+
+Average energies for 300.00K:
+    - the average energy is  -992.32 kJ/mol.
+    - the second momentum is 984693.44 (kJ/mol)^2.
+    - the variance is        0.27 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-5.00_0.00mV_300K
+
+*** Starting calculation for pH -4.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 5082 single moves at 300K were accepted
+    - acceptance is 9.77%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19075 single moves at 300K were accepted
+    - acceptance is 47.69%
+
+Average energies for 300.00K:
+    - the average energy is  -960.73 kJ/mol.
+    - the second momentum is 922993.75 (kJ/mol)^2.
+    - the variance is        0.27 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-4.50_0.00mV_300K
+
+*** Starting calculation for pH -4.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 4917 single moves at 300K were accepted
+    - acceptance is 9.46%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19196 single moves at 300K were accepted
+    - acceptance is 47.99%
+
+Average energies for 300.00K:
+    - the average energy is  -929.14 kJ/mol.
+    - the second momentum is 863297.29 (kJ/mol)^2.
+    - the variance is        0.27 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-4.00_0.00mV_300K
+
+*** Starting calculation for pH -3.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 4900 single moves at 300K were accepted
+    - acceptance is 9.42%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19025 single moves at 300K were accepted
+    - acceptance is 47.56%
+
+Average energies for 300.00K:
+    - the average energy is  -897.55 kJ/mol.
+    - the second momentum is 805598.62 (kJ/mol)^2.
+    - the variance is        0.26 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-3.50_0.00mV_300K
+
+*** Starting calculation for pH -3.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 4989 single moves at 300K were accepted
+    - acceptance is 9.59%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19274 single moves at 300K were accepted
+    - acceptance is 48.19%
+
+Average energies for 300.00K:
+    - the average energy is  -865.97 kJ/mol.
+    - the second momentum is 749895.99 (kJ/mol)^2.
+    - the variance is        0.26 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-3.00_0.00mV_300K
+
+*** Starting calculation for pH -2.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 4972 single moves at 300K were accepted
+    - acceptance is 9.56%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19127 single moves at 300K were accepted
+    - acceptance is 47.82%
+
+Average energies for 300.00K:
+    - the average energy is  -834.37 kJ/mol.
+    - the second momentum is 696172.30 (kJ/mol)^2.
+    - the variance is        0.26 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-2.50_0.00mV_300K
+
+*** Starting calculation for pH -2.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 4993 single moves at 300K were accepted
+    - acceptance is 9.60%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19085 single moves at 300K were accepted
+    - acceptance is 47.71%
+
+Average energies for 300.00K:
+    - the average energy is  -802.78 kJ/mol.
+    - the second momentum is 644449.72 (kJ/mol)^2.
+    - the variance is        0.36 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-2.00_0.00mV_300K
+
+*** Starting calculation for pH -1.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 5013 single moves at 300K were accepted
+    - acceptance is 9.64%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19034 single moves at 300K were accepted
+    - acceptance is 47.59%
+
+Average energies for 300.00K:
+    - the average energy is  -771.19 kJ/mol.
+    - the second momentum is 594734.43 (kJ/mol)^2.
+    - the variance is        0.34 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-1.50_0.00mV_300K
+
+*** Starting calculation for pH -1.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 4884 single moves at 300K were accepted
+    - acceptance is 9.39%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19089 single moves at 300K were accepted
+    - acceptance is 47.72%
+
+Average energies for 300.00K:
+    - the average energy is  -739.60 kJ/mol.
+    - the second momentum is 547007.78 (kJ/mol)^2.
+    - the variance is        0.40 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-1.00_0.00mV_300K
+
+*** Starting calculation for pH -0.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 4968 single moves at 300K were accepted
+    - acceptance is 9.55%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19277 single moves at 300K were accepted
+    - acceptance is 48.19%
+
+Average energies for 300.00K:
+    - the average energy is  -708.00 kJ/mol.
+    - the second momentum is 501266.28 (kJ/mol)^2.
+    - the variance is        0.63 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH-0.50_0.00mV_300K
+
+*** Starting calculation for pH 0.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 5033 single moves at 300K were accepted
+    - acceptance is 9.68%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19258 single moves at 300K were accepted
+    - acceptance is 48.15%
+
+Average energies for 300.00K:
+    - the average energy is  -676.39 kJ/mol.
+    - the second momentum is 457509.57 (kJ/mol)^2.
+    - the variance is        0.84 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH0.00_0.00mV_300K
+
+*** Starting calculation for pH 0.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 5005 single moves at 300K were accepted
+    - acceptance is 9.62%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19128 single moves at 300K were accepted
+    - acceptance is 47.82%
+
+Average energies for 300.00K:
+    - the average energy is  -644.74 kJ/mol.
+    - the second momentum is 415685.56 (kJ/mol)^2.
+    - the variance is        1.26 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH0.50_0.00mV_300K
+
+*** Starting calculation for pH 1.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 5069 single moves at 300K were accepted
+    - acceptance is 9.75%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19450 single moves at 300K were accepted
+    - acceptance is 48.62%
+
+Average energies for 300.00K:
+    - the average energy is  -613.02 kJ/mol.
+    - the second momentum is 375800.55 (kJ/mol)^2.
+    - the variance is        1.58 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH1.00_0.00mV_300K
+
+*** Starting calculation for pH 1.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 5379 single moves at 300K were accepted
+    - acceptance is 10.34%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 20230 single moves at 300K were accepted
+    - acceptance is 50.58%
+
+Average energies for 300.00K:
+    - the average energy is  -581.12 kJ/mol.
+    - the second momentum is 337707.96 (kJ/mol)^2.
+    - the variance is        2.07 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH1.50_0.00mV_300K
+
+*** Starting calculation for pH 2.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 6064 single moves at 300K were accepted
+    - acceptance is 11.66%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 22415 single moves at 300K were accepted
+    - acceptance is 56.04%
+
+Average energies for 300.00K:
+    - the average energy is  -549.03 kJ/mol.
+    - the second momentum is 301443.13 (kJ/mol)^2.
+    - the variance is        2.36 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH2.00_0.00mV_300K
+
+*** Starting calculation for pH 2.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 7869 single moves at 300K were accepted
+    - acceptance is 15.13%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 5 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 5 single moves at 300K (on average)
+    - 50000 single moves at 300K were performed
+    - 30018 single moves at 300K were accepted
+    - acceptance is 60.04%
+
+Average energies for 300.00K:
+    - the average energy is  -516.71 kJ/mol.
+    - the second momentum is 266999.22 (kJ/mol)^2.
+    - the variance is        2.50 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH2.50_0.00mV_300K
+
+*** Starting calculation for pH 3.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 9735 single moves at 300K were accepted
+    - acceptance is 18.72%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 5 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 5 single moves at 300K (on average)
+    - 50000 single moves at 300K were performed
+    - 37427 single moves at 300K were accepted
+    - acceptance is 74.85%
+
+Average energies for 300.00K:
+    - the average energy is  -486.82 kJ/mol.
+    - the second momentum is 236996.55 (kJ/mol)^2.
+    - the variance is        1.88 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH3.00_0.00mV_300K
+
+*** Starting calculation for pH 3.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 8866 single moves at 300K were accepted
+    - acceptance is 17.05%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 5 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 5 single moves at 300K (on average)
+    - 50000 single moves at 300K were performed
+    - 35124 single moves at 300K were accepted
+    - acceptance is 70.25%
+
+Average energies for 300.00K:
+    - the average energy is  -461.45 kJ/mol.
+    - the second momentum is 212939.40 (kJ/mol)^2.
+    - the variance is        2.45 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH3.50_0.00mV_300K
+
+*** Starting calculation for pH 4.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 6000 single moves at 300K were accepted
+    - acceptance is 11.54%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A TYR-10_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 5 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 5 single moves at 300K (on average)
+    - 50000 single moves at 300K were performed
+    - 22974 single moves at 300K were accepted
+    - acceptance is 45.95%
+
+Average energies for 300.00K:
+    - the average energy is  -440.88 kJ/mol.
+    - the second momentum is 194387.23 (kJ/mol)^2.
+    - the variance is        3.57 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH4.00_0.00mV_300K
+
+*** Starting calculation for pH 4.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 2887 single moves at 300K were accepted
+    - acceptance is 5.55%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 2 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 2 single moves at 300K (on average)
+    - 20000 single moves at 300K were performed
+    - 7327 single moves at 300K were accepted
+    - acceptance is 36.63%
+
+Average energies for 300.00K:
+    - the average energy is  -425.16 kJ/mol.
+    - the second momentum is 180767.34 (kJ/mol)^2.
+    - the variance is        3.13 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH4.50_0.00mV_300K
+
+*** Starting calculation for pH 5.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 1173 single moves at 300K were accepted
+    - acceptance is 2.26%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 1 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 1 single moves at 300K (on average)
+    - 10000 single moves at 300K were performed
+    - 2128 single moves at 300K were accepted
+    - acceptance is 21.28%
+
+Average energies for 300.00K:
+    - the average energy is  -409.15 kJ/mol.
+    - the second momentum is 167407.80 (kJ/mol)^2.
+    - the variance is        2.77 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH5.00_0.00mV_300K
+
+*** Starting calculation for pH 5.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 502 single moves at 300K were accepted
+    - acceptance is 0.97%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 0 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 0 single moves at 300K (on average)
+    - 0 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is -nan%
+
+Average energies for 300.00K:
+    - the average energy is  -392.84 kJ/mol.
+    - the second momentum is 154324.66 (kJ/mol)^2.
+    - the variance is        1.76 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH5.50_0.00mV_300K
+
+*** Starting calculation for pH 6.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 471 single moves at 300K were accepted
+    - acceptance is 0.91%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 0 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 0 single moves at 300K (on average)
+    - 0 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is -nan%
+
+Average energies for 300.00K:
+    - the average energy is  -375.67 kJ/mol.
+    - the second momentum is 141131.43 (kJ/mol)^2.
+    - the variance is        1.53 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH6.00_0.00mV_300K
+
+*** Starting calculation for pH 6.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 933 single moves at 300K were accepted
+    - acceptance is 1.79%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 1 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 1 single moves at 300K (on average)
+    - 10000 single moves at 300K were performed
+    - 3040 single moves at 300K were accepted
+    - acceptance is 30.40%
+
+Average energies for 300.00K:
+    - the average energy is  -357.93 kJ/mol.
+    - the second momentum is 128114.24 (kJ/mol)^2.
+    - the variance is        1.82 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH6.50_0.00mV_300K
+
+*** Starting calculation for pH 7.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 2188 single moves at 300K were accepted
+    - acceptance is 4.21%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 1 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 1 single moves at 300K (on average)
+    - 10000 single moves at 300K were performed
+    - 7123 single moves at 300K were accepted
+    - acceptance is 71.23%
+
+Average energies for 300.00K:
+    - the average energy is  -340.74 kJ/mol.
+    - the second momentum is 116103.53 (kJ/mol)^2.
+    - the variance is        1.51 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH7.00_0.00mV_300K
+
+*** Starting calculation for pH 7.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 2873 single moves at 300K were accepted
+    - acceptance is 5.53%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 1 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 1 single moves at 300K (on average)
+    - 10000 single moves at 300K were performed
+    - 7213 single moves at 300K were accepted
+    - acceptance is 72.13%
+
+Average energies for 300.00K:
+    - the average energy is  -324.81 kJ/mol.
+    - the second momentum is 105506.93 (kJ/mol)^2.
+    - the variance is        1.65 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH7.50_0.00mV_300K
+
+*** Starting calculation for pH 8.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 3303 single moves at 300K were accepted
+    - acceptance is 6.35%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A ARG-53_A TYR-23_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 3 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 3 single moves at 300K (on average)
+    - 30000 single moves at 300K were performed
+    - 10842 single moves at 300K were accepted
+    - acceptance is 36.14%
+
+Average energies for 300.00K:
+    - the average energy is  -309.10 kJ/mol.
+    - the second momentum is 95549.05 (kJ/mol)^2.
+    - the variance is        2.83 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH8.00_0.00mV_300K
+
+*** Starting calculation for pH 8.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 5639 single moves at 300K were accepted
+    - acceptance is 10.84%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A DPP-3_A ARG-1_A ARG-53_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 19695 single moves at 300K were accepted
+    - acceptance is 49.24%
+
+Average energies for 300.00K:
+    - the average energy is  -294.99 kJ/mol.
+    - the second momentum is 87026.64 (kJ/mol)^2.
+    - the variance is        2.89 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH8.50_0.00mV_300K
+
+*** Starting calculation for pH 9.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 7629 single moves at 300K were accepted
+    - acceptance is 14.67%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A DPP-3_A ARG-1_A ARG-53_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 25277 single moves at 300K were accepted
+    - acceptance is 63.19%
+
+Average energies for 300.00K:
+    - the average energy is  -283.40 kJ/mol.
+    - the second momentum is 80321.58 (kJ/mol)^2.
+    - the variance is        2.58 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH9.00_0.00mV_300K
+
+*** Starting calculation for pH 9.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 8991 single moves at 300K were accepted
+    - acceptance is 17.29%
+
+The following sites will be fixed in the reduced sampling:
+    ARG-39_A CTE-58_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A DPP-3_A ARG-1_A ARG-53_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 5 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 5 single moves at 300K (on average)
+    - 50000 single moves at 300K were performed
+    - 29139 single moves at 300K were accepted
+    - acceptance is 58.28%
+
+Average energies for 300.00K:
+    - the average energy is  -274.87 kJ/mol.
+    - the second momentum is 75564.81 (kJ/mol)^2.
+    - the variance is        3.00 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH9.50_0.00mV_300K
+
+*** Starting calculation for pH 10.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 9032 single moves at 300K were accepted
+    - acceptance is 17.37%
+
+The following sites will be fixed in the reduced sampling:
+    ARG-39_A CTE-58_A DPP-50_A ARG-42_A ARG-20_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A NTE-1_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 7 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 7 single moves at 300K (on average)
+    - 70000 single moves at 300K were performed
+    - 32225 single moves at 300K were accepted
+    - acceptance is 46.04%
+
+Average energies for 300.00K:
+    - the average energy is  -269.17 kJ/mol.
+    - the second momentum is 72466.14 (kJ/mol)^2.
+    - the variance is        3.73 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH10.00_0.00mV_300K
+
+*** Starting calculation for pH 10.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 10209 single moves at 300K were accepted
+    - acceptance is 19.63%
+
+The following sites will be fixed in the reduced sampling:
+    ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A ARG-20_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A NTE-1_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 6 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 6 single moves at 300K (on average)
+    - 60000 single moves at 300K were performed
+    - 36677 single moves at 300K were accepted
+    - acceptance is 61.13%
+
+Average energies for 300.00K:
+    - the average energy is  -269.03 kJ/mol.
+    - the second momentum is 72385.45 (kJ/mol)^2.
+    - the variance is        3.22 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH10.50_0.00mV_300K
+
+*** Starting calculation for pH 11.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 8170 single moves at 300K were accepted
+    - acceptance is 15.71%
+
+The following sites will be fixed in the reduced sampling:
+    ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 23702 single moves at 300K were accepted
+    - acceptance is 59.26%
+
+Average energies for 300.00K:
+    - the average energy is  -274.11 kJ/mol.
+    - the second momentum is 75147.94 (kJ/mol)^2.
+    - the variance is        3.11 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH11.00_0.00mV_300K
+
+*** Starting calculation for pH 11.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 6680 single moves at 300K were accepted
+    - acceptance is 12.85%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A CTE-58_A TYR-10_A DPP-50_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A EPP-49_A EPP-7_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 6 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 6 single moves at 300K (on average)
+    - 60000 single moves at 300K were performed
+    - 20575 single moves at 300K were accepted
+    - acceptance is 34.29%
+
+Average energies for 300.00K:
+    - the average energy is  -280.62 kJ/mol.
+    - the second momentum is 78761.90 (kJ/mol)^2.
+    - the variance is        4.08 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH11.50_0.00mV_300K
+
+*** Starting calculation for pH 12.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 8809 single moves at 300K were accepted
+    - acceptance is 16.94%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A CTE-58_A TYR-10_A DPP-50_A LYS-26_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 6 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 6 single moves at 300K (on average)
+    - 60000 single moves at 300K were performed
+    - 29090 single moves at 300K were accepted
+    - acceptance is 48.48%
+
+Average energies for 300.00K:
+    - the average energy is  -289.63 kJ/mol.
+    - the second momentum is 83899.55 (kJ/mol)^2.
+    - the variance is        3.53 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH12.00_0.00mV_300K
+
+*** Starting calculation for pH 12.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 10345 single moves at 300K were accepted
+    - acceptance is 19.89%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A CTE-58_A TYR-10_A DPP-50_A LYS-41_A LYS-26_A TYR-21_A DPP-3_A TYR-35_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 6 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 6 single moves at 300K (on average)
+    - 60000 single moves at 300K were performed
+    - 37467 single moves at 300K were accepted
+    - acceptance is 62.45%
+
+Average energies for 300.00K:
+    - the average energy is  -302.40 kJ/mol.
+    - the second momentum is 91452.44 (kJ/mol)^2.
+    - the variance is        2.85 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH12.50_0.00mV_300K
+
+*** Starting calculation for pH 13.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 9768 single moves at 300K were accepted
+    - acceptance is 18.78%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A CTE-58_A TYR-10_A DPP-50_A LYS-41_A LYS-26_A TYR-21_A DPP-3_A TYR-35_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 6 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 6 single moves at 300K (on average)
+    - 60000 single moves at 300K were performed
+    - 37378 single moves at 300K were accepted
+    - acceptance is 62.30%
+
+Average energies for 300.00K:
+    - the average energy is  -320.48 kJ/mol.
+    - the second momentum is 102717.15 (kJ/mol)^2.
+    - the variance is        2.80 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH13.00_0.00mV_300K
+
+*** Starting calculation for pH 13.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 5834 single moves at 300K were accepted
+    - acceptance is 11.22%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A LYS-41_A LYS-26_A TYR-21_A DPP-3_A TYR-35_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 4 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 4 single moves at 300K (on average)
+    - 40000 single moves at 300K were performed
+    - 20370 single moves at 300K were accepted
+    - acceptance is 50.92%
+
+Average energies for 300.00K:
+    - the average energy is  -344.49 kJ/mol.
+    - the second momentum is 118682.54 (kJ/mol)^2.
+    - the variance is        2.75 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH13.50_0.00mV_300K
+
+*** Starting calculation for pH 14.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 2363 single moves at 300K were accepted
+    - acceptance is 4.54%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A TYR-35_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 2 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 2 single moves at 300K (on average)
+    - 20000 single moves at 300K were performed
+    - 5711 single moves at 300K were accepted
+    - acceptance is 28.55%
+
+Average energies for 300.00K:
+    - the average energy is  -371.30 kJ/mol.
+    - the second momentum is 137870.96 (kJ/mol)^2.
+    - the variance is        2.61 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH14.00_0.00mV_300K
+
+*** Starting calculation for pH 14.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 787 single moves at 300K were accepted
+    - acceptance is 1.51%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 0 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 0 single moves at 300K (on average)
+    - 0 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is -nan%
+
+Average energies for 300.00K:
+    - the average energy is  -398.39 kJ/mol.
+    - the second momentum is 158715.91 (kJ/mol)^2.
+    - the variance is        1.55 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH14.50_0.00mV_300K
+
+*** Starting calculation for pH 15.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 248 single moves at 300K were accepted
+    - acceptance is 0.48%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 0 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 0 single moves at 300K (on average)
+    - 0 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is -nan%
+
+Average energies for 300.00K:
+    - the average energy is  -424.37 kJ/mol.
+    - the second momentum is 180093.86 (kJ/mol)^2.
+    - the variance is        1.10 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH15.00_0.00mV_300K
+
+*** Starting calculation for pH 15.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 90 single moves at 300K were accepted
+    - acceptance is 0.17%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 0 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 0 single moves at 300K (on average)
+    - 0 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is -nan%
+
+Average energies for 300.00K:
+    - the average energy is  -450.26 kJ/mol.
+    - the second momentum is 202736.20 (kJ/mol)^2.
+    - the variance is        0.99 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH15.50_0.00mV_300K
+
+*** Starting calculation for pH 16.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 26 single moves at 300K were accepted
+    - acceptance is 0.05%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 0 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 0 single moves at 300K (on average)
+    - 0 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is -nan%
+
+Average energies for 300.00K:
+    - the average energy is  -476.16 kJ/mol.
+    - the second momentum is 226728.73 (kJ/mol)^2.
+    - the variance is        0.40 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH16.00_0.00mV_300K
+
+*** Starting calculation for pH 16.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 12 single moves at 300K were accepted
+    - acceptance is 0.02%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 0 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 0 single moves at 300K (on average)
+    - 0 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is -nan%
+
+Average energies for 300.00K:
+    - the average energy is  -502.01 kJ/mol.
+    - the second momentum is 252010.68 (kJ/mol)^2.
+    - the variance is        0.44 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH16.50_0.00mV_300K
+
+*** Starting calculation for pH 17.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is 0.00%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 0 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 0 single moves at 300K (on average)
+    - 0 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is -nan%
+
+Average energies for 300.00K:
+    - the average energy is  -527.86 kJ/mol.
+    - the second momentum is 278637.03 (kJ/mol)^2.
+    - the variance is        0.00 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH17.00_0.00mV_300K
+
+*** Starting calculation for pH 17.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is 0.00%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 0 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 0 single moves at 300K (on average)
+    - 0 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is -nan%
+
+Average energies for 300.00K:
+    - the average energy is  -553.71 kJ/mol.
+    - the second momentum is 306590.75 (kJ/mol)^2.
+    - the variance is        -nan kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH17.50_0.00mV_300K
+
+*** Starting calculation for pH 18.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is 0.00%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 0 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 0 single moves at 300K (on average)
+    - 0 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is -nan%
+
+Average energies for 300.00K:
+    - the average energy is  -579.55 kJ/mol.
+    - the second momentum is 335880.46 (kJ/mol)^2.
+    - the variance is        0.00 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH18.00_0.00mV_300K
+
+*** Starting calculation for pH 18.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is 0.00%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 0 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 0 single moves at 300K (on average)
+    - 0 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is -nan%
+
+Average energies for 300.00K:
+    - the average energy is  -605.40 kJ/mol.
+    - the second momentum is 366506.16 (kJ/mol)^2.
+    - the variance is        -nan kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH18.50_0.00mV_300K
+
+*** Starting calculation for pH 19.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is 0.00%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 0 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 0 single moves at 300K (on average)
+    - 0 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is -nan%
+
+Average energies for 300.00K:
+    - the average energy is  -631.24 kJ/mol.
+    - the second momentum is 398467.84 (kJ/mol)^2.
+    - the variance is        -nan kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH19.00_0.00mV_300K
+
+*** Starting calculation for pH 19.50 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is 0.00%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 0 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 0 single moves at 300K (on average)
+    - 0 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is -nan%
+
+Average energies for 300.00K:
+    - the average energy is  -657.09 kJ/mol.
+    - the second momentum is 431765.51 (kJ/mol)^2.
+    - the variance is        0.00 kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH19.50_0.00mV_300K
+
+*** Starting calculation for pH 20.00 and redox potential 0.00mV. ***
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 20 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 100 equilibration scans...
+...ready!
+
+Performing 2500 full scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 20 single moves at 300K (on average)
+    - 52000 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is 0.00%
+
+The following sites will be fixed in the reduced sampling:
+    LYS-46_A ARG-39_A CTE-58_A TYR-10_A DPP-50_A ARG-42_A LYS-41_A LYS-26_A ARG-20_A TYR-21_A DPP-3_A ARG-1_A TYR-35_A ARG-53_A TYR-23_A NTE-1_A LYS-15_A EPP-49_A EPP-7_A ARG-17_A 
+
+Setting up move set...
+    - no tempering moves applicable (only one sampling temperature given)
+    - no conformation moves applicable (only one global conformation given)
+    - 0 single moves per scan and temperature
+    - no double moves
+    - no triple moves
+...ready!
+
+Performing 10000 reduced scans...
+...ready!
+
+Move statistics for single moves at 300K:
+    - each scan comprised 0 single moves at 300K (on average)
+    - 0 single moves at 300K were performed
+    - 0 single moves at 300K were accepted
+    - acceptance is -nan%
+
+Average energies for 300.00K:
+    - the average energy is  -682.93 kJ/mol.
+    - the second momentum is 466399.16 (kJ/mol)^2.
+    - the variance is        -nan kJ/mol.
+
+I am writing the following files (modified):
+    - kb_pH20.00_0.00mV_300K
+
+Your job has been completed and has used the following amount of time:
+real: 4.15s  cpu-user: 4.13s  cpu-sys: 0.01s
+
+Here's the time and date of finishing the job:
+  Local time: Tue Dec 14 12:33:10 2021
+  GMT       : Tue Dec 14 11:33:10 2021
+
+Congratulations, normal termination!

@@ -1,0 +1,39 @@
+# Initial energy calculation for this PAC! 
+Starting prot_energy job to determine protonation 
+Starting Karlsberg 
+
+# Starting self-consistent-cycle! 
+
+***Starting iteration 1*** 
+previous_protonation 
+{('LYS', 46, 'A'): None, ('ARG', 39, 'A'): None, ('CTE', 58, 'A'): None, ('TYR', 10, 'A'): None, ('DPP', 50, 'A'): None, ('TYR', 21, 'A'): None, ('LYS', 41, 'A'): None, ('LYS', 26, 'A'): None, ('ARG', 20, 'A'): None, ('ARG', 42, 'A'): None, ('DPP', 3, 'A'): None, ('ARG', 1, 'A'): None, ('TYR', 35, 'A'): None, ('ARG', 53, 'A'): None, ('EPP', 7, 'A'): None, ('NTE', 1, 'A'): None, ('LYS', 15, 'A'): None, ('EPP', 49, 'A'): None, ('TYR', 23, 'A'): None, ('ARG', 17, 'A'): None} 
+current_protonation 
+{('LYS', 46, 'A'): 1, ('ARG', 39, 'A'): 1, ('CTE', 58, 'A'): 1, ('TYR', 10, 'A'): 0, ('DPP', 50, 'A'): 1, ('ARG', 42, 'A'): 1, ('LYS', 41, 'A'): 1, ('LYS', 26, 'A'): 1, ('ARG', 20, 'A'): 1, ('TYR', 21, 'A'): 0, ('DPP', 3, 'A'): 1, ('ARG', 1, 'A'): 1, ('TYR', 35, 'A'): 0, ('ARG', 53, 'A'): 1, ('TYR', 23, 'A'): 0, ('NTE', 1, 'A'): 1, ('LYS', 15, 'A'): 1, ('EPP', 49, 'A'): 1, ('EPP', 7, 'A'): 1, ('ARG', 17, 'A'): 1} 
+Residues that have changed the protonation state are: 
+[('LYS', 46, 'A'), ('ARG', 39, 'A'), ('CTE', 58, 'A'), ('TYR', 10, 'A'), ('DPP', 50, 'A'), ('TYR', 21, 'A'), ('LYS', 41, 'A'), ('LYS', 26, 'A'), ('ARG', 20, 'A'), ('ARG', 42, 'A'), ('DPP', 3, 'A'), ('ARG', 1, 'A'), ('TYR', 35, 'A'), ('ARG', 53, 'A'), ('EPP', 7, 'A'), ('NTE', 1, 'A'), ('LYS', 15, 'A'), ('EPP', 49, 'A'), ('TYR', 23, 'A'), ('ARG', 17, 'A')] 
+# Starting PAC modelling 
+Only hydrogens are minimzied! Iteration 1 
+Starting prot_energy job to determine protonation 
+Starting Karlsberg 
+
+
+***Starting iteration 2*** 
+previous_protonation 
+{('LYS', 46, 'A'): 1, ('ARG', 39, 'A'): 1, ('CTE', 58, 'A'): 1, ('TYR', 10, 'A'): 0, ('DPP', 50, 'A'): 1, ('ARG', 42, 'A'): 1, ('LYS', 41, 'A'): 1, ('LYS', 26, 'A'): 1, ('ARG', 20, 'A'): 1, ('TYR', 21, 'A'): 0, ('DPP', 3, 'A'): 1, ('ARG', 1, 'A'): 1, ('TYR', 35, 'A'): 0, ('ARG', 53, 'A'): 1, ('TYR', 23, 'A'): 0, ('NTE', 1, 'A'): 1, ('LYS', 15, 'A'): 1, ('EPP', 49, 'A'): 1, ('EPP', 7, 'A'): 1, ('ARG', 17, 'A'): 1} 
+current_protonation 
+{('LYS', 46, 'A'): 1, ('ARG', 39, 'A'): 1, ('CTE', 58, 'A'): 1, ('TYR', 10, 'A'): 0, ('DPP', 50, 'A'): 1, ('TYR', 21, 'A'): 0, ('LYS', 41, 'A'): 1, ('LYS', 26, 'A'): 1, ('ARG', 20, 'A'): 1, ('ARG', 42, 'A'): 1, ('DPP', 3, 'A'): 1, ('ARG', 1, 'A'): 1, ('TYR', 35, 'A'): 0, ('ARG', 53, 'A'): 1, ('EPP', 7, 'A'): 1, ('NTE', 1, 'A'): 0, ('LYS', 15, 'A'): 1, ('EPP', 49, 'A'): 1, ('TYR', 23, 'A'): 0, ('ARG', 17, 'A'): 1} 
+Residues that have changed the protonation state are: 
+[('NTE', 1, 'A')] 
+# Starting PAC modelling 
+Only hydrogens are minimzied! Iteration 2 
+Starting prot_energy job to determine protonation 
+Starting Karlsberg 
+
+
+***Starting iteration 3*** 
+previous_protonation 
+{('LYS', 46, 'A'): 1, ('ARG', 39, 'A'): 1, ('CTE', 58, 'A'): 1, ('TYR', 10, 'A'): 0, ('DPP', 50, 'A'): 1, ('TYR', 21, 'A'): 0, ('LYS', 41, 'A'): 1, ('LYS', 26, 'A'): 1, ('ARG', 20, 'A'): 1, ('ARG', 42, 'A'): 1, ('DPP', 3, 'A'): 1, ('ARG', 1, 'A'): 1, ('TYR', 35, 'A'): 0, ('ARG', 53, 'A'): 1, ('EPP', 7, 'A'): 1, ('NTE', 1, 'A'): 0, ('LYS', 15, 'A'): 1, ('EPP', 49, 'A'): 1, ('TYR', 23, 'A'): 0, ('ARG', 17, 'A'): 1} 
+current_protonation 
+{('LYS', 46, 'A'): 1, ('ARG', 39, 'A'): 1, ('CTE', 58, 'A'): 1, ('TYR', 10, 'A'): 0, ('DPP', 50, 'A'): 1, ('ARG', 42, 'A'): 1, ('LYS', 41, 'A'): 1, ('LYS', 26, 'A'): 1, ('ARG', 20, 'A'): 1, ('TYR', 21, 'A'): 0, ('DPP', 3, 'A'): 1, ('ARG', 1, 'A'): 1, ('TYR', 35, 'A'): 0, ('ARG', 53, 'A'): 1, ('TYR', 23, 'A'): 0, ('NTE', 1, 'A'): 0, ('LYS', 15, 'A'): 1, ('EPP', 49, 'A'): 1, ('EPP', 7, 'A'): 1, ('ARG', 17, 'A'): 1} 
+
+Pac 7_h_min completed! 

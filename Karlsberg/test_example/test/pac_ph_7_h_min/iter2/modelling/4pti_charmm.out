@@ -1,0 +1,438 @@
+1
+                 Chemistry at HARvard Macromolecular Mechanics
+                (CHARMM) - Free Version 46b1     August 15, 2021                
+                                   bde556660                                    
+       Copyright(c) 1984-2020  President and Fellows of Harvard College
+                              All Rights Reserved
+        Current operating system: Linux-5.11.0-41-generic(x86_64)@london        
+                 Created on 12/14/21 at 12:34:31 by user: pbuser      
+
+            Maximum number of ATOMS:    360720, and RESidues:      120240
+ RDTITL>  
+ RDTITL> No title read.
+
+      ***** LEVEL  1 WARNING FROM <RDTITL> *****
+      ***** Title expected.
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+  
+ CHARMM>     
+  
+ CHARMM>    dimension chsize 999999
+Size      Original         New
+MAXA        360720      999999
+MAXB        360720      999999
+MAXT        721440     1999998
+MAXP       1082160     2999997
+MAXIMP      180360      499999
+MAXNB        90180      249999
+MAXPAD      360720      999999
+MAXRES      120240      333333
+MAXSEG       45090      124999
+MAXATC        1400
+MAXCB         3000
+MAXCT        50000
+MAXCP        20000
+MAXCI         1200
+MAXCH         6400
+MAXCN       502503
+MAXCRT      120240      333333
+  
+ CHARMM>    read rtf card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top.inp"
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top.inp::
+ MAINIO> Residue topology file being read from unit  90.
+ TITLE> *>>>>>>>>CHARMM22 ALL-HYDROGEN TOPOLOGY FILE FOR PROTEINS <<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>> AND NUCLEIC ACIDS <<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> *>>>>> INCLUDES PHI, PSI CROSS TERM MAP (CMAP) CORRECTION <<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>>>>   JULY, 2004    <<<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> * ALL COMMENTS TO ADM JR. VIA THE CHARMM WEB SITE: WWW.CHARMM.ORG
+ TITLE> *               PARAMETER SET DISCUSSION FORUM
+ TITLE> *
+ **** WARNING from RTFRDR **** The total charge of the residue, 5PO3,  -2.1800000,
+ does not equal the expected charge,  -2.0000000.
+          PRES DELB         0.00
+ There were   1 warning(s) from RTFRDR.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    read rtf card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.rtf" append
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.rtf::
+ MAINIO> Residue topology file being read from unit  90.
+ TITLE> * SPECIFIC REFERENCE CHARGE STATES
+ TITLE> * BY GERNOT KIESERITZKY 2006
+ TITLE> *
+ **** WARNING from RTFRDR **** The total charge of the residue, CT1N,  -0.7300000,
+ does not equal the expected charge,   0.0000000.
+ There were   1 warning(s) from RTFRDR.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    read rtf card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/sb_pat.rtf" append
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/sb_pat.rtf::
+ MAINIO> Residue topology file being read from unit  90.
+ TITLE> * SALT BRIDGE OPENING PATCHES INVERTING
+ TITLE> * BY JOVAN DRAGELJ 2014
+ TITLE> *
+ **** WARNING from RTFRDR **** The total charge of the residue, EPPS,   0.8200000,
+ does not equal the expected charge,   1.0000000.
+          PRES DPPS         1.00
+ **** WARNING from RTFRDR **** The total charge of the residue, DPPS,   0.8200000,
+ does not equal the expected charge,   1.0000000.
+          PRES LYSS        -1.00
+ **** WARNING from RTFRDR **** The total charge of the residue, LYSS,  -1.3100000,
+ does not equal the expected charge,  -1.0000000.
+          PRES ARGS        -1.00
+ **** WARNING from RTFRDR **** The total charge of the residue, ARGS,  -1.3800000,
+ does not equal the expected charge,  -1.0000000.
+          PRES HSPS        -1.00
+ **** WARNING from RTFRDR **** The total charge of the residue, HSPS,  -1.1800000,
+ does not equal the expected charge,  -1.0000000.
+          PRES TYRS   1.00
+ **** WARNING from RTFRDR **** The total charge of the residue, NTES,  -1.3100000,
+ does not equal the expected charge,  -1.0000000.
+ There were   6 warning(s) from RTFRDR.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    read para card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par.inp"
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par.inp::
+
+          PARAMETER FILE BEING READ FROM UNIT 90
+ TITLE> *>>>>> CHARMM22 ALL-HYDROGEN PARAMETER FILE FOR PROTEINS <<<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>> AND NUCLEIC ACIDS <<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> *>>>>> INCLUDES PHI, PSI CROSS TERM MAP (CMAP) CORRECTION <<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>>>> DECEMBER, 2003 <<<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> * ALL COMMENTS TO ADM JR. VIA THE CHARMM WEB SITE: WWW.CHARMM.ORG
+ TITLE> *               PARAMETER SET DISCUSSION FORUM
+ TITLE> *
+ PARMIO> NONBOND, HBOND lists and IMAGE atoms cleared.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    read para card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.prm" append
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.prm::
+
+          PARAMETER FILE BEING READ FROM UNIT 90
+ TITLE> * ADDITIONAL PARAMETERS FOR SPECIAL RESIDUES
+ TITLE> * GERNOT KIESERITZKY
+ TITLE>  
+ PARMIO> NONBOND, HBOND lists and IMAGE atoms cleared.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>     
+  
+ CHARMM>    read sequence coor name "4pti_in_A.crd" resid
+ VOPEN> Attempting to open::4pti_in_A.crd::
+ MAINIO> Sequence information being read from unit  90.
+ TITLE> 900  EXT
+ RDTITL> No title read.
+
+          RESIDUE SEQUENCE --    58 RESIDUES
+          ARG PRO DPP PHE CYS LEU EPP PRO PRO TYR THR GLY PRO CYS LYS ALA ARG ILE ILE ARG 
+          TYR PHE TYR ASN ALA LYS ALA GLY LEU CYS GLN THR PHE VAL TYR GLY GLY CYS ARG ALA 
+          LYS ARG ASN ASN PHE LYS SER ALA EPP DPP CYS MET ARG THR CYS GLY GLY ALA 
+ ***** Message from SEQRDR ***** THE SYSTEM CONTAINS  8 TITRATABLE GROUPS
+ THE USER MUST PREDETERMINE THE PROTONATION STATE THROUGH THE SEQUENCE AND RTF
+ HIS -  0  HSD -  0  HSE -  0  HSP -  0  ASP -  0  GLU -  0  LYS -  4  TYR -  4
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    generate setup A first NTER last CTER
+ THE PATCH 'NTER' WILL BE USED FOR THE FIRST RESIDUE
+ THE PATCH 'CTER' WILL BE USED FOR THE LAST  RESIDUE
+ GENPSF> Segment   1 has been generated. Its identifier is A.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =       58
+         Number of atoms         =      906   Number of groups     =      273
+         Number of bonds         =      917   Number of angles     =     1642
+         Number of dihedrals     =     2420   Number of impropers  =      141
+         Number of cross-terms   =       52
+         Number of HB acceptors  =       79   Number of HB donors  =      120
+         Number of NB exclusions =        0   Total charge =    6.00000
+  
+ CHARMM>     
+  
+ CHARMM>    patch disu A 5 A 55
+ ATOM  A    5    CYS  HG1  AND ALL REFERENCES TO IT DELETED.
+ ATOM  A    55   CYS  HG1  AND ALL REFERENCES TO IT DELETED.
+
+ Message from MAPIC: Atom numbers are changed.
+ DELTIC:         2 bonds deleted
+ DELTIC:         2 angles deleted
+ DELTIC:         6 dihedrals deleted
+ DELTIC:         2 donors deleted
+ PATCH: Check angles and dihedrals autogenerated.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =       58
+         Number of atoms         =      904   Number of groups     =      273
+         Number of bonds         =      916   Number of angles     =     1640
+         Number of dihedrals     =     2414   Number of impropers  =      141
+         Number of cross-terms   =       52
+         Number of HB acceptors  =       79   Number of HB donors  =      118
+         Number of NB exclusions =        0   Total charge =    6.00000
+  
+ CHARMM>    patch disu A 14 A 38
+ ATOM  A    14   CYS  HG1  AND ALL REFERENCES TO IT DELETED.
+ ATOM  A    38   CYS  HG1  AND ALL REFERENCES TO IT DELETED.
+
+ Message from MAPIC: Atom numbers are changed.
+ DELTIC:         2 bonds deleted
+ DELTIC:         2 angles deleted
+ DELTIC:         6 dihedrals deleted
+ DELTIC:         2 donors deleted
+ PATCH: Check angles and dihedrals autogenerated.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =       58
+         Number of atoms         =      902   Number of groups     =      273
+         Number of bonds         =      915   Number of angles     =     1638
+         Number of dihedrals     =     2408   Number of impropers  =      141
+         Number of cross-terms   =       52
+         Number of HB acceptors  =       79   Number of HB donors  =      116
+         Number of NB exclusions =        0   Total charge =    6.00000
+  
+ CHARMM>    patch disu A 30 A 51
+ ATOM  A    30   CYS  HG1  AND ALL REFERENCES TO IT DELETED.
+ ATOM  A    51   CYS  HG1  AND ALL REFERENCES TO IT DELETED.
+
+ Message from MAPIC: Atom numbers are changed.
+ DELTIC:         2 bonds deleted
+ DELTIC:         2 angles deleted
+ DELTIC:         6 dihedrals deleted
+ DELTIC:         2 donors deleted
+ PATCH: Check angles and dihedrals autogenerated.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =       58
+         Number of atoms         =      900   Number of groups     =      273
+         Number of bonds         =      914   Number of angles     =     1636
+         Number of dihedrals     =     2402   Number of impropers  =      141
+         Number of cross-terms   =       52
+         Number of HB acceptors  =       79   Number of HB donors  =      114
+         Number of NB exclusions =        0   Total charge =    6.00000
+  
+ CHARMM>     
+  
+ CHARMM>    patch NTEREF  A 1 setup
+ PATCH: Check angles and dihedrals autogenerated.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =       58
+         Number of atoms         =      900   Number of groups     =      273
+         Number of bonds         =      914   Number of angles     =     1636
+         Number of dihedrals     =     2402   Number of impropers  =      141
+         Number of cross-terms   =       52
+         Number of HB acceptors  =       79   Number of HB donors  =      114
+         Number of NB exclusions =        0   Total charge =    5.00000
+  
+ CHARMM>     
+  
+ CHARMM>    AUTOgenerate ANGLes DIHEdrals
+ AUTOGEN: All angles are removed and regenerated.
+ AUTOGEN: All dihedrals are removed and regenerated.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =       58
+         Number of atoms         =      900   Number of groups     =      273
+         Number of bonds         =      914   Number of angles     =     1634
+         Number of dihedrals     =     2407   Number of impropers  =      141
+         Number of cross-terms   =       52
+         Number of HB acceptors  =       79   Number of HB donors  =      114
+         Number of NB exclusions =        0   Total charge =    5.00000
+  
+ CHARMM>     
+  
+ CHARMM>    read coor card name "4pti_in_A.crd"
+ VOPEN> Attempting to open::4pti_in_A.crd::
+          SPATIAL COORDINATES BEING READ FROM UNIT 90
+ TITLE> 900  EXT
+ RDTITL> No title read.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>     
+  
+ CHARMM>    ic para
+  
+ CHARMM>    ic build
+  
+ CHARMM>     
+  
+ CHARMM>    hbuild
+
+      ***** LEVEL  4 WARNING FROM <GTHBUI> *****
+      ***** Zero selection specified
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+  
+ CHARMM>     
+  
+ CHARMM>    cons fix select .not. ( none .or. hydrogens )   end
+ SELRPN>    454 atoms have been selected out of    900
+  
+ CHARMM>    minimize sd nsteps 1000 tolg 0.1
+
+ NONBOND OPTION FLAGS: 
+     ELEC     VDW      ATOMs    CDIElec  SHIFt    VATOm    VSWItch 
+     BYGRoup  NOEXtnd  NOEWald 
+ CUTNB  = 14.000 CTEXNB =999.000 CTONNB = 10.000 CTOFNB = 12.000
+ CGONNB =  0.000 CGOFNB = 10.000
+ WMIN   =  1.500 WRNMXD =  0.500 E14FAC =  1.000 EPS    =  1.000
+ NBXMOD =      5
+ There are        0 atom  pairs and        0 atom  exclusions.
+ There are        0 group pairs and        0 group exclusions.
+ <MAKINB> with mode   5 found   2548 exclusions and   2363 interactions(1-4)
+ <MAKGRP> found    818 group exclusions.
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR   258616 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+   142139 ATOM PAIRS WERE FOUND FOR ATOM LIST
+     7447 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+
+
+ STEEPD> An energy minimization has been requested.
+
+ NSTEP  =         1000   NPRINT =           10
+ STEP   =    0.0200000   TOLFUN =    0.0000000
+ TOLGRD =    0.1000000   TOLSTP =    0.0000000
+
+MINI MIN: Cycle      ENERgy      Delta-E         GRMS    Step-size
+MINI INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+MINI EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>        0 -14003.06128      0.00000      0.55520      0.02000
+MINI INTERN>        3.64632     43.13993      4.93623     79.00322      4.80944
+MINI EXTERN>      -47.81332 -14090.78310      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       10 -14006.11534      3.05406      0.16186      0.00065
+MINI INTERN>        3.53049     41.91215      4.88159     77.39769      4.33866
+MINI EXTERN>      -47.76255 -14090.41337      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+
+ STEEPD> Minimization exiting with gradient tolerance ( 0.1000000) satisfied.
+
+STPD MIN: Cycle      ENERgy      Delta-E         GRMS    Step-size
+STPD INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+STPD EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ ----------       ---------    ---------    ---------    ---------    ---------
+STPD>       15 -14006.24168      0.12634      0.07268      0.00034
+STPD INTERN>        3.50975     41.89382      4.87622     77.31881      4.31355
+STPD EXTERN>      -47.75215 -14090.40168      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+  
+ CHARMM>    minimize abnr nsteps 5000 tolg 0.01
+
+ NONBOND OPTION FLAGS: 
+     ELEC     VDW      ATOMs    CDIElec  SHIFt    VATOm    VSWItch 
+     BYGRoup  NOEXtnd  NOEWald 
+ CUTNB  = 14.000 CTEXNB =999.000 CTONNB = 10.000 CTOFNB = 12.000
+ CGONNB =  0.000 CGOFNB = 10.000
+ WMIN   =  1.500 WRNMXD =  0.500 E14FAC =  1.000 EPS    =  1.000
+ NBXMOD =      5
+ There are   142139 atom  pairs and     4911 atom  exclusions.
+ There are        0 group pairs and      818 group exclusions.
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR   258616 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+   142141 ATOM PAIRS WERE FOUND FOR ATOM LIST
+     7453 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+
+
+ ABNER> An energy minimization has been requested.
+
+ EIGRNG =    0.0005000   MINDIM =            5
+ NPRINT =           10   NSTEP  =         5000
+ PSTRCT =    0.0000000   SDSTP  =    0.0200000
+ STPLIM =    1.0000000   STRICT =    0.1000000
+ TOLFUN =    0.0000000   TOLGRD =    0.0100000
+ TOLITR =          100   TOLSTP =    0.0000000
+ FMEM   =    0.0000000
+MINI MIN: Cycle      ENERgy      Delta-E         GRMS    Step-size
+MINI INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+MINI EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>        0 -14006.24168      0.12634      0.07268      0.00000
+MINI INTERN>        3.50975     41.89382      4.87622     77.31881      4.31355
+MINI EXTERN>      -47.75215 -14090.40168      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       10 -14006.41802      0.17633      0.19220      0.01033
+MINI INTERN>        3.54433     41.90523      4.87872     77.33640      4.27800
+MINI EXTERN>      -47.74782 -14090.61288      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       20 -14006.44474      0.02673      0.06299      0.00360
+MINI INTERN>        3.55457     41.91083      4.88079     77.32751      4.27870
+MINI EXTERN>      -47.75146 -14090.64569      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       30 -14006.45127      0.00653      0.01522      0.00126
+MINI INTERN>        3.49783     41.91287      4.88122     77.30218      4.27567
+MINI EXTERN>      -47.75044 -14090.57059      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+
+ ABNER> Minimization exiting with gradient tolerance ( 0.0100000) satisfied.
+
+ABNR MIN: Cycle      ENERgy      Delta-E         GRMS    Step-size
+ABNR INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+ABNR EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ ----------       ---------    ---------    ---------    ---------    ---------
+ABNR>       33 -14006.45174      0.00048      0.00955      0.00082
+ABNR INTERN>        3.50212     41.91364      4.88057     77.30301      4.27643
+ABNR EXTERN>      -47.74965 -14090.57785      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+  
+ CHARMM>     
+  
+ CHARMM>    ioformat exten
+ MISCOM> Expanded I/O format is used.
+  
+ CHARMM>    write coord pdb name "4pti_out.pdb"
+ VOPEN> Attempting to open::4pti_out.pdb::
+ RDTITL> WRITE COORD CARD NAME "4pti_out.crd"
+ RDTITL> No title read.
+  Write CHARMM-pdb format
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    write coord card name "4pti_out.crd"
+ VOPEN> Attempting to open::4pti_out.crd::
+ RDTITL> WRITE PSF CARD NAME "4pti_out.psf"
+ RDTITL> No title read.
+ VCLOSE: Closing unit   90 with status "KEEP"
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    write psf card name "4pti_out.psf"
+ VOPEN> Attempting to open::4pti_out.psf::
+ RDTITL> WRITE PSF XPLOR CARD NAME "4pti_out.xplor.psf"
+ RDTITL> No title read.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    write psf xplor card name "4pti_out.xplor.psf"
+ VOPEN> Attempting to open::4pti_out.xplor.psf::
+ RDTITL>  
+ RDTITL> No title read.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    stop
+$$$$$$  New timer profile $$$$$
+         Electrostatic & VDW             0.15 Other:            0.00
+      Nonbond force                   0.15 Other:            0.00
+         Bond energy                     0.00 Other:            0.00
+         Angle energy                    0.00 Other:            0.00
+         Dihedral energy                 0.00 Other:            0.00
+         Restraints energy               0.00 Other:            0.00
+      INTRNL energy                   0.01 Other:            0.00
+   Energy time                     0.16 Other:            0.00
+ Total time                      0.32 Other:            0.16
+
+                    NORMAL TERMINATION BY NORMAL STOP
+                    MOST SEVERE WARNING WAS AT LEVEL  4
+
+                    $$$$$ JOB ACCOUNTING INFORMATION $$$$$
+                     ELAPSED TIME:     0.32  SECONDS 
+                         CPU TIME:     0.32  SECONDS 
