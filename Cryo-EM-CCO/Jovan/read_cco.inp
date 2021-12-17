@@ -1,37 +1,39 @@
-OPEN READ UNIT 42 CARD NAME "/scratch/scratch/jdragelj/CHARMM_TOPPAR/top_alw.inp"
+# READ in and build CCO Structure
+# by Jesse Jones, based on script from Jovan Dragelj
+
+OPEN READ UNIT 42 CARD NAME "top_alw.inp"
 READ rtf CARD UNIT 42
 close unit 42
 
-OPEN READ UNIT 42 CARD NAME "/scratch/scratch/jdragelj/CHARMM_TOPPAR/top_all36_lipid.rtf"
+OPEN READ UNIT 42 CARD NAME "top_all36_lipid.rtf"
 READ rtf CARD UNIT 42 APPEND
 close unit 42
 
-OPEN READ UNIT 42 CARD NAME "/scratch/scratch/jdragelj/CHARMM_TOPPAR/top_all36_cgenff.rtf"
+OPEN READ UNIT 42 CARD NAME "top_all36_cgenff.rtf"
 READ rtf CARD UNIT 42 APPEND
 close unit 42
 
 
-OPEN READ UNIT 42 CARD NAME "/scratch/scratch/jdragelj/CHARMM_TOPPAR/par_all22_prot_plus_heme_and_Cu.inp"
+OPEN READ UNIT 42 CARD NAME "par_all22_prot_plus_heme_and_Cu.inp"
 READ PARAMETERS UNIT 42 CARD
 close unit 42
 
-OPEN READ UNIT 42 CARD NAME "/scratch/scratch/jdragelj/CHARMM_TOPPAR/par_all36_lipid.prm"
+OPEN READ UNIT 42 CARD NAME "par_all36_lipid.prm"
 READ PARAMETERS UNIT 42 CARD APPEND
 close unit 42
 
-OPEN READ UNIT 42 CARD NAME "/scratch/scratch/jdragelj/CHARMM_TOPPAR/par_all36_cgenff.prm"
-READ PARAMETERS UNIT 42 CARD APPEND
-close unit 42
+!OPEN READ UNIT 42 CARD NAME "par_all36_cgenff.prm"
+!READ PARAMETERS UNIT 42 CARD APPEND
+!close unit 42
 
 
-stream "/scratch/scratch/jdragelj/CHARMM_TOPPAR/toppar_charmm_FLU/toppar_fluorescin_p2.str
+!stream "/scratch/scratch/jdragelj/CHARMM_TOPPAR/toppar_charmm_FLU/toppar_fluorescin_p2.str
 
 !read coordinates
 
 read sequence coor name "KetteA" resid
 GENERATE  ACHAIN SETUP
 read coor card name "KetteA"
-
 
 read sequence coor name "KetteB" resid
 GENERATE BCHAIN SETUP
@@ -66,12 +68,12 @@ read sequence coor name "membrane" resid
 GENERATE MEMBRANE SETUP
 read coor card name "membrane" append
 
-read sequence coor name "fluorescein" resid
-GENERATE  FLUR SETUP
-read coor card name "fluorescein" append
+!read sequence coor name "fluorescein" resid
+!GENERATE  FLUR SETUP
+!read coor card name "fluorescein" append
 
 !flu patch
-PATCH FCYS ACHAIN 299 FLUR 1 SETUP
+!PATCH FCYS ACHAIN 299 FLUR 1 SETUP
 
 
 
@@ -93,7 +95,7 @@ AUTOGENERATE ANGLES DIHEDRALS
 !charge patches
 PATCH AHE3 GHEMEA 2  ACHAIN 94 ACHAIN  413 SETUP
 PATCH CA21 METAL 2 METAL 3 BCHAIN 181 BCHAIN 216 BCHAIN 218 BCHAIN 220 BCHAIN 224 BCHAIN 227 SETUP
-PATCH CB4 METAL 1 ACHAIN 325 ACHAIN 326 HOHCU 1 ACHAIN 280 ACHAIN 276 SETUP
+!PATCH CB4 METAL 1 ACHAIN 325 ACHAIN 326 HOHCU 1 ACHAIN 280 ACHAIN 276 SETUP
 PATCH A3H3 EHEMEA3 2 ACHAIN 411 FEOH 1 SETUP
 
 !bonds towards heme and copper
@@ -128,7 +130,7 @@ read coor card name "waterbox" append
 !make hydrogen
 hbuild
 
-delete atom sele .byres. (((segid FLUR) .around. 2.8) .and. (segid SWAT .or. segid WAT .or. segid PAH2O .or. segid QBH2O)) end
+!delete atom sele .byres. (((segid FLUR) .around. 2.8) .and. (segid SWAT .or. segid WAT .or. segid PAH2O .or. segid QBH2O)) end
 
 OPEN WRITE UNIT 08 CARD NAME "cco_flu.crd"
 WRITE COORDINATES UNIT 08 CARD
