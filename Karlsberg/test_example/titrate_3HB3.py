@@ -12,16 +12,16 @@ def titrate_structure(pdb_structure, workfolder, state, residues_tt=None):
     #############
     #top = topology
     top = []
-    top.append("/toppar27/top_alw_clean_kb.inp")#here, but what is the difference between top_alw_clean.inp und top_alw_clean_kb.inp
-    top.append("/toppar27/patches.rtf")#here
-    top.append("/toppar27/top_all36_lipid.rtf")#here
-    top.append("/toppar27/top_all36_cgenff.rtf")#here
+    top.append("/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top_alw_clean_kb.inp")#here, but what is the difference between top_alw_clean.inp und top_alw_clean_kb.inp
+    top.append("/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.rtf")#here
+    top.append("/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top_all36_lipid.rtf")#here
+    top.append("/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top_all36_cgenff.rtf")#here
     #par = parameters
     par = []
-    par.append("/toppar27/par_all22_prot_plus_heme_and_Cu_kb.inp")#here but what is the diference between regular and _kb file?
-    par.append("/toppar27/patches.prm")#here
-    par.append("/toppar27/par_all36_lipid.prm")#here
-    par.append("/toppar27/par_all36_cgenff.prm")#here
+    par.append("/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par_all22_prot_plus_heme_and_Cu_kb.inp")#here but what is the diference between regular and _kb file?
+    par.append("/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.prm")#here
+    par.append("/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par_all36_lipid.prm")#here
+    par.append("/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par_all36_cgenff.prm")#here
 
 
     kbp2_settings = kbp2.pka_calculation.PkaCalcSettings()
@@ -44,8 +44,8 @@ def titrate_structure(pdb_structure, workfolder, state, residues_tt=None):
     # kbp2_settings.cavity_par = [0.8, 0.2, 0.0]
 
     # kbp2_settings.titr_residue_charges_0 = True
-    #titratable_yaml = 'toppar27/titratable_cco_noglupasp.yaml'
-    #kbp2_settings.set_yaml(titratable_yaml)
+    titratable_yaml = '/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/titratable_cco_noglupasp.yaml'
+    kbp2_settings.set_yaml(titratable_yaml)
     titratable_definitions = kbp2.kbp_tools.parse_titratable_yaml(titratable_yaml)
     ##############################################################################
 

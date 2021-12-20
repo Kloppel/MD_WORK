@@ -1,0 +1,28 @@
+Log file for pka calculation for the structure 3hb3 
+
+# Setup: 
+-pdb_file:/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/test/titrate_3HB3/3hb3.pdb
+-workdir:/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/test/titrate_3HB3/
+-topology:
+ /home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top_alw_clean_kb.inp
+ /home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.rtf
+ /home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top_all36_lipid.rtf
+ /home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top_all36_cgenff.rtf
+-parameters:
+ /home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par_all22_prot_plus_heme_and_Cu_kb.inp
+ /home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.prm
+ /home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par_all36_lipid.prm
+ /home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par_all36_cgenff.prm
+-yaml:/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/titratable_cco_noglupasp.yaml
+-protocol:
+ (7, 'h_min')
+-preopt:
+ carb_oxi_relax: False
+ init_die_4: True
+-salt_bridge_cutoff:4
+
+# Starting inital modelling 
+ -Preoptimization: Dielectric constant will be set to 4  
+Structure preparation (initial modelling) is done! 
+
+# Pac run for 7 h_min 
