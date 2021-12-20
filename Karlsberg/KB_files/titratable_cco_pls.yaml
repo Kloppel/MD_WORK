@@ -1,0 +1,110 @@
+---
+HSW:
+ - sym: R
+   pka: 0.00
+   apc:
+    NE2: -0.70
+    CG: -0.05
+    ND1: -0.36
+    HD1: 0.32
+    CE1: 0.25
+    HE2: 0.00
+    CD2: 0.22
+    CB: -0.09
+    HD2: 0.10
+    HE1: 0.13
+   patch: HSPD
+ - sym: P
+   pka: -7.00
+   apc:
+    NE2: -0.51
+    CG: 0.19
+    ND1: -0.51
+    HD1: 0.44
+    CE1: 0.32
+    HE2: 0.44
+    CD2: 0.19
+    CB: -0.05
+    HD2: 0.13
+    HE1: 0.18
+ - sym: 0
+   pka: -0.40
+   apc:
+    NE2: -0.36
+    CG: 0.22
+    ND1: -0.70
+    HD1: 0.00
+    CE1: 0.25
+    HE2: 0.32
+    CD2: -0.05
+    CB: -0.08
+    HD2: 0.09
+    HE1: 0.13
+   patch: HSPE
+PAX:
+# propionate A
+ - sym: R
+   pka: 0.00
+   apc:
+    CBA: -0.21
+    HBA1: 0.09
+    HBA2: 0.09
+    CGA: 0.75
+    O1A: -0.61
+    O2A: -0.55
+    H1A: 0.44
+    H2A: 0.00
+   patch: PAH1
+ - sym: D
+   pka: 4.00
+   apc:
+    CBA: -0.28
+    HBA1: 0.09
+    HBA2: 0.09
+    CGA: 0.62
+    O1A: -0.76
+    O2A: -0.76
+    H1A: 0.00
+    H2A: 0.00
+ - sym: 0
+   pka: 0.00
+   apc:
+    CBA: -0.21
+    HBA1: 0.09
+    HBA2: 0.09
+    CGA: 0.75
+    O1A: -0.55
+    O2A: -0.61
+    H1A: 0.00
+    H2A: 0.44
+   patch: PAH2
+ASS:
+ - sym: R
+   pka: 0.00
+   apc:
+    CB: -0.21
+    CG: 0.75
+    OD1: -0.61
+    OD2: -0.55
+    HD1: 0.44
+    HD2: 0.00
+   patch: DPP1
+ - sym: D
+   pka: 4.00
+   apc:
+    CB: -0.28
+    CG: 0.62
+    OD1: -0.76
+    OD2: -0.76
+    HD1: 0.00
+    HD2: 0.00
+ - sym: 0
+   pka: 0.00
+   apc:
+    CB: -0.21
+    CG: 0.75
+    OD1: -0.55
+    OD2: -0.61
+    HD1: 0.00
+    HD2: 0.44
+   patch: DPP2

@@ -12,13 +12,13 @@ def titrate_structure(pdb_structure, workfolder, state, residues_tt=None):
     #############
     #top = topology
     top = []
-    top.append("/toppar27/top_alw_clean.inp")#here, but what is the difference between top_alw_clean.inp und top_alw_clean_kb.inp
+    top.append("/toppar27/top_alw_clean_kb.inp")#here, but what is the difference between top_alw_clean.inp und top_alw_clean_kb.inp
     top.append("/toppar27/patches.rtf")#here
     top.append("/toppar27/top_all36_lipid.rtf")#here
     top.append("/toppar27/top_all36_cgenff.rtf")#here
     #par = parameters
     par = []
-    par.append("/toppar27/par_all22_prot_plus_heme_and_Cu.inp")#here but what is the diference between regular and _kb file?
+    par.append("/toppar27/par_all22_prot_plus_heme_and_Cu_kb.inp")#here but what is the diference between regular and _kb file?
     par.append("/toppar27/patches.prm")#here
     par.append("/toppar27/par_all36_lipid.prm")#here
     par.append("/toppar27/par_all36_cgenff.prm")#here
