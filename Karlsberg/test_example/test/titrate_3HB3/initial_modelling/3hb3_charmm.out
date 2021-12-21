@@ -5,7 +5,7 @@
        Copyright(c) 1984-2020  President and Fellows of Harvard College
                               All Rights Reserved
         Current operating system: Linux-5.11.0-43-generic(x86_64)@london        
-                 Created on 12/20/21 at 15:31:26 by user: pbuser      
+                 Created on 12/20/21 at 15:54:44 by user: pbuser      
 
             Maximum number of ATOMS:    360720, and RESidues:      120240
  RDTITL>  
@@ -1797,7 +1797,7 @@ MAXCRT      120240      333333
 
           PARAMETER FILE BEING READ FROM UNIT 90
  TITLE> *  --------------------------------------------------------------------------  *
- TITLE> *         CGENFF: PARAMETERS FOR THE CHARMM GENERAL FORCE FIELD V. 2B8         *
+ TITLE> *         CGENFF: PARAMETERS FOR THE CHARMM GENERAL FORCE FIELD V. 2B6         *
  TITLE> *                    FOR SMALL MOLECULE DRUG DESIGN                            *
  TITLE> *  --------------------------------------------------------------------------  *
  TITLE> *
@@ -1846,5 +1846,5 @@ MAXCRT      120240      333333
                     MOST SEVERE WARNING WAS AT LEVEL -1
 
                     $$$$$ JOB ACCOUNTING INFORMATION $$$$$
-                     ELAPSED TIME:     0.56  SECONDS 
-                         CPU TIME:     0.55  SECONDS 
+                     ELAPSED TIME:     0.54  SECONDS 
+                         CPU TIME:     0.53  SECONDS 
