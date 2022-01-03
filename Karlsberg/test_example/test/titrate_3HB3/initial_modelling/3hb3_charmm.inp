@@ -9,7 +9,7 @@ read para card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_exampl
 read para card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.prm" append
 read para card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par_all36_lipid.prm" append
 read para card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par_all36_cgenff.prm" append
-    
+
 
 read sequence coor name "3hb3_in_A.crd" resid 
 generate setup A first GLYP last CTER
