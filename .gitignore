@@ -17,7 +17,7 @@ PF_prdh_2/
 Pr_prdh/
 vmd-1.9.3/
 benchmark_cuda0.ipynb
-charmm.tar.gz
+*.tar.gz
 
 #exclude large filetypes like dcd trajectory files
 *.dcd
