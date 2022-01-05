@@ -59,77 +59,134 @@ def titrate_structure(pdb_structure, workfolder, state, residues_tt=None):
     charge_patches = []
     bond_patches = []
 
-    if state == '21Cua_3hea_3hea3_2Cub':
-        charge_patches.append({'AHE3': ['HEM-2_GHEM', 'HSD-102_ACHA', 'HSD-421_ACHA']})
-        charge_patches.append({'CA21': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
-                                        'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
-        charge_patches.append({'A3H3': ['HEM-2_EHEM', 'HSD-419_ACHA', 'OHMI-1_FEOH']})
-        charge_patches.append({'CBF2': ['CU1-1_META', 'HSD-333_ACHA', 'HSD-334_ACHA', 'HOH-1_HOHC', 'TYR-288_ACHA', 'HSE-284_ACHA']})
-        # charge_patches.append({'CBF2': ['CU1-1_META', 'HSD-333_ACHA', 'HSD-334_ACHA', 'TIP3-1_HOHC', 'TYR-288_ACHA', 'HSE-284_ACHA']})
+    #from here on 2gsm patches
+#    if state == '21Cua_3hea_3hea3_2Cub': #
+#        charge_patches.append({'AHE3': ['HEM-2_GHEM', 'HSD-102_ACHA', 'HSD-421_ACHA']})
+#        charge_patches.append({'CA21': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
+#                                        'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
+#        charge_patches.append({'A3H3': ['HEM-2_EHEM', 'HSD-419_ACHA', 'OHMI-1_FEOH']})
+#        charge_patches.append({'CBF2': ['CU1-1_META', 'HSD-333_ACHA', 'HSD-334_ACHA', 'HOH-1_HOHC', 'TYR-288_ACHA', 'HSE-284_ACHA']})
+#        # charge_patches.append({'CBF2': ['CU1-1_META', 'HSD-333_ACHA', 'HSD-334_ACHA', 'TIP3-1_HOHC', 'TYR-288_ACHA', 'HSE-284_ACHA']})
+#
+#        bond_patches.append({'PHEM': ['HSD-419_ACHA', 'HEM-2_EHEM']})
+#        bond_patches.append({'PHEM': ['HSD-102_ACHA', 'HEM-2_GHEM']})
+#        bond_patches.append({'PHE2': ['HSD-421_ACHA', 'HEM-2_GHEM']})
+#        bond_patches.append({'EISO': ['OHMI-1_FEOH', 'HEM-2_EHEM']})
+#        bond_patches.append({'CUB2': ['CU1-1_META', 'HSE-284_ACHA', 'HSD-333_ACHA', 'HSD-334_ACHA', 'HOH-1_HOHC']})
+#        # bond_patches.append({'CUB2': ['CU1-1_META', 'HSE-284_ACHA', 'HSD-333_ACHA', 'HSD-334_ACHA', 'TIP3-1_HOHC']})
+#        bond_patches.append({'CUAP': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
+#                                      'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
+#
+#    if state == '11Cua_2hea_3hea3_2Cub':
+#        charge_patches.append({'AHE2': ['HEM-2_GHEM', 'HSD-102_ACHA', 'HSD-421_ACHA']})
+#        charge_patches.append({'CA11': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
+#                                        'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
+#        charge_patches.append({'A3H3': ['HEM-2_EHEM', 'HSD-419_ACHA', 'OHMI-1_FEOH']})
+#        charge_patches.append({'CBF2': ['CU1-1_META', 'HSD-333_ACHA', 'HSD-334_ACHA', 'HOH-1_HOHC', 'TYR-288_ACHA', 'HSE-284_ACHA']})
+#
+#        bond_patches.append({'PHEM': ['HSD-419_ACHA', 'HEM-2_EHEM']})
+#        bond_patches.append({'PHEM': ['HSD-102_ACHA', 'HEM-2_GHEM']})
+#        bond_patches.append({'PHE2': ['HSD-421_ACHA', 'HEM-2_GHEM']})
+#        bond_patches.append({'EISO': ['OHMI-1_FEOH', 'HEM-2_EHEM']})
+#        bond_patches.append({'CUB2': ['CU1-1_META', 'HSE-284_ACHA', 'HSD-333_ACHA', 'HSD-334_ACHA', 'HOH-1_HOHC']})
+#        bond_patches.append({'CUAP': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
+#                                      'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
+#
+#    if state == '11Cua_2hea_2hea3_1Cub':
+#        charge_patches.append({'AHE2': ['HEM-2_GHEM', 'HSD-102_ACHA', 'HSD-421_ACHA']})
+#        charge_patches.append({'CA11': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
+#                                        'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
+#        charge_patches.append({'A3H2': ['HEM-2_EHEM', 'HSD-419_ACHA', 'OHMI-1_FEOH']})
+#        charge_patches.append({'CBT4': ['CU1-1_META', 'HSD-333_ACHA', 'HSD-334_ACHA', 'HOH-1_HOHC', 'TYR-288_ACHA', 'HSE-284_ACHA']})
+#
+#        bond_patches.append({'PHEM': ['HSD-419_ACHA', 'HEM-2_EHEM']})
+#        bond_patches.append({'PHEM': ['HSD-102_ACHA', 'HEM-2_GHEM']})
+#        bond_patches.append({'PHE2': ['HSD-421_ACHA', 'HEM-2_GHEM']})
+#        bond_patches.append({'EISO': ['OHMI-1_FEOH', 'HEM-2_EHEM']})
+#        bond_patches.append({'CUB2': ['CU1-1_META', 'HSE-284_ACHA', 'HSD-333_ACHA', 'HSD-334_ACHA', 'HOH-1_HOHC']})
+#        bond_patches.append({'CUAP': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
+#                                      'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
+#
+#                                       
+    #from here on 3hb3 patches
+    #if state == 'O2_bound':
+    #    charge_patches.append({'AHE3': ['HEM-2_GHEM', 'HSD-102_ACHA', 'HSD-421_ACHA']})
+    #    charge_patches.append({'CA21': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
+    #                                    'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
+    #    charge_patches.append({'OA3O': ['HEM-2_EHEM', 'HSD-419_ACHA', 'PER-1_PERI']})
+    #    charge_patches.append({'OCBO': ['CU1-1_META', 'HSD-333_ACHA', 'HSD-334_ACHA', 'PER-1_PERI', 'TYR-288_ACHA', 'HSE-284_ACHA']})
+#
+    #if state == 'Pr':
+    #    charge_patches.append({'AHE3': ['HEM-2_GHEM', 'HSD-102_ACHA', 'HSD-421_ACHA']})
+    #    charge_patches.append({'CA21': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
+    #                                    'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
+    #    charge_patches.append({'A3H4': ['HEM-2_EHEM', 'HSD-419_ACHA', 'HAO2-1_FEOH']})
+    #    charge_patches.append({'CBPN': ['CU1-1_META', 'HSD-333_ACHA', 'HSD-334_ACHA', 'OMI2-1_HOHC', 'TYR-288_ACHA', 'HSE-284_ACHA']})
+#
+    #    bond_patches.append({'PHEM': ['HSD-419_ACHA', 'HEM-2_EHEM']})
+    #    bond_patches.append({'PHEM': ['HSD-102_ACHA', 'HEM-2_GHEM']})
+    #    bond_patches.append({'PHE2': ['HSD-421_ACHA', 'HEM-2_GHEM']})
+    #    bond_patches.append({'EISO': ['HAO2-1_FEOH', 'HEM-2_EHEM']})
+    #    bond_patches.append({'CUB2': ['CU1-1_META', 'HSE-284_ACHA', 'HSD-333_ACHA', 'HSD-334_ACHA', 'OMI2-1_HOHC']})
+    #    bond_patches.append({'CUAP': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
+    #                                  'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
+#
+    if state == 'O':
+        ### CHARGE PATCHES
+        charge_patches.append({'AHE3' : ['HEM-2_GHEM', 'HSD-94_ACHA', 'HSD-413_ACHA']})
+        charge_patches.append({'CA21' : ['CU1-2_META', 'CU1-3_META', 'HSE-181_BCHA', 'CYS-216_BCHA', 'EPP-218_BCHA', 'CYS-220_BCHA', 'HSE-224_BCHA', 'MET-227_BCHA']})
+        charge_patches.append({'CB4' : ['CU1-1_META', 'HSD-325_ACHA', 'HSD-326_ACHA', 'HOH-1_HOHC', 'TYR-280_ACHA', 'HSE-276_ACHA']})
+        charge_patches.append({'A3H3' : ['HEM-2_EHEM', 'HSD-411_ACHA', 'OHMI-1_FEOH']})
+        ### BOND PATCHES
+        bond_patches.append({'PHEM' : ['HSD-411_ACHA', 'HEM-2_EHEM']})
+        bond_patches.append({'PHEM' : ['HSD-94_ACHA', 'HEM-2_GHEM']})
+        bond_patches.append({'PHE2' : ['HSD-413_ACHA', 'HEM-2_GHEM']})
+        bond_patches.append({'EISE' : ['OHMI-1_FEOH', 'HEM-2_EHEM']})
+        bond_patches.append({'CUBP' : ['CU1-1_META', 'HSE-276_ACHA', 'HSD-325_ACHA', 'HSD-326_ACHA', 'HOH-1_HOHC']})
+        bond_patches.append({'CUAP' : ['CU1-2_META', 'CU1-3_META', 'HSE-181_BCHA', 'CYS-216_BCHA', 'EPP-218_BCHA', 'CYS-220_BCHA', 'HSE-224_BCHA', 'MET-227_BCHA']})
 
-        bond_patches.append({'PHEM': ['HSD-419_ACHA', 'HEM-2_EHEM']})
-        bond_patches.append({'PHEM': ['HSD-102_ACHA', 'HEM-2_GHEM']})
-        bond_patches.append({'PHE2': ['HSD-421_ACHA', 'HEM-2_GHEM']})
-        bond_patches.append({'EISO': ['OHMI-1_FEOH', 'HEM-2_EHEM']})
-        bond_patches.append({'CUB2': ['CU1-1_META', 'HSE-284_ACHA', 'HSD-333_ACHA', 'HSD-334_ACHA', 'HOH-1_HOHC']})
-        # bond_patches.append({'CUB2': ['CU1-1_META', 'HSE-284_ACHA', 'HSD-333_ACHA', 'HSD-334_ACHA', 'TIP3-1_HOHC']})
-        bond_patches.append({'CUAP': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
-                                      'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
+    if state == 'R':
+        ### CHARGE PATCHES
+        charge_patches.append({'AHE2' : ['HEM-2_GHEM', 'HSD-94_ACHA', 'HSD-413_ACHA']})
+        charge_patches.append({'CA11' : ['CU1-2_META', 'CU1-3_META', 'HSE-181_BCHA', 'CYS-216_BCHA', 'EPP-218_BCHA', 'CYS-220_BCHA', 'HSE-224_BCHA', 'MET-227_BCHA']})
+        charge_patches.append({'CB1T' : ['CU1-1_META', 'HSD-325_ACHA', 'HSD-326_ACHA', 'HOH-1_HOHC', 'TYR-280_ACHA', 'HSE-276_ACHA']})
+        charge_patches.append({'A3W2' : ['HEM-2_EHEM', 'HSD-411_ACHA', 'HOH-1_FEOH']})
+        ### BOND PATCHES
+        bond_patches.append({'PHEM' : ['HSD-411_ACHA', 'HEM-2_EHEM']})
+        bond_patches.append({'PHEM' : ['HSD-94_ACHA', 'HEM-2_GHEM']})
+        bond_patches.append({'PHE2' : ['HSD-413_ACHA', 'HEM-2_GHEM']})
+        bond_patches.append({'EISW' : ['HOH-1_FEOH', 'HEM-2_EHEM']})
+        bond_patches.append({'CUBP' : ['CU1-1_META', 'HSE-276_ACHA', 'HSD-325_ACHA', 'HSD-326_ACHA', 'HOH-1_HOHC']})
+        bond_patches.append({'CUAP' : ['CU1-2_META', 'CU1-3_META', 'HSE-181_BCHA', 'CYS-216_BCHA', 'EPP-218_BCHA', 'CYS-220_BCHA', 'HSE-224_BCHA', 'MET-227_BCHA']})
+        # temporary mix -> flip charge only for CuA and hemeA
 
-    if state == '11Cua_2hea_3hea3_2Cub':
-        charge_patches.append({'AHE2': ['HEM-2_GHEM', 'HSD-102_ACHA', 'HSD-421_ACHA']})
-        charge_patches.append({'CA11': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
-                                        'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
-        charge_patches.append({'A3H3': ['HEM-2_EHEM', 'HSD-419_ACHA', 'OHMI-1_FEOH']})
-        charge_patches.append({'CBF2': ['CU1-1_META', 'HSD-333_ACHA', 'HSD-334_ACHA', 'HOH-1_HOHC', 'TYR-288_ACHA', 'HSE-284_ACHA']})
+    if state == 'Cua_hemea_R_hemea3_Cub_O':
+        ### CHARGE PATCHES
+        charge_patches.append({'AHE2': ['HEM-2_GHEM', 'HSD-94_ACHA', 'HSD-413_ACHA']})
+        charge_patches.append({'CA11': ['CU1-2_META', 'CU1-3_META', 'HSE-181_BCHA', 'CYS-216_BCHA','EPP-218_BCHA', 'CYS-220_BCHA', 'HSE-224_BCHA', 'MET-227_BCHA']})
+        charge_patches.append({'CB4' : ['CU1-1_META', 'HSD-325_ACHA', 'HSD-326_ACHA', 'HOH-1_HOHC', 'TYR-280_ACHA', 'HSE-276_ACHA']})
+        charge_patches.append({'A3H3' : ['HEM-2_EHEM', 'HSD-411_ACHA', 'OHMI-1_FEOH']})
+        ### BOND PATCHES
+        bond_patches.append({'PHEM': ['HSD-411_ACHA', 'HEM-2_EHEM']})
+        bond_patches.append({'PHEM': ['HSD-94_ACHA', 'HEM-2_GHEM']})
+        bond_patches.append({'PHE2': ['HSD-413_ACHA', 'HEM-2_GHEM']})
+        bond_patches.append({'EISW': ['HOH-1_FEOH', 'HEM-2_EHEM']})
+        bond_patches.append({'CUBP': ['CU1-1_META', 'HSE-276_ACHA', 'HSD-325_ACHA', 'HSD-326_ACHA', 'HOH-1_HOHC']})
+        bond_patches.append({'CUAP': ['CU1-2_META', 'CU1-3_META', 'HSE-181_BCHA', 'CYS-216_BCHA','EPP-218_BCHA', 'CYS-220_BCHA', 'HSE-224_BCHA', 'MET-227_BCHA']})
 
-        bond_patches.append({'PHEM': ['HSD-419_ACHA', 'HEM-2_EHEM']})
-        bond_patches.append({'PHEM': ['HSD-102_ACHA', 'HEM-2_GHEM']})
-        bond_patches.append({'PHE2': ['HSD-421_ACHA', 'HEM-2_GHEM']})
-        bond_patches.append({'EISO': ['OHMI-1_FEOH', 'HEM-2_EHEM']})
-        bond_patches.append({'CUB2': ['CU1-1_META', 'HSE-284_ACHA', 'HSD-333_ACHA', 'HSD-334_ACHA', 'HOH-1_HOHC']})
-        bond_patches.append({'CUAP': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
-                                      'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
-
-    if state == '11Cua_2hea_2hea3_1Cub':
-        charge_patches.append({'AHE2': ['HEM-2_GHEM', 'HSD-102_ACHA', 'HSD-421_ACHA']})
-        charge_patches.append({'CA11': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
-                                        'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
-        charge_patches.append({'A3H2': ['HEM-2_EHEM', 'HSD-419_ACHA', 'OHMI-1_FEOH']})
-        charge_patches.append({'CBT4': ['CU1-1_META', 'HSD-333_ACHA', 'HSD-334_ACHA', 'HOH-1_HOHC', 'TYR-288_ACHA', 'HSE-284_ACHA']})
-
-        bond_patches.append({'PHEM': ['HSD-419_ACHA', 'HEM-2_EHEM']})
-        bond_patches.append({'PHEM': ['HSD-102_ACHA', 'HEM-2_GHEM']})
-        bond_patches.append({'PHE2': ['HSD-421_ACHA', 'HEM-2_GHEM']})
-        bond_patches.append({'EISO': ['OHMI-1_FEOH', 'HEM-2_EHEM']})
-        bond_patches.append({'CUB2': ['CU1-1_META', 'HSE-284_ACHA', 'HSD-333_ACHA', 'HSD-334_ACHA', 'HOH-1_HOHC']})
-        bond_patches.append({'CUAP': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
-                                      'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
-
-    if state == 'O2_bound':
-        charge_patches.append({'AHE3': ['HEM-2_GHEM', 'HSD-102_ACHA', 'HSD-421_ACHA']})
-        charge_patches.append({'CA21': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
-                                        'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
-
-        charge_patches.append({'OA3O': ['HEM-2_EHEM', 'HSD-419_ACHA', 'PER-1_PERI']})
-        charge_patches.append({'OCBO': ['CU1-1_META', 'HSD-333_ACHA', 'HSD-334_ACHA', 'PER-1_PERI', 'TYR-288_ACHA', 'HSE-284_ACHA']})
-
-
-    if state == 'Pr':
-        charge_patches.append({'AHE3': ['HEM-2_GHEM', 'HSD-102_ACHA', 'HSD-421_ACHA']})
-        charge_patches.append({'CA21': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
-                                        'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
-        charge_patches.append({'A3H4': ['HEM-2_EHEM', 'HSD-419_ACHA', 'HAO2-1_FEOH']})
-        charge_patches.append({'CBPN': ['CU1-1_META', 'HSD-333_ACHA', 'HSD-334_ACHA', 'OMI2-1_HOHC', 'TYR-288_ACHA', 'HSE-284_ACHA']})
-
-        bond_patches.append({'PHEM': ['HSD-419_ACHA', 'HEM-2_EHEM']})
-        bond_patches.append({'PHEM': ['HSD-102_ACHA', 'HEM-2_GHEM']})
-        bond_patches.append({'PHE2': ['HSD-421_ACHA', 'HEM-2_GHEM']})
-        bond_patches.append({'EISO': ['HAO2-1_FEOH', 'HEM-2_EHEM']})
-        bond_patches.append({'CUB2': ['CU1-1_META', 'HSE-284_ACHA', 'HSD-333_ACHA', 'HSD-334_ACHA', 'OMI2-1_HOHC']})
-        bond_patches.append({'CUAP': ['CU1-2_META', 'CU1-3_META', 'HSE-217_BCHA', 'CYS-252_BCHA', 'GLU-254_BCHA',
-                                      'CYS-256_BCHA', 'HSE-260_BCHA', 'MET-263_BCHA']})
-
+    if state == 'Cua_hemea_O_hemea3_Cub_R':
+        ### CHARGE PATCHES
+        charge_patches.append({'AHE3' : ['HEM-2_GHEM', 'HSD-94_ACHA', 'HSD-413_ACHA']})
+        charge_patches.append({'CA21' : ['CU1-2_META', 'CU1-3_META', 'HSE-181_BCHA', 'CYS-216_BCHA', 'EPP-218_BCHA', 'CYS-220_BCHA', 'HSE-224_BCHA', 'MET-227_BCHA']})
+        charge_patches.append({'CB1T' : ['CU1-1_META', 'HSD-325_ACHA', 'HSD-326_ACHA', 'HOH-1_HOHC', 'TYR-280_ACHA', 'HSE-276_ACHA']})
+        charge_patches.append({'A3W2' : ['HEM-2_EHEM', 'HSD-411_ACHA', 'HOH-1_FEOH']})
+        ### BOND PATCHES
+        bond_patches.append({'PHEM': ['HSD-411_ACHA', 'HEM-2_EHEM']})
+        bond_patches.append({'PHEM': ['HSD-94_ACHA', 'HEM-2_GHEM']})
+        bond_patches.append({'PHE2': ['HSD-413_ACHA', 'HEM-2_GHEM']})
+        bond_patches.append({'EISW': ['HOH-1_FEOH', 'HEM-2_EHEM']})
+        bond_patches.append({'CUBP': ['CU1-1_META', 'HSE-276_ACHA', 'HSD-325_ACHA', 'HSD-326_ACHA', 'HOH-1_HOHC']})
+        bond_patches.append({'CUAP': ['CU1-2_META', 'CU1-3_META', 'HSE-181_BCHA', 'CYS-216_BCHA','EPP-218_BCHA', 'CYS-220_BCHA', 'HSE-224_BCHA', 'MET-227_BCHA']})
 
 
     #CHARGE PACTHES
@@ -160,7 +217,8 @@ def titrate_structure(pdb_structure, workfolder, state, residues_tt=None):
 if __name__ == '__main__':
     workfolder = '/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/test/titrate_3HB3/'
     pdb_structure = '/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/test/titrate_3HB3/3hb3.pdb'
-    state = '21Cua_3hea_3hea3_2Cub'
+    #state = '21Cua_3hea_3hea3_2Cub'
+    state= 'O'
     titrate_structure(pdb_structure=pdb_structure, workfolder=workfolder, state=state, residues_tt=None)
 
     #print('for project with "Maria Andrea and Inez Weidinger')

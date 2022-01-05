@@ -27,19 +27,19 @@ patch disu A 66 A 80
 patch disu C 22 C 96
 patch disu D 23 D 88
 
-patch AHE3  GHEM 2 ACHA 102 ACHA 421 setup
-patch CA21  META 2 META 3 BCHA 217 BCHA 252 BCHA 254 BCHA 256 BCHA 260 BCHA 263 setup
-patch A3H3  EHEM 2 ACHA 419 FEOH 1 setup
-patch CBF2  META 1 ACHA 333 ACHA 334 HOHC 1 ACHA 288 ACHA 284 setup
+patch AHE3  GHEM 2 ACHA 94 ACHA 413 setup
+patch CA21  META 2 META 3 BCHA 181 BCHA 216 BCHA 218 BCHA 220 BCHA 224 BCHA 227 setup
+patch CB4  META 1 ACHA 325 ACHA 326 HOHC 1 ACHA 280 ACHA 276 setup
+patch A3H3  EHEM 2 ACHA 411 FEOH 1 setup
 
 AUTOgenerate ANGLes DIHEdrals
 
-patch PHEM  ACHA 419 EHEM 2 setup
-patch PHEM  ACHA 102 GHEM 2 setup
-patch PHE2  ACHA 421 GHEM 2 setup
-patch EISO  FEOH 1 EHEM 2 setup
-patch CUB2  META 1 ACHA 284 ACHA 333 ACHA 334 HOHC 1 setup
-patch CUAP  META 2 META 3 BCHA 217 BCHA 252 BCHA 254 BCHA 256 BCHA 260 BCHA 263 setup
+patch PHEM  ACHA 411 EHEM 2 setup
+patch PHEM  ACHA 94 GHEM 2 setup
+patch PHE2  ACHA 413 GHEM 2 setup
+patch EISE  FEOH 1 EHEM 2 setup
+patch CUBP  META 1 ACHA 276 ACHA 325 ACHA 326 HOHC 1 setup
+patch CUAP  META 2 META 3 BCHA 181 BCHA 216 BCHA 218 BCHA 220 BCHA 224 BCHA 227 setup
 read coor card name "3hb3_in_A.crd"
 read coor card name "3hb3_in_B.crd" resid
 read coor card name "3hb3_in_C.crd" resid
