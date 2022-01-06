@@ -17,15 +17,19 @@ generate setup A first GLYP last CTER
 read sequence coor name "3hb3_in_B.crd" resid 
 generate setup B first NTER last CTER
 
-read sequence coor name "3hb3_in_C.crd" resid 
-generate setup C first NTER last CTER
+read sequence coor name "3hb3_in_E.crd" resid 
+generate setup E first NONE last NONE
 
-read sequence coor name "3hb3_in_D.crd" resid 
-generate setup D first NTER last CTER
+read sequence coor name "3hb3_in_F.crd" resid 
+generate setup F first NONE last NONE
+
+read sequence coor name "3hb3_in_G.crd" resid 
+generate setup G first NONE last NONE
+
+read sequence coor name "3hb3_in_M.crd" resid 
+generate setup M first NONE last NONE
 
 patch disu A 66 A 80
-patch disu C 22 C 96
-patch disu D 23 D 88
 
 patch AHE3  GHEM 2 ACHA 94 ACHA 413 setup
 patch CA21  META 2 META 3 BCHA 181 BCHA 216 BCHA 218 BCHA 220 BCHA 224 BCHA 227 setup
@@ -42,8 +46,10 @@ patch CUBP  META 1 ACHA 276 ACHA 325 ACHA 326 HOHC 1 setup
 patch CUAP  META 2 META 3 BCHA 181 BCHA 216 BCHA 218 BCHA 220 BCHA 224 BCHA 227 setup
 read coor card name "3hb3_in_A.crd"
 read coor card name "3hb3_in_B.crd" resid
-read coor card name "3hb3_in_C.crd" resid
-read coor card name "3hb3_in_D.crd" resid
+read coor card name "3hb3_in_E.crd" resid
+read coor card name "3hb3_in_F.crd" resid
+read coor card name "3hb3_in_G.crd" resid
+read coor card name "3hb3_in_M.crd" resid
 
 
 ic para
@@ -52,315 +58,7 @@ ic build
 hbuild
 
 NBONDS EPS 4
-define sel_1 select (segid A .and. resid 563 .and. type C3) .or. (segid A .and. resid 563 .and. type O3) -
-               .or. (segid A .and. resid 563 .and. type C4) .or. (segid A .and. resid 563 .and. type C5) -
-               .or. (segid A .and. resid 563 .and. type C6) .or. (segid A .and. resid 563 .and. type C7) -
-               .or. (segid A .and. resid 563 .and. type O7) .or. (segid A .and. resid 563 .and. type C8) -
-               .or. (segid A .and. resid 563 .and. type C14) .or. (segid A .and. resid 563 .and. type C15) -
-               .or. (segid A .and. resid 563 .and. type C16) .or. (segid A .and. resid 563 .and. type C17) -
-               .or. (segid A .and. resid 563 .and. type C13) .or. (segid A .and. resid 563 .and. type C18) -
-               .or. (segid A .and. resid 563 .and. type C12) .or. (segid A .and. resid 563 .and. type O12) -
-               .or. (segid A .and. resid 563 .and. type C11) .or. (segid A .and. resid 563 .and. type C9) -
-               .or. (segid A .and. resid 563 .and. type C10) .or. (segid A .and. resid 563 .and. type C19) -
-               .or. (segid A .and. resid 563 .and. type C1) .or. (segid A .and. resid 563 .and. type C2) -
-               .or. (segid A .and. resid 563 .and. type C20) .or. (segid A .and. resid 563 .and. type C21) -
-               .or. (segid A .and. resid 563 .and. type C22) .or. (segid A .and. resid 563 .and. type C23) -
-               .or. (segid A .and. resid 563 .and. type CD) .or. (segid A .and. resid 563 .and. type OE1) -
-               .or. (segid A .and. resid 563 .and. type OE2) .or. (segid A .and. resid 577 .and. type XH2) -
-               .or. (segid A .and. resid 578 .and. type XH2) .or. (segid A .and. resid 579 .and. type XH2) -
-               .or. (segid A .and. resid 580 .and. type XH2) .or. (segid A .and. resid 581 .and. type XH2) -
-               .or. (segid A .and. resid 582 .and. type XH2) .or. (segid A .and. resid 583 .and. type XH2) -
-               .or. (segid A .and. resid 584 .and. type XH2) .or. (segid A .and. resid 585 .and. type XH2) -
-               .or. (segid A .and. resid 586 .and. type XH2) .or. (segid A .and. resid 587 .and. type XH2) -
-               end
-define sel_2 select (segid A .and. resid 588 .and. type XH2) .or. (segid A .and. resid 589 .and. type XH2) -
-               .or. (segid A .and. resid 590 .and. type XH2) .or. (segid A .and. resid 591 .and. type XH2) -
-               .or. (segid A .and. resid 592 .and. type XH2) .or. (segid A .and. resid 593 .and. type XH2) -
-               .or. (segid A .and. resid 594 .and. type XH2) .or. (segid A .and. resid 595 .and. type XH2) -
-               .or. (segid A .and. resid 596 .and. type XH2) .or. (segid A .and. resid 597 .and. type XH2) -
-               .or. (segid A .and. resid 598 .and. type XH2) .or. (segid A .and. resid 599 .and. type XH2) -
-               .or. (segid A .and. resid 600 .and. type XH2) .or. (segid A .and. resid 601 .and. type XH2) -
-               .or. (segid A .and. resid 602 .and. type XH2) .or. (segid A .and. resid 603 .and. type XH2) -
-               .or. (segid A .and. resid 604 .and. type XH2) .or. (segid A .and. resid 605 .and. type XH2) -
-               .or. (segid A .and. resid 606 .and. type XH2) .or. (segid A .and. resid 607 .and. type XH2) -
-               .or. (segid A .and. resid 608 .and. type XH2) .or. (segid A .and. resid 609 .and. type XH2) -
-               .or. (segid A .and. resid 610 .and. type XH2) .or. (segid A .and. resid 611 .and. type XH2) -
-               .or. (segid A .and. resid 612 .and. type XH2) .or. (segid A .and. resid 613 .and. type XH2) -
-               .or. (segid A .and. resid 614 .and. type XH2) .or. (segid A .and. resid 615 .and. type XH2) -
-               .or. (segid A .and. resid 616 .and. type XH2) .or. (segid A .and. resid 617 .and. type XH2) -
-               .or. (segid A .and. resid 618 .and. type XH2) .or. (segid A .and. resid 619 .and. type XH2) -
-               .or. (segid A .and. resid 620 .and. type XH2) .or. (segid A .and. resid 621 .and. type XH2) -
-               .or. (segid A .and. resid 622 .and. type XH2) .or. (segid A .and. resid 623 .and. type XH2) -
-               .or. (segid A .and. resid 624 .and. type XH2) .or. (segid A .and. resid 625 .and. type XH2) -
-               .or. (segid A .and. resid 626 .and. type XH2) .or. (segid A .and. resid 629 .and. type XH2) -
-               end
-define sel_3 select (segid A .and. resid 637 .and. type XH2) .or. (segid A .and. resid 655 .and. type XH2) -
-               .or. (segid A .and. resid 665 .and. type XH2) .or. (segid A .and. resid 670 .and. type XH2) -
-               .or. (segid A .and. resid 673 .and. type XH2) .or. (segid A .and. resid 679 .and. type XH2) -
-               .or. (segid A .and. resid 681 .and. type XH2) .or. (segid A .and. resid 694 .and. type XH2) -
-               .or. (segid A .and. resid 697 .and. type XH2) .or. (segid A .and. resid 703 .and. type XH2) -
-               .or. (segid A .and. resid 704 .and. type XH2) .or. (segid A .and. resid 705 .and. type XH2) -
-               .or. (segid A .and. resid 717 .and. type XH2) .or. (segid A .and. resid 719 .and. type XH2) -
-               .or. (segid A .and. resid 735 .and. type XH2) .or. (segid A .and. resid 745 .and. type XH2) -
-               .or. (segid A .and. resid 751 .and. type XH2) .or. (segid A .and. resid 754 .and. type XH2) -
-               .or. (segid A .and. resid 760 .and. type XH2) .or. (segid A .and. resid 763 .and. type XH2) -
-               .or. (segid A .and. resid 766 .and. type XH2) .or. (segid A .and. resid 767 .and. type XH2) -
-               .or. (segid A .and. resid 771 .and. type XH2) .or. (segid A .and. resid 773 .and. type XH2) -
-               .or. (segid A .and. resid 779 .and. type XH2) .or. (segid A .and. resid 782 .and. type XH2) -
-               .or. (segid A .and. resid 787 .and. type XH2) .or. (segid A .and. resid 804 .and. type XH2) -
-               .or. (segid A .and. resid 827 .and. type XH2) .or. (segid A .and. resid 835 .and. type XH2) -
-               .or. (segid A .and. resid 849 .and. type XH2) .or. (segid A .and. resid 851 .and. type XH2) -
-               .or. (segid A .and. resid 852 .and. type XH2) .or. (segid A .and. resid 854 .and. type XH2) -
-               .or. (segid A .and. resid 855 .and. type XH2) .or. (segid A .and. resid 856 .and. type XH2) -
-               .or. (segid A .and. resid 857 .and. type XH2) .or. (segid A .and. resid 860 .and. type XH2) -
-               .or. (segid A .and. resid 878 .and. type XH2) .or. (segid A .and. resid 885 .and. type XH2) -
-               end
-define sel_4 select (segid A .and. resid 890 .and. type XH2) .or. (segid A .and. resid 895 .and. type XH2) -
-               .or. (segid A .and. resid 896 .and. type XH2) .or. (segid A .and. resid 899 .and. type XH2) -
-               .or. (segid A .and. resid 941 .and. type XH2) .or. (segid A .and. resid 945 .and. type XH2) -
-               .or. (segid A .and. resid 949 .and. type XH2) .or. (segid A .and. resid 950 .and. type XH2) -
-               .or. (segid A .and. resid 959 .and. type XH2) .or. (segid A .and. resid 960 .and. type XH2) -
-               .or. (segid A .and. resid 962 .and. type XH2) .or. (segid A .and. resid 963 .and. type XH2) -
-               .or. (segid A .and. resid 964 .and. type XH2) .or. (segid A .and. resid 965 .and. type XH2) -
-               .or. (segid A .and. resid 967 .and. type XH2) .or. (segid A .and. resid 968 .and. type XH2) -
-               .or. (segid A .and. resid 969 .and. type XH2) .or. (segid A .and. resid 972 .and. type XH2) -
-               .or. (segid A .and. resid 1014 .and. type XH2) .or. (segid A .and. resid 1018 .and. type XH2) -
-               .or. (segid A .and. resid 1024 .and. type XH2) .or. (segid A .and. resid 1033 .and. type XH2) -
-               .or. (segid A .and. resid 1038 .and. type XH2) .or. (segid A .and. resid 1041 .and. type XH2) -
-               .or. (segid A .and. resid 1056 .and. type XH2) .or. (segid A .and. resid 1073 .and. type XH2) -
-               .or. (segid A .and. resid 1085 .and. type XH2) .or. (segid A .and. resid 1094 .and. type XH2) -
-               .or. (segid A .and. resid 1096 .and. type XH2) .or. (segid A .and. resid 1097 .and. type XH2) -
-               .or. (segid A .and. resid 1102 .and. type XH2) .or. (segid A .and. resid 1110 .and. type XH2) -
-               .or. (segid A .and. resid 1130 .and. type XH2) .or. (segid A .and. resid 1136 .and. type XH2) -
-               .or. (segid A .and. resid 1147 .and. type XH2) .or. (segid A .and. resid 1157 .and. type XH2) -
-               .or. (segid A .and. resid 1169 .and. type XH2) .or. (segid A .and. resid 1175 .and. type XH2) -
-               .or. (segid A .and. resid 1202 .and. type XH2) .or. (segid A .and. resid 1217 .and. type XH2) -
-               end
-define sel_5 select (segid A .and. resid 1218 .and. type XH2) .or. (segid A .and. resid 1228 .and. type XH2) -
-               .or. (segid A .and. resid 1229 .and. type XH2) .or. (segid A .and. resid 1230 .and. type XH2) -
-               .or. (segid A .and. resid 1231 .and. type XH2) .or. (segid A .and. resid 1232 .and. type XH2) -
-               .or. (segid A .and. resid 1233 .and. type XH2) .or. (segid A .and. resid 1252 .and. type XH2) -
-               .or. (segid A .and. resid 1253 .and. type XH2) .or. (segid A .and. resid 1254 .and. type XH2) -
-               .or. (segid A .and. resid 1255 .and. type XH2) .or. (segid A .and. resid 1257 .and. type XH2) -
-               .or. (segid A .and. resid 1260 .and. type XH2) .or. (segid A .and. resid 1274 .and. type XH2) -
-               .or. (segid A .and. resid 1282 .and. type XH2) .or. (segid A .and. resid 1301 .and. type XH2) -
-               .or. (segid A .and. resid 1302 .and. type XH2) .or. (segid A .and. resid 1304 .and. type XH2) -
-               .or. (segid A .and. resid 1306 .and. type XH2) .or. (segid A .and. resid 1310 .and. type XH2) -
-               .or. (segid A .and. resid 1311 .and. type XH2) .or. (segid A .and. resid 1314 .and. type XH2) -
-               .or. (segid A .and. resid 1316 .and. type XH2) .or. (segid A .and. resid 1321 .and. type XH2) -
-               .or. (segid A .and. resid 1324 .and. type XH2) .or. (segid A .and. resid 1325 .and. type XH2) -
-               .or. (segid A .and. resid 1326 .and. type XH2) .or. (segid B .and. resid 284 .and. type XH2) -
-               .or. (segid B .and. resid 285 .and. type XH2) .or. (segid B .and. resid 286 .and. type XH2) -
-               .or. (segid B .and. resid 287 .and. type XH2) .or. (segid B .and. resid 288 .and. type XH2) -
-               .or. (segid B .and. resid 289 .and. type XH2) .or. (segid B .and. resid 290 .and. type XH2) -
-               .or. (segid B .and. resid 291 .and. type XH2) .or. (segid B .and. resid 292 .and. type XH2) -
-               .or. (segid B .and. resid 293 .and. type XH2) .or. (segid B .and. resid 294 .and. type XH2) -
-               .or. (segid B .and. resid 295 .and. type XH2) .or. (segid B .and. resid 296 .and. type XH2) -
-               end
-define sel_6 select (segid B .and. resid 297 .and. type XH2) .or. (segid B .and. resid 298 .and. type XH2) -
-               .or. (segid B .and. resid 299 .and. type XH2) .or. (segid B .and. resid 300 .and. type XH2) -
-               .or. (segid B .and. resid 301 .and. type XH2) .or. (segid B .and. resid 302 .and. type XH2) -
-               .or. (segid B .and. resid 303 .and. type XH2) .or. (segid B .and. resid 304 .and. type XH2) -
-               .or. (segid B .and. resid 305 .and. type XH2) .or. (segid B .and. resid 306 .and. type XH2) -
-               .or. (segid B .and. resid 307 .and. type XH2) .or. (segid B .and. resid 308 .and. type XH2) -
-               .or. (segid B .and. resid 309 .and. type XH2) .or. (segid B .and. resid 310 .and. type XH2) -
-               .or. (segid B .and. resid 311 .and. type XH2) .or. (segid B .and. resid 312 .and. type XH2) -
-               .or. (segid B .and. resid 313 .and. type XH2) .or. (segid B .and. resid 314 .and. type XH2) -
-               .or. (segid B .and. resid 315 .and. type XH2) .or. (segid B .and. resid 316 .and. type XH2) -
-               .or. (segid B .and. resid 317 .and. type XH2) .or. (segid B .and. resid 318 .and. type XH2) -
-               .or. (segid B .and. resid 328 .and. type XH2) .or. (segid B .and. resid 372 .and. type XH2) -
-               .or. (segid B .and. resid 374 .and. type XH2) .or. (segid B .and. resid 381 .and. type XH2) -
-               .or. (segid B .and. resid 382 .and. type XH2) .or. (segid B .and. resid 385 .and. type XH2) -
-               .or. (segid B .and. resid 386 .and. type XH2) .or. (segid B .and. resid 396 .and. type XH2) -
-               .or. (segid B .and. resid 407 .and. type XH2) .or. (segid B .and. resid 418 .and. type XH2) -
-               .or. (segid B .and. resid 462 .and. type XH2) .or. (segid B .and. resid 473 .and. type XH2) -
-               .or. (segid B .and. resid 545 .and. type XH2) .or. (segid B .and. resid 555 .and. type XH2) -
-               .or. (segid B .and. resid 556 .and. type XH2) .or. (segid B .and. resid 558 .and. type XH2) -
-               .or. (segid B .and. resid 559 .and. type XH2) .or. (segid B .and. resid 560 .and. type XH2) -
-               end
-define sel_7 select (segid B .and. resid 562 .and. type XH2) .or. (segid B .and. resid 563 .and. type XH2) -
-               .or. (segid B .and. resid 567 .and. type XH2) .or. (segid B .and. resid 569 .and. type XH2) -
-               .or. (segid B .and. resid 571 .and. type XH2) .or. (segid B .and. resid 572 .and. type XH2) -
-               .or. (segid B .and. resid 575 .and. type XH2) .or. (segid B .and. resid 578 .and. type XH2) -
-               .or. (segid B .and. resid 579 .and. type XH2) .or. (segid B .and. resid 583 .and. type XH2) -
-               .or. (segid B .and. resid 589 .and. type XH2) .or. (segid B .and. resid 596 .and. type XH2) -
-               .or. (segid B .and. resid 597 .and. type XH2) .or. (segid B .and. resid 598 .and. type XH2) -
-               .or. (segid B .and. resid 603 .and. type XH2) .or. (segid B .and. resid 604 .and. type XH2) -
-               .or. (segid B .and. resid 610 .and. type XH2) .or. (segid B .and. resid 623 .and. type XH2) -
-               .or. (segid B .and. resid 625 .and. type XH2) .or. (segid B .and. resid 631 .and. type XH2) -
-               .or. (segid B .and. resid 633 .and. type XH2) .or. (segid B .and. resid 634 .and. type XH2) -
-               .or. (segid B .and. resid 636 .and. type XH2) .or. (segid B .and. resid 639 .and. type XH2) -
-               .or. (segid B .and. resid 640 .and. type XH2) .or. (segid B .and. resid 649 .and. type XH2) -
-               .or. (segid B .and. resid 653 .and. type XH2) .or. (segid B .and. resid 654 .and. type XH2) -
-               .or. (segid B .and. resid 659 .and. type XH2) .or. (segid B .and. resid 660 .and. type XH2) -
-               .or. (segid B .and. resid 671 .and. type XH2) .or. (segid B .and. resid 676 .and. type XH2) -
-               .or. (segid B .and. resid 684 .and. type XH2) .or. (segid B .and. resid 688 .and. type XH2) -
-               .or. (segid B .and. resid 691 .and. type XH2) .or. (segid B .and. resid 695 .and. type XH2) -
-               .or. (segid B .and. resid 700 .and. type XH2) .or. (segid B .and. resid 708 .and. type XH2) -
-               .or. (segid B .and. resid 713 .and. type XH2) .or. (segid B .and. resid 732 .and. type XH2) -
-               end
-define sel_8 select (segid B .and. resid 739 .and. type XH2) .or. (segid B .and. resid 753 .and. type XH2) -
-               .or. (segid B .and. resid 756 .and. type XH2) .or. (segid B .and. resid 758 .and. type XH2) -
-               .or. (segid B .and. resid 761 .and. type XH2) .or. (segid B .and. resid 762 .and. type XH2) -
-               .or. (segid B .and. resid 765 .and. type XH2) .or. (segid B .and. resid 768 .and. type XH2) -
-               .or. (segid B .and. resid 769 .and. type XH2) .or. (segid B .and. resid 792 .and. type XH2) -
-               .or. (segid B .and. resid 803 .and. type XH2) .or. (segid B .and. resid 812 .and. type XH2) -
-               .or. (segid B .and. resid 818 .and. type XH2) .or. (segid B .and. resid 823 .and. type XH2) -
-               .or. (segid B .and. resid 853 .and. type XH2) .or. (segid B .and. resid 858 .and. type XH2) -
-               .or. (segid B .and. resid 859 .and. type XH2) .or. (segid B .and. resid 862 .and. type XH2) -
-               .or. (segid B .and. resid 863 .and. type XH2) .or. (segid B .and. resid 864 .and. type XH2) -
-               .or. (segid B .and. resid 865 .and. type XH2) .or. (segid B .and. resid 866 .and. type XH2) -
-               .or. (segid B .and. resid 867 .and. type XH2) .or. (segid B .and. resid 868 .and. type XH2) -
-               .or. (segid B .and. resid 869 .and. type XH2) .or. (segid B .and. resid 870 .and. type XH2) -
-               .or. (segid B .and. resid 871 .and. type XH2) .or. (segid B .and. resid 872 .and. type XH2) -
-               .or. (segid B .and. resid 873 .and. type XH2) .or. (segid B .and. resid 874 .and. type XH2) -
-               .or. (segid B .and. resid 875 .and. type XH2) .or. (segid B .and. resid 876 .and. type XH2) -
-               .or. (segid B .and. resid 877 .and. type XH2) .or. (segid B .and. resid 879 .and. type XH2) -
-               .or. (segid B .and. resid 880 .and. type XH2) .or. (segid B .and. resid 884 .and. type XH2) -
-               .or. (segid B .and. resid 886 .and. type XH2) .or. (segid B .and. resid 887 .and. type XH2) -
-               .or. (segid B .and. resid 888 .and. type XH2) .or. (segid B .and. resid 889 .and. type XH2) -
-               end
-define sel_9 select (segid B .and. resid 891 .and. type XH2) .or. (segid B .and. resid 892 .and. type XH2) -
-               .or. (segid B .and. resid 894 .and. type XH2) .or. (segid B .and. resid 939 .and. type XH2) -
-               .or. (segid B .and. resid 942 .and. type XH2) .or. (segid B .and. resid 946 .and. type XH2) -
-               .or. (segid B .and. resid 947 .and. type XH2) .or. (segid B .and. resid 1023 .and. type XH2) -
-               .or. (segid B .and. resid 1030 .and. type XH2) .or. (segid B .and. resid 1032 .and. type XH2) -
-               .or. (segid B .and. resid 1036 .and. type XH2) .or. (segid B .and. resid 1039 .and. type XH2) -
-               .or. (segid B .and. resid 1040 .and. type XH2) .or. (segid B .and. resid 1043 .and. type XH2) -
-               .or. (segid B .and. resid 1046 .and. type XH2) .or. (segid B .and. resid 1049 .and. type XH2) -
-               .or. (segid B .and. resid 1050 .and. type XH2) .or. (segid B .and. resid 1053 .and. type XH2) -
-               .or. (segid B .and. resid 1054 .and. type XH2) .or. (segid B .and. resid 1055 .and. type XH2) -
-               .or. (segid B .and. resid 1057 .and. type XH2) .or. (segid B .and. resid 1058 .and. type XH2) -
-               .or. (segid B .and. resid 1067 .and. type XH2) .or. (segid B .and. resid 1072 .and. type XH2) -
-               .or. (segid B .and. resid 1074 .and. type XH2) .or. (segid B .and. resid 1087 .and. type XH2) -
-               .or. (segid B .and. resid 1089 .and. type XH2) .or. (segid B .and. resid 1098 .and. type XH2) -
-               .or. (segid B .and. resid 1099 .and. type XH2) .or. (segid B .and. resid 1105 .and. type XH2) -
-               .or. (segid B .and. resid 1106 .and. type XH2) .or. (segid B .and. resid 1108 .and. type XH2) -
-               .or. (segid B .and. resid 1112 .and. type XH2) .or. (segid B .and. resid 1115 .and. type XH2) -
-               .or. (segid B .and. resid 1118 .and. type XH2) .or. (segid B .and. resid 1127 .and. type XH2) -
-               .or. (segid B .and. resid 1129 .and. type XH2) .or. (segid B .and. resid 1131 .and. type XH2) -
-               .or. (segid B .and. resid 1134 .and. type XH2) .or. (segid B .and. resid 1135 .and. type XH2) -
-               end
-define sel_10 select (segid B .and. resid 1137 .and. type XH2) .or. (segid B .and. resid 1141 .and. type XH2) -
-               .or. (segid B .and. resid 1142 .and. type XH2) .or. (segid B .and. resid 1143 .and. type XH2) -
-               .or. (segid B .and. resid 1151 .and. type XH2) .or. (segid B .and. resid 1156 .and. type XH2) -
-               .or. (segid B .and. resid 1158 .and. type XH2) .or. (segid B .and. resid 1160 .and. type XH2) -
-               .or. (segid B .and. resid 1161 .and. type XH2) .or. (segid B .and. resid 1174 .and. type XH2) -
-               .or. (segid B .and. resid 1176 .and. type XH2) .or. (segid B .and. resid 1183 .and. type XH2) -
-               .or. (segid B .and. resid 1184 .and. type XH2) .or. (segid B .and. resid 1186 .and. type XH2) -
-               .or. (segid B .and. resid 1187 .and. type XH2) .or. (segid B .and. resid 1191 .and. type XH2) -
-               .or. (segid B .and. resid 1199 .and. type XH2) .or. (segid B .and. resid 1211 .and. type XH2) -
-               .or. (segid B .and. resid 1220 .and. type XH2) .or. (segid B .and. resid 1221 .and. type XH2) -
-               .or. (segid B .and. resid 1223 .and. type XH2) .or. (segid B .and. resid 1226 .and. type XH2) -
-               .or. (segid B .and. resid 1227 .and. type XH2) .or. (segid B .and. resid 1234 .and. type XH2) -
-               .or. (segid B .and. resid 1235 .and. type XH2) .or. (segid B .and. resid 1242 .and. type XH2) -
-               .or. (segid B .and. resid 1243 .and. type XH2) .or. (segid B .and. resid 1261 .and. type XH2) -
-               .or. (segid B .and. resid 1262 .and. type XH2) .or. (segid B .and. resid 1269 .and. type XH2) -
-               .or. (segid B .and. resid 1270 .and. type XH2) .or. (segid B .and. resid 1275 .and. type XH2) -
-               .or. (segid B .and. resid 1283 .and. type XH2) .or. (segid B .and. resid 1284 .and. type XH2) -
-               .or. (segid B .and. resid 1285 .and. type XH2) .or. (segid B .and. resid 1286 .and. type XH2) -
-               .or. (segid B .and. resid 1287 .and. type XH2) .or. (segid B .and. resid 1288 .and. type XH2) -
-               .or. (segid B .and. resid 1289 .and. type XH2) .or. (segid B .and. resid 1291 .and. type XH2) -
-               end
-define sel_11 select (segid B .and. resid 1293 .and. type XH2) .or. (segid B .and. resid 1298 .and. type XH2) -
-               .or. (segid B .and. resid 1299 .and. type XH2) .or. (segid B .and. resid 1300 .and. type XH2) -
-               .or. (segid B .and. resid 1307 .and. type XH2) .or. (segid B .and. resid 1308 .and. type XH2) -
-               .or. (segid B .and. resid 1309 .and. type XH2) .or. (segid B .and. resid 1312 .and. type XH2) -
-               .or. (segid B .and. resid 1315 .and. type XH2) .or. (segid B .and. resid 1318 .and. type XH2) -
-               .or. (segid B .and. resid 1319 .and. type XH2) .or. (segid B .and. resid 1323 .and. type XH2) -
-               .or. (segid B .and. resid 1330 .and. type XH2) .or. (segid B .and. resid 1331 .and. type XH2) -
-               .or. (segid B .and. resid 1332 .and. type XH2) .or. (segid C .and. resid 128 .and. type XH2) -
-               .or. (segid C .and. resid 129 .and. type XH2) .or. (segid C .and. resid 141 .and. type XH2) -
-               .or. (segid C .and. resid 164 .and. type XH2) .or. (segid C .and. resid 222 .and. type XH2) -
-               .or. (segid C .and. resid 225 .and. type XH2) .or. (segid C .and. resid 253 .and. type XH2) -
-               .or. (segid C .and. resid 254 .and. type XH2) .or. (segid C .and. resid 295 .and. type XH2) -
-               .or. (segid C .and. resid 297 .and. type XH2) .or. (segid C .and. resid 459 .and. type XH2) -
-               .or. (segid C .and. resid 466 .and. type XH2) .or. (segid C .and. resid 498 .and. type XH2) -
-               .or. (segid C .and. resid 557 .and. type XH2) .or. (segid C .and. resid 570 .and. type XH2) -
-               .or. (segid C .and. resid 587 .and. type XH2) .or. (segid C .and. resid 591 .and. type XH2) -
-               .or. (segid C .and. resid 600 .and. type XH2) .or. (segid C .and. resid 602 .and. type XH2) -
-               .or. (segid C .and. resid 606 .and. type XH2) .or. (segid C .and. resid 616 .and. type XH2) -
-               .or. (segid C .and. resid 644 .and. type XH2) .or. (segid C .and. resid 652 .and. type XH2) -
-               .or. (segid C .and. resid 663 .and. type XH2) .or. (segid C .and. resid 667 .and. type XH2) -
-               end
-define sel_12 select (segid C .and. resid 675 .and. type XH2) .or. (segid C .and. resid 685 .and. type XH2) -
-               .or. (segid C .and. resid 707 .and. type XH2) .or. (segid C .and. resid 716 .and. type XH2) -
-               .or. (segid C .and. resid 755 .and. type XH2) .or. (segid C .and. resid 774 .and. type XH2) -
-               .or. (segid C .and. resid 795 .and. type XH2) .or. (segid C .and. resid 811 .and. type XH2) -
-               .or. (segid C .and. resid 813 .and. type XH2) .or. (segid C .and. resid 821 .and. type XH2) -
-               .or. (segid C .and. resid 882 .and. type XH2) .or. (segid C .and. resid 883 .and. type XH2) -
-               .or. (segid C .and. resid 893 .and. type XH2) .or. (segid C .and. resid 900 .and. type XH2) -
-               .or. (segid C .and. resid 901 .and. type XH2) .or. (segid C .and. resid 902 .and. type XH2) -
-               .or. (segid C .and. resid 903 .and. type XH2) .or. (segid C .and. resid 904 .and. type XH2) -
-               .or. (segid C .and. resid 905 .and. type XH2) .or. (segid C .and. resid 906 .and. type XH2) -
-               .or. (segid C .and. resid 907 .and. type XH2) .or. (segid C .and. resid 908 .and. type XH2) -
-               .or. (segid C .and. resid 909 .and. type XH2) .or. (segid C .and. resid 911 .and. type XH2) -
-               .or. (segid C .and. resid 912 .and. type XH2) .or. (segid C .and. resid 914 .and. type XH2) -
-               .or. (segid C .and. resid 915 .and. type XH2) .or. (segid C .and. resid 916 .and. type XH2) -
-               .or. (segid C .and. resid 917 .and. type XH2) .or. (segid C .and. resid 918 .and. type XH2) -
-               .or. (segid C .and. resid 919 .and. type XH2) .or. (segid C .and. resid 920 .and. type XH2) -
-               .or. (segid C .and. resid 921 .and. type XH2) .or. (segid C .and. resid 922 .and. type XH2) -
-               .or. (segid C .and. resid 923 .and. type XH2) .or. (segid C .and. resid 924 .and. type XH2) -
-               .or. (segid C .and. resid 925 .and. type XH2) .or. (segid C .and. resid 926 .and. type XH2) -
-               .or. (segid C .and. resid 927 .and. type XH2) .or. (segid C .and. resid 928 .and. type XH2) -
-               end
-define sel_13 select (segid C .and. resid 929 .and. type XH2) .or. (segid C .and. resid 930 .and. type XH2) -
-               .or. (segid C .and. resid 931 .and. type XH2) .or. (segid C .and. resid 935 .and. type XH2) -
-               .or. (segid C .and. resid 936 .and. type XH2) .or. (segid C .and. resid 937 .and. type XH2) -
-               .or. (segid C .and. resid 938 .and. type XH2) .or. (segid C .and. resid 1037 .and. type XH2) -
-               .or. (segid C .and. resid 1051 .and. type XH2) .or. (segid C .and. resid 1081 .and. type XH2) -
-               .or. (segid C .and. resid 1083 .and. type XH2) .or. (segid C .and. resid 1138 .and. type XH2) -
-               .or. (segid C .and. resid 1178 .and. type XH2) .or. (segid C .and. resid 1207 .and. type XH2) -
-               .or. (segid C .and. resid 1208 .and. type XH2) .or. (segid C .and. resid 1225 .and. type XH2) -
-               .or. (segid C .and. resid 1236 .and. type XH2) .or. (segid C .and. resid 1238 .and. type XH2) -
-               .or. (segid C .and. resid 1280 .and. type XH2) .or. (segid C .and. resid 1281 .and. type XH2) -
-               .or. (segid C .and. resid 1296 .and. type XH2) .or. (segid C .and. resid 1297 .and. type XH2) -
-               .or. (segid D .and. resid 121 .and. type XH2) .or. (segid D .and. resid 122 .and. type XH2) -
-               .or. (segid D .and. resid 123 .and. type XH2) .or. (segid D .and. resid 158 .and. type XH2) -
-               .or. (segid D .and. resid 175 .and. type XH2) .or. (segid D .and. resid 188 .and. type XH2) -
-               .or. (segid D .and. resid 217 .and. type XH2) .or. (segid D .and. resid 218 .and. type XH2) -
-               .or. (segid D .and. resid 321 .and. type XH2) .or. (segid D .and. resid 323 .and. type XH2) -
-               .or. (segid D .and. resid 392 .and. type XH2) .or. (segid D .and. resid 458 .and. type XH2) -
-               .or. (segid D .and. resid 568 .and. type XH2) .or. (segid D .and. resid 573 .and. type XH2) -
-               .or. (segid D .and. resid 586 .and. type XH2) .or. (segid D .and. resid 590 .and. type XH2) -
-               .or. (segid D .and. resid 595 .and. type XH2) .or. (segid D .and. resid 599 .and. type XH2) -
-               end
-define sel_14 select (segid D .and. resid 605 .and. type XH2) .or. (segid D .and. resid 643 .and. type XH2) -
-               .or. (segid D .and. resid 657 .and. type XH2) .or. (segid D .and. resid 661 .and. type XH2) -
-               .or. (segid D .and. resid 662 .and. type XH2) .or. (segid D .and. resid 687 .and. type XH2) -
-               .or. (segid D .and. resid 696 .and. type XH2) .or. (segid D .and. resid 711 .and. type XH2) -
-               .or. (segid D .and. resid 757 .and. type XH2) .or. (segid D .and. resid 764 .and. type XH2) -
-               .or. (segid D .and. resid 772 .and. type XH2) .or. (segid D .and. resid 776 .and. type XH2) -
-               .or. (segid D .and. resid 797 .and. type XH2) .or. (segid D .and. resid 816 .and. type XH2) -
-               .or. (segid D .and. resid 881 .and. type XH2) .or. (segid D .and. resid 913 .and. type XH2) -
-               .or. (segid D .and. resid 932 .and. type XH2) .or. (segid D .and. resid 933 .and. type XH2) -
-               .or. (segid D .and. resid 934 .and. type XH2) .or. (segid D .and. resid 943 .and. type XH2) -
-               .or. (segid D .and. resid 944 .and. type XH2) .or. (segid D .and. resid 951 .and. type XH2) -
-               .or. (segid D .and. resid 952 .and. type XH2) .or. (segid D .and. resid 953 .and. type XH2) -
-               .or. (segid D .and. resid 954 .and. type XH2) .or. (segid D .and. resid 955 .and. type XH2) -
-               .or. (segid D .and. resid 956 .and. type XH2) .or. (segid D .and. resid 957 .and. type XH2) -
-               .or. (segid D .and. resid 958 .and. type XH2) .or. (segid D .and. resid 1022 .and. type XH2) -
-               .or. (segid D .and. resid 1035 .and. type XH2) .or. (segid D .and. resid 1052 .and. type XH2) -
-               .or. (segid D .and. resid 1071 .and. type XH2) .or. (segid D .and. resid 1100 .and. type XH2) -
-               .or. (segid D .and. resid 1107 .and. type XH2) .or. (segid D .and. resid 1117 .and. type XH2) -
-               .or. (segid D .and. resid 1120 .and. type XH2) .or. (segid D .and. resid 1159 .and. type XH2) -
-               .or. (segid D .and. resid 1168 .and. type XH2) .or. (segid D .and. resid 1196 .and. type XH2) -
-               end
-define sel_15 select (segid D .and. resid 1219 .and. type XH2) .or. (segid D .and. resid 1222 .and. type XH2) -
-               .or. (segid D .and. resid 1237 .and. type XH2) .or. (segid D .and. resid 1239 .and. type XH2) -
-               .or. (segid D .and. resid 1240 .and. type XH2) .or. (segid D .and. resid 1244 .and. type XH2) -
-               .or. (segid D .and. resid 1245 .and. type XH2) .or. (segid D .and. resid 1249 .and. type XH2) -
-               .or. (segid D .and. resid 1259 .and. type XH2) .or. (segid D .and. resid 1263 .and. type XH2) -
-               .or. (segid D .and. resid 1264 .and. type XH2) .or. (segid D .and. resid 1271 .and. type XH2) -
-               .or. (segid D .and. resid 1272 .and. type XH2) .or. (segid D .and. resid 1273 .and. type XH2) -
-               .or. (segid D .and. resid 1279 .and. type XH2) .or. (segid D .and. resid 1303 .and. type XH2) -
-               .or. (segid D .and. resid 1305 .and. type XH2) .or. (segid D .and. resid 1313 .and. type XH2) -
-               .or. (segid D .and. resid 1317 .and. type XH2) .or. (segid D .and. resid 1320 .and. type XH2) -
-               .or. (segid D .and. resid 1322 .and. type XH2) .or. (segid D .and. resid 1327 .and. type XH2) -
-               .or. (segid D .and. resid 1328 .and. type XH2) end
-cons fix select .not. ( sel_1 .or. sel_2 .or. sel_3 .or. sel_4 .or. sel_5 -
-                   .or. sel_6 .or. sel_7 .or. sel_8 .or. sel_9 .or. sel_10 .or. sel_11 -
-                   .or. sel_12 .or. sel_13 .or. sel_14 .or. sel_15 .or. hydrogens )   end
+cons fix select .not. ( none .or. hydrogens )   end
 minimize sd nsteps 1000 tolg 0.1
 minimize abnr nsteps 5000 tolg 0.01
 
