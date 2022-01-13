@@ -1,0 +1,61 @@
+---
+HSX:
+  # deprotonate HSD at CuB doubly, from PR state
+ - sym: R
+   pka: 0.00
+   apc:             
+    CB: -0.07  
+    HB1: 0.09  
+    HB2: 0.09  
+    ND1: -0.391 
+    HD1: 0.00  
+    CG: 0.28            
+    CE1: -0.018
+    HE1: 0.085 
+    NE2: -0.321
+    CD2: -0.196
+    HD2: 0.06
+   patch: HPPR 
+ - sym: P
+   pka: -14.5
+   apc:          
+    CB: -0.07  
+    HB1: 0.09  
+    HB2: 0.09  
+    ND1: -0.191 
+    HD1: 0.316 
+    CG: 0.28           
+    CE1: 0.082 
+    HE1: 0.177 
+    NE2: -0.221
+    CD2: -0.096
+    HD2: 0.152
+   patch: HDPR  
+HSY:
+  # deprotonate HSD at CuB doubly, general
+ - sym: R
+   pka: 0.00
+   apc:             
+    CB: -0.09    
+    ND1: -0.70 
+    HD1: 0.00  
+    CG: -0.11            
+    CE1: 0.12
+    HE1: 0.09 
+    NE2: -0.70
+    CD2: 0.12
+    HD2: 0.09
+   patch: HID   
+ - sym: P
+   pka: -14.5
+   apc:          
+    CB: -0.09   
+    ND1: -0.36 
+    HD1: 0.32 
+    CG: -0.05           
+    CE1: 0.25 
+    HE1: 0.13 
+    NE2: -0.70
+    CD2: 0.22
+    HD2: 0.10
+   patch: HIR

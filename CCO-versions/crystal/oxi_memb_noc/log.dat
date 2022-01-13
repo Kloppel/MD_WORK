@@ -1,0 +1,29 @@
+Log file for pka calculation for the structure cco_memb_noc 
+
+# Setup: 
+-pdb_file:/scratch/scratch/jdragelj/projects/cco_alexiev/MD_299/titrations/cco_memb_noc.pdb
+-workdir:/scratch/scratch/jdragelj/projects/cco_alexiev/MD_299/titrations/crystal/oxi_memb_noc/
+-topology:
+ /scratch/scratch/jdragelj/CHARMM_TOPPAR/top_alw_clean_kb.inp
+ /scratch/scratch/jdragelj/CHARMM_TOPPAR/top_all36_lipid_no_charge_POPC.rtf
+ /scratch/scratch/jdragelj/CHARMM_TOPPAR/patches.rtf
+ /scratch/scratch/jdragelj/CHARMM_TOPPAR/top_all36_cgenff.rtf
+-parameters:
+ /scratch/scratch/jdragelj/CHARMM_TOPPAR/par_all22_prot_plus_heme_and_Cu_kb.inp
+ /scratch/scratch/jdragelj/CHARMM_TOPPAR/patches.prm
+ /scratch/scratch/jdragelj/CHARMM_TOPPAR/par_all36_lipid.prm
+ /scratch/scratch/jdragelj/CHARMM_TOPPAR/par_all36_cgenff.prm
+-yaml:/scratch/scratch/jdragelj/KB_files/titratable_cco_extended.yaml
+-protocol:
+ (7, 'h_min')
+-preopt:
+ carb_oxi_relax: False
+ init_die_4: False
+-salt_bridge_cutoff:4
+
+# Starting inital modelling 
+Structure preparation (initial modelling) is done! 
+
+# Pac run for 7 h_min 
+Conformational energy will not be calculated. 
+Final results are combined, the pKa computation is done! 

@@ -1,0 +1,31 @@
+---
+GLT:
+ - sym: R
+   pka: 0.00
+   apc:
+    CG: -0.21
+    CD: 0.75
+    OE1: -0.61
+    OE2: -0.55
+    HE1: 0.44
+    HE2: 0.00
+   patch: EPP1
+ - sym: D
+   pka: 4.40
+   apc:
+    CG: -0.28
+    CD: 0.62
+    OE1: -0.76
+    OE2: -0.76
+    HE1: 0.00
+    HE2: 0.00
+ - sym: 0
+   pka: 0.00
+   apc:
+    CG: -0.21
+    CD: 0.75
+    OE1: -0.55
+    OE2: -0.61
+    HE1: 0.00
+    HE2: 0.44
+   patch: EPP2

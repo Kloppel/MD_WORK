@@ -1,0 +1,147 @@
+extra residues: 
+	1. hemes are split into porphyrin ring (including iron) and propionic acids: HEM, PRD, PRA (technical reason for titration in Karlsberg)
+	-> they should form a sequence (1. PRA, 2. HEM, 3. PRD)
+	-> protonated PRA/PRD via patch PRAH/PRA2 or PRDH/PRD2
+
+	2. ligands of BNC:
+	HOH: tip3p water model for CcO without H-H bond
+	HAO2: ("half oxygen") single oxygen at heme
+	OHMI: ("OH minus") hydroxyl ion
+	OMI2: ("OH minus no. 2") hydroxyl ion (other atom type than OHMI, added for technical reasons)
+
+
+	3. copper (included in some force fields already): CU1
+
+
+	-> charges MUST be changed for all cofactors via Patches, initial charges are arbitrary!
+
+
+Patches: 
+
+   a) charge patches
+
+	1. CuA: reduced or oxidized state -> two patches: CA21 and CA11
+	use patch in charmm: 
+		PATCH CA21 METAL 2 METAL 3 BCHAIN 217 BCHAIN 252 BCHAIN 254 BCHAIN 256 BCHAIN 260 BCHAIN 263 SETUP
+		1. first copper ion, 2. second copper ion, 3. HSE217(B), 4. CYS 252 (B), 5. GLU 254 (B), 6. CYS 256 (B), 7. HSE 260 (B), 8. MET 263 (B)
+
+
+	2. heme a: reduced or oxidized state -> two patches: AHE2 and AHE3
+	use patch in charmm: 
+		PATCH AHE3 GHEMEA 2  ACHAIN 102 ACHAIN  421 SETUP
+		1. HEM of heme a, 2. HSD 102 (A), 3. HSD 421 (A)
+
+	3. heme a3: several diffent states in redox cycle from iron(IV) to iron(II) and ligands O2-, OH- and H2O etc....
+	patches:
+	A3H4: ligand is one oxygen (wo H), Fe(IV) -> use with (HAO2 as oxygen ligand) and (EISO + PHEM for bonds)
+	A343: ligand is one oxygen (wo H), Fe(III) -> use with (HAO2 as oxygen ligand) and (EISO + PHEM for bonds)
+	A3H3: ligand is hydroxyl (one H), Fe(III) -> use with (OHMI as oxygen ligand) and (EISE + PHEM for bonds)
+	A3H2: ligand is hydroxyl (one H), Fe(II) -> use with (OHMI as oxygen ligand) and (EISE + PHEM for bonds)
+	A3W2: ligand is water (two H), Fe(II) -> use with (HOH as oxygen ligand) and (EISW + PHEM for bonds)
+	use patches in charmm:
+		PATCH A3H3 EHEMEA3 2 ACHAIN 419 FEOH 1 SETUP
+		1. HEM of heme a3, 2. HSD 419 (A), 3. oxygen ligand
+
+
+	4. CuB (includesTyr288): several diffent states in redox cycle from Cu(II) to Cu(I), Tyr288-O*/O-/OH and ligands OH- and H2O etc....
+	patches:
+	CBP2: ligand is hydroxyl, Cu(II), Tyr288-O* (radical) -> use with (OMI2 as oxygen-ligand) and (CUB2 for bonds)
+	CBPN: ligand is hydroxyl, Cu(II), Tyr288-O- (anion) -> use with (OMI2 as oxygen-ligand) and (CUB2 for bonds)
+	CBF2: ligand is water, Cu(II), Tyr288-O- (anion) -> use with (HOH as oxygen-ligand) and (CUB2 for bonds)
+	CBT4: ligand is water, Cu(I), Tyr288-O- (anion) -> use with (HOH as oxygen-ligand) and (CUB2 for bonds)
+	CB1T: ligand is water, Cu(I), Tyr288-OH (protonated) -> use with (HOH as oxygen-ligand) and (CUB2 for bonds)
+	use patches in charmm:
+		PATCH CBT4 METAL 1 ACHAIN 333 ACHAIN 334 HOHCU 1 ACHAIN 288 ACHAIN 284 SETUP
+		1. copper ion, 2. HSD 333 (A), 3. HSD 334 (A), 4. oxygen ligand, 5. TYR288 (A), 6. HSE 284 (A)
+	
+
+   b) bond patches
+	PHEM: patch first HSD to heme (used for both hemes)
+		use patch in charmm: PATCH PHEM  ACHAIN 419  EHEMEA3 2 SETUP
+	PHE2: patch additional HSD to heme (used only for heme a)
+		use patch in charmm: PATCH PHE2  ACHAIN 421 GHEMEA 2 SETUP
+	EISO: patch one oxygen atom to heme (used for heme a3)
+		use patch in charmm: PATCH EISW  FEOH 1   EHEMEA3 2 SETUP
+	EISE: patch one hydroxyl to heme (used for heme a3)
+		use patch in charmm: PATCH EISE  FEOH 1   EHEMEA3 2 SETUP	
+	EISW: patch one water molecule to heme (used for heme a3)
+		use patch in charmm: PATCH EISW  FEOH 1   EHEMEA3 2 SETUP
+	CUB2: patch CuB center together
+		use in charmm: PATCH CUB2 METAL 1 ACHAIN 284 ACHAIN 333 ACHAIN 334 HOHCU 1 SETUP
+	CUAP: patch CuA center together
+		use in charmm: PATCH CUAP METAL 2 METAL 3 BCHAIN 217 BCHAIN 252 BCHAIN 254 BCHAIN 256 BCHAIN 260 BCHAIN 263 SETUP
+
+	
+   c) protonation patches (mostly taken from regular charmm)
+	GLUP/GLUE: protonate Glu (one side or the other)
+	ASPP/ASP2: protonate Asp (one side or the other)
+	LSN: deprotonate Lys
+	PRAH/PRA2: protonate propionic acid A (one side or the other) 
+	PRDH/PRD2: protonate propionic acid D (one side or the other) 
+
+
+
+Redox-states:
+
+  Pm: 
+	charge patches: A3H4 + CBP2
+	ligands: HAO2 at heme a3, OMI2 at CuB
+	bond patches: EISO + PHEM + CUB2
+
+  Pr: 
+	charge patches: A3H4 + CBPN
+	ligands: HAO2 at heme a3, OMI2 at CuB
+	bond patches: EISO + PHEM + CUB2
+
+  P->F: 
+	charge patches: A343 + CBP2
+	ligands: HAO2 at heme a3, OMI2 at CuB
+	bond patches: EISO + PHEM + CUB2
+
+  F: 
+	charge patches: A3H4 + CBF2
+	ligands: HAO2 at heme a3, HOH at CuB
+	bond patches: EISO + PHEM + CUB2
+
+  F->O: 
+	charge patches: A343 + CBF2
+	ligands: HAO2 at heme a3, HOH at CuB
+	bond patches: EISO + PHEM + CUB2
+
+  F: 
+	charge patches: A3H3 + CBF2
+	ligands: OHMI at heme a3, HOH at CuB
+	bond patches: EISE + PHEM + CUB2
+
+  O->E: 
+	charge patches: A3H3 + CBT4
+	ligands: OHMI at heme a3, HOH at CuB
+	bond patches: EISE + PHEM + CUB2
+
+  E: 
+	charge patches: A3H3 + CB1T
+	ligands: OHMI at heme a3, HOH at CuB
+	bond patches: EISE + PHEM + CUB2
+
+  E->R: 
+	charge patches: A3W2 + CBT4
+	ligands: HOH at heme a3, HOH at CuB
+	bond patches: EISW + PHEM + CUB2
+
+  R: 
+	charge patches: A3W2 + CB1T
+	ligands: HOH at heme a3, HOH at CuB
+	bond patches: EISW + PHEM + CUB2
+
+
+
+
+
+
+
+
+
+
+
+
+		

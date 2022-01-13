@@ -1,0 +1,376 @@
+PRES CA21 	   0.00 ! 1. CU1003, 2. CU1004, 3. HSE217(B), 4. CYS252, 5. GLU254
+GROUP			 ! 6. CYS256, 7. HSE260, 8. MET263
+ATOM 1CU   CU   0.312
+GROUP
+ATOM 2CU   CU   0.312
+GROUP                   
+ATOM 3CB   CT2    -0.08  !     |                 HE1
+ATOM 3HB1  HA      0.09  !  HN-N             __  /
+ATOM 3HB2  HA      0.09  !     |   HB1    ND1--CE1
+ATOM 3ND1  NR2    -0.214  !     |   |     /      |
+ATOM 3CG   CPH1    0.067  !  HA-CA--CB--CG       |
+ATOM 3CE1  CPH2    0.097  !     |   |     \\     |
+ATOM 3HE1  HR1     0.104  !     |   HB2    CD2--NE2
+GROUP                    !   O=C           |     \
+ATOM 3NE2  NR1    -0.193  !     |          HD2    HE2
+ATOM 3HE2  H       0.319       
+ATOM 3CD2  CPH1   -0.209    
+ATOM 3HD2  HR3     0.197  
+GROUP                  
+ATOM 4CB   CT2    0.046  !     |   HB1
+ATOM 4HB1  HA      0.051  !     |   |     (-)
+ATOM 4HB2  HA      0.051  !  HA-CA--CB--SG
+ATOM 4SG   S      -0.311  !     |   |  
+GROUP                   !				|   |     
+!ATOM 5CG   CT2    -0.28  !     |          
+!ATOM 5HG1  HA      0.09  !  HN-N          
+!ATOM 5HG2  HA      0.09  !     |   HB1 HG1   OE1
+!ATOM 5CD   CC      0.62  !     |   |   |    //
+!ATOM 5OE1  OC     -0.76  !  HA-CA--CB--CG--CD
+!ATOM 5OE2  OC     -0.76  !     |   |   |    \
+GROUP                    !     |   HB2 HG2   OE2(-)
+ATOM 5C    C       0.51  !   O=C          
+ATOM 5O    O      -0.425  !     |          
+GROUP                  
+ATOM 6CB   CT2    0.124 !     |   HB1  
+ATOM 6HB1  HA      0.022 !     |   |      (-)
+ATOM 6HB2  HA      0.022 !  HA-CA--CB--SG  
+ATOM 6SG   S      -0.353 !     |   |     
+GROUP                   !     |   HB2    
+ATOM 7CB   CT2    -0.08  !     |                 HE1
+ATOM 7HB1  HA      0.09  !  HN-N             __  /
+ATOM 7HB2  HA      0.09  !     |   HB1    ND1--CE1
+ATOM 7ND1  NR2    -0.148  !     |   |     /      |
+ATOM 7CG   CPH1    0.01  !  HA-CA--CB--CG       |
+ATOM 7CE1  CPH2    -0.019  !     |   |     \\     |
+ATOM 7HE1  HR1     0.133  !     |   HB2    CD2--NE2
+GROUP                    !   O=C           |     \
+ATOM 7NE2  NR1    -0.159  !     |          HD2    HE2
+ATOM 7HE2  H       0.321       
+ATOM 7CD2  CPH1   -0.154    
+ATOM 7HD2  HR3     0.177 
+GROUP                         
+ATOM 8CG   CT2    -0.002 !  HN-N                   
+ATOM 8HG1  HA      0.092 !     |   HB1 HG1     HE1 
+ATOM 8HG2  HA      0.092 !     |   |   |       |   
+ATOM 8SD   S      -0.221 !  HA-CA--CB--CG--SD--CE--HE3
+ATOM 8CE   CT3    -0.223 !     |   |   |       |   
+ATOM 8HE1  HA      0.124 !     |   HB2 HG2     HE2 
+ATOM 8HE2  HA      0.124 !   O=C                  
+ATOM 8HE3  HA      0.124     
+DELETE ATOM 4HG1
+DELETE ATOM 6HG1             
+
+PRES HEB3         0.00 ! 1. HEMB 2. HSD72 3. HSD386
+GROUP   
+ATOM 1FE   FE      0.425 !                	    
+ATOM 1NA   NPH    -0.277 !	        	       
+ATOM 1NB   NPH    -0.277 !	        		
+ATOM 1NC   NPH    -0.277 !	    			 
+ATOM 1ND   NPH    -0.277 !                     HA   
+ATOM 1C1A  CPA     0.199 !	    	      | 	 
+ATOM 1C2A  CPB    -0.476 !           X        _CHA_        X
+ATOM 1C3A  CPB    0.222 !	   |	   /	 \	 |
+ATOM 1C4A  CPA     0.066 !	  C2A---C1A	  C4D---C3D
+ATOM 1C1B  CPA     0.123 !	   |	 |	   |	 |
+ATOM 1C2B  CPB    0.057 !HMA1\	   |	 |	   |	 |	/HMD1
+ATOM 1C3B  CPB    -0.006 !HMA2-CMA--C3A	 NA	  ND	C2D--CMD-HMD2
+ATOM 1C4B  CPA     0.097 !HMA3/	    \	/ \	  / \	/	\HMD3
+ATOM 1C1C  CPA     0.029 !	     C4A   \	 /   C1D
+ATOM 1C2C  CPB    0.102 !	    /	    \	/	\
+ATOM 1C3C  CPB    0.055 !      HB--CHB	     FE 	CHD--HD
+ATOM 1C4C  CPA     0.04 !	    \	    /	\	/
+ATOM 1C1D  CPA     0.134 !	     C1B   /	 \   C4C	HAC
+ATOM 1C2D  CPB    0.087 !HMB1\	    /	\ /	  \ /	\	/
+ATOM 1C3D  CPB    -0.47 !HMB2-CMB--C2B	 NB	  NC	C3C--CAC
+ATOM 1C4D  CPA     0.238 !HMB3/	   |	 |	   |	 |     \\  /HBC1
+GROUP                  !           |     |         |     |      CBC
+ATOM 1CHA  CPM    -0.334 !	  C3B---C4B	  C1C---C2C	   \HBC2
+ATOM 1HA   HA      0.199 !	   |	   \_CHC_/	 |
+GROUP                  !          CAB         |         CMC--HMC3
+ATOM 1CHB  CPM    -0.215 ! 	//  \	     HC       /  | 
+ATOM 1HB   HA      0.149 !        CBB  HAB 	  HMC1  HMC2
+GROUP                  !       /   \
+ATOM 1CHC  CPM    -0.213 !    HBB1  HBB2
+ATOM 1HC   HA      0.159 !
+GROUP   
+ATOM 1CHD  CPM    -0.168
+ATOM 1HD   HA      0.124
+GROUP   
+ATOM 1CMA  CT3    -0.36
+ATOM 1HMA1 HA      0.116
+ATOM 1HMA2 HA      0.116
+ATOM 1HMA3 HA      0.116
+GROUP   
+ATOM 1CMB  CT3    -0.296
+ATOM 1HMB1 HA      0.098
+ATOM 1HMB2 HA      0.098
+ATOM 1HMB3 HA      0.098
+GROUP   
+ATOM 1CAB  C      -0.101
+ATOM 1HAB  HA      0.124
+GROUP   
+ATOM 1CBB  C      -0.319
+ATOM 1HBB1 HA      0.152
+ATOM 1HBB2 HA      0.162
+GROUP   
+ATOM 1CMC  CT3    -0.303
+ATOM 1HMC1 HA      0.101
+ATOM 1HMC2 HA      0.101
+ATOM 1HMC3 HA      0.101
+GROUP   
+ATOM 1CAC  C      -0.138
+ATOM 1HAC  HA      0.14
+GROUP   
+ATOM 1CBC  C      -0.302
+ATOM 1HBC1 HA      0.148
+ATOM 1HBC2 HA      0.16
+GROUP   
+ATOM 1CMD  CT3    -0.293
+ATOM 1HMD1 HA      0.101
+ATOM 1HMD2 HA      0.101
+ATOM 1HMD3 HA      0.101
+GROUP                  
+ATOM 2CB   CT2    -0.09  !     |          HD1    HE1
+ATOM 2HB1  HA      0.09  !  HN-N           |     /
+ATOM 2HB2  HA      0.09  !     |   HB1    ND1--CE1
+ATOM 2ND1  NR1    -0.204  !     |   |     /      ||
+ATOM 2HD1  H       0.329  !  HA-CA--CB--CG       ||
+ATOM 2CG   CPH1   -0.2  !     |   |     \\     ||
+GROUP                    !     |   HB2    CD2--NE2
+ATOM 2CE1  CPH2    -0.004  !   O=C           |
+ATOM 2HE1  HR1     0.165  !     |          HD2
+ATOM 2NE2  NR2    0.024
+ATOM 2CD2  CPH1    -0.136
+ATOM 2HD2  HR3     0.16
+GROUP                  
+ATOM 3CB   CT2    -0.09 
+ATOM 3HB1  HA      0.09 
+ATOM 3HB2  HA      0.09 
+ATOM 3ND1  NR1    -0.213 
+ATOM 3HD1  H       0.331
+ATOM 3CG   CPH1   -0.212
+GROUP   
+ATOM 3CE1  CPH2    -0.008
+ATOM 3HE1  HR1     0.154
+ATOM 3NE2  NR2    0.092
+ATOM 3CD2  CPH1    -0.204
+ATOM 3HD2  HR3     0.209
+
+
+PRES A3H4	  0.00! first heme a3, second hsd419 (Rhodobacter), third OH-
+GROUP			! use QM from CuB/hemea3 2/3   
+ATOM 1FE   FE      0.562 !           
+ATOM 1NA   NPH    -0.176 !           
+ATOM 1NB   NPH    -0.151 !           
+ATOM 1NC   NPH    -0.128 !           
+ATOM 1ND   NPH    -0.144 !   		      HA   
+ATOM 1C1A  CPA     0.207 !        	      |   
+ATOM 1C2A  CPB    -0.132 !   	   X        _CHA_	 X 
+ATOM 1C3A  CPB    -0.064 !           |       /     \       |
+ATOM 1C4A  CPA     0.142 !          C2A---C1A       C4D---C3D
+ATOM 1C1B  CPA     0.067 !HMA       |     |         |     |
+ATOM 1C2B  CPB    0.103 !   \      |     |         |     |      /HMD1
+ATOM 1C3B  CPB    -0.244 !    CMA--C3A    NA       ND    C2D--CMD-HMD2
+ATOM 1C4B  CPA     0.124 !    //      \   / \       / \   /       \HMD3
+ATOM 1C1C  CPA     -0.017 !  0MA        C4A   \     /   C1D
+ATOM 1C2C  CPB    0.121 !            /       \   /       \
+ATOM 1C3C  CPB    -0.018 !      HB--CHB        FE         CHD--HD
+ATOM 1C4C  CPA     0.044 !            \       /   \       /
+ATOM 1C1D  CPA     0.04 !             C1B   /     \   C4C        HAC
+ATOM 1C2D  CPB    0.167 !HMB1\       /   \ /       \ /   \       /
+ATOM 1C3D  CPB    -0.21 !HMB2-CMB--C2B    NB       NC    C3C--CAC
+ATOM 1C4D  CPA     0.233 !HMB3/      |     |         |     |     \\  /HBC1
+GROUP                  !           |     |         |     |      CBC
+ATOM 1CHA  CPM    -0.273 !          C3B---C4B       C1C---C2C        \HBC2
+ATOM 1HA   HA      0.14 !           |       \_CHC_/       |
+GROUP                  !      H11-C11         |         CMC--HMC3
+ATOM 1CHB  CPM    -0.212 !         /  \         HC       /  | 
+ATOM 1HB   HA      0.155 !H121    /    O11-HO11        HMC1  HMC2
+GROUP                  !    \  /   
+ATOM 1CHC  CPM    -0.17 !H122-C12  
+ATOM 1HC   HA      0.159 !     |
+GROUP   	       !H131-C13-H132
+ATOM 1CHD  CPM    -0.173 !     | 
+ATOM 1HD   HA      0.123 ! H14-C14        H262
+GROUP  		       !     ||		/
+ATOM 1CMA  C       0.401 !    C15-----C26-H261
+ATOM 1HMA  HA      -0.02 !     |          \
+ATOM 1OMA  O	 -0.434 !H161-C16-H162    H263
+GROUP   	       !     |
+ATOM 1CMB  CT3    -0.317 !H171-C17-H172
+ATOM 1HMB1 HA      0.105 !     |
+ATOM 1HMB2 HA      0.079 ! H18-C18        H272
+ATOM 1HMB3 HA      0.112 !     ||		/
+GROUP    	       !    C19-----C27-H271
+ATOM 1CMC  CT3    -0.279 !     |          \
+ATOM 1HMC1 HA      0.099 !H201-C20-H202    H273
+ATOM 1HMC2 HA      0.077 !     |
+ATOM 1HMC3 HA      0.083 !H211-C21-H212
+GROUP   	       !     |
+ATOM 1CAC  C      -0.084 ! H22-C22
+ATOM 1HAC  HA      0.122 !     ||
+GROUP   	       !     C23
+ATOM 1CBC  C      -0.379 !    /    \
+ATOM 1HBC1 HA      0.147 !   C24     C25
+ATOM 1HBC2 HA      0.159 !   /|\       /|\
+GROUP		       !H241|H243 H251|H253
+ATOM 1CMD  CT3    -0.301 !   H242      H252
+ATOM 1HMD1 HA      0.096
+ATOM 1HMD2 HA      0.079
+ATOM 1HMD3 HA      0.097
+GROUP
+ATOM 1C11  CT2	  0.354
+ATOM 1H11  HA	  -0.017
+ATOM 1O11  OH1	 -0.614
+ATOM 1HO11 H	  0.391
+GROUP                  
+ATOM 2CB   CT2    -0.09  !     |          HD1    HE1
+ATOM 2HB1  HA      0.09  !  HN-N           |     /
+ATOM 2HB2  HA      0.09  !     |   HB1    ND1--CE1
+ATOM 2ND1  NR1    -0.207  !     |   |     /      ||
+ATOM 2HD1  H       0.317  !  HA-CA--CB--CG       ||
+ATOM 2CG   CPH1   -0.071  !     |   |     \\     ||
+GROUP                   !     |   HB2    CD2--NE2
+ATOM 2CE1  CPH2    0.126  !   O=C           |
+ATOM 2HE1  HR1     0.105  !     |          HD2
+ATOM 2NE2  NR2    -0.335
+ATOM 2CD2  CPH1    0.01
+ATOM 2HD2  HR3     0.087
+GROUP   
+ATOM 3OH2  OM     -0.353
+
+
+PRES CBPP	   2.00  ! 1. CU1, 2. HSD333, 3. HSD334, 4.  TIP3, 5. TYR288, 6.HSE284 
+GROUP                    ! --> ankewa added, QM TYR237-HSE233 Bond with deprotonated Tyr237, adapted from QM annalena!
+ATOM 1CU   CU      0.594	! changes also atom type (new) ATOM 3NE2 (HSD333) -> NX
+GROUP                   
+ATOM 2CB   CT2    -0.07  !     |          HD1    HE1
+ATOM 2HB1  HA      0.09  !  HN-N           |     /
+ATOM 2HB2  HA      0.09  !     |   HB1    ND1--CE1
+ATOM 2ND1  NR1    -0.191  !     |   |     /      ||
+ATOM 2HD1  H       0.316 !  HA-CA--CB--CG       ||
+ATOM 2CG   CPH1   0.28 !     |   |     \\     ||
+GROUP                    !     |   HB2    CD2--NE2
+ATOM 2CE1  CPH2    0.082 !   O=C           |
+ATOM 2HE1  HR1     0.177 !     |          HD2
+ATOM 2NE2  NR2    -0.221
+ATOM 2CD2  CPH1    -0.096
+ATOM 2HD2  HR3     0.152
+GROUP                 
+ATOM 3CB   CT2    -0.07  !     |          HD1    HE1
+ATOM 3HB1  HA      0.09  !  HN-N           |     /
+ATOM 3HB2  HA      0.09  !     |   HB1    ND1--CE1
+ATOM 3ND1  NR1    -0.159 !     |   |     /      ||
+ATOM 3HD1  H       0.32 !  HA-CA--CB--CG       ||
+ATOM 3CG   CPH1    0.14 !     |   |     \\     ||
+GROUP                    !     |   HB2    CD2--NE2
+ATOM 3CE1  CPH2   0.066 !   O=C           |
+ATOM 3HE1  HR1     0.128  !     |          HD2
+ATOM 3NE2  NX     -0.276
+ATOM 3CD2  CPH1   -0.003
+ATOM 3HD2  HR3     0.112
+GROUP   
+ATOM 4XH2  OT     -0.761
+ATOM 4H1   HT      0.368
+GROUP                  
+ATOM 5CG   CA      0.14  ! for bond btw TYR237 and HSE233 with deprotonated Tyr 237 QM
+GROUP                    ! ankewa added, adapted for cco_ba3 
+ATOM 5CD1  CA     -0.046 !       |        HD1  HE1 
+ATOM 5HD1  HP      0.133 !    HN-N         |    | 
+GROUP                    !       |   HB1  CD1--CE1
+ATOM 5CE1  CA     -0.252 !       |   |   //      \\
+ATOM 5HE1  HP      0.149 !    HA-CA--CB--CG      CZ--OH
+GROUP                    !       |   |    \  __  /     
+ATOM 5CZ   CA      0.256  !       |   HB2  CD2--CE2     
+ATOM 5OH   OH1     -0.515  !     O=C         |    | 
+ATOM 5HH   H       0.42  !
+GROUP                            |        HD2   | 
+ATOM 5CD2  CA     -0.13 !                      |
+ATOM 5HD2  HP      0.143 !     |          HD2   | 
+GROUP                    !   O=C           |    |
+ATOM 5CE2  CA      0.007 !     |   HB2    CD2--NE2
+GROUP                    !     |   |     //     |
+ATOM 6CB   CT2    -0.07  !  HA-CA--CB--CG       |
+ATOM 6HB1  HA      0.09  !     |   |     \   __ | 
+ATOM 6HB2  HA      0.09  !     |   HB1    ND1--CE1 
+ATOM 6ND1  NR2    -0.278 !  HN-N                \ 
+ATOM 6CG   CPH1   0.284  !     |                 HE1
+ATOM 6CE1  CPH2    0.114 !
+ATOM 6HE1  HR1     0.102 !
+GROUP                    !
+ATOM 6NE2  NR1    0.116
+ATOM 6CD2  CPH1   -0.179
+ATOM 6HD2  HR3     0.178
+DELEte ATOM 5HE2
+DELEte ATOM 6HE2
+BOND 5CE2 6NE2
+
+
+PRES CBN1	  -1.00  ! 1. CU1, 2. HSD333, 3. HSD334, 4.  TIP3, 5. TYR288, 6.HSE284 
+GROUP                    ! --> ankewa added, QM TYR237-HSE233 Bond with deprotonated Tyr237, adapted from QM annalena!
+ATOM 1CU   CU     0.345	! changes also atom type (new) ATOM 3NE2 (HSD333) -> NX
+GROUP                   
+ATOM 2CB   CT2    -0.07  !     |          HD1    HE1
+ATOM 2HB1  HA      0.09  !  HN-N           |     /
+ATOM 2HB2  HA      0.09  !     |   HB1    ND1--CE1
+ATOM 2ND1  NR1    -0.247  !     |   |     /      ||
+ATOM 2HD1  H       0.274 !  HA-CA--CB--CG       ||
+ATOM 2CG   CPH1   -0.066 !     |   |     \\     ||
+GROUP                    !     |   HB2    CD2--NE2
+ATOM 2CE1  CPH2    0.049 !   O=C           |
+ATOM 2HE1  HR1     0.153 !     |          HD2
+ATOM 2NE2  NR2    -0.1
+ATOM 2CD2  CPH1    -0.176
+ATOM 2HD2  HR3     0.135
+GROUP                 
+ATOM 3CB   CT2    -0.07  !     |          HD1    HE1
+ATOM 3HB1  HA      0.09  !  HN-N           |     /
+ATOM 3HB2  HA      0.09  !     |   HB1    ND1--CE1
+ATOM 3ND1  NR1    -0.138 !     |   |     /      ||
+ATOM 3HD1  H       0.277 !  HA-CA--CB--CG       ||
+ATOM 3CG   CPH1    -0.207 !     |   |     \\     ||
+GROUP                    !     |   HB2    CD2--NE2
+ATOM 3CE1  CPH2   0.123 !   O=C           |
+ATOM 3HE1  HR1     0.071  !     |          HD2
+ATOM 3NE2  NX     -0.347
+ATOM 3CD2  CPH1   0.066
+ATOM 3HD2  HR3     0.094
+GROUP   
+ATOM 4XH2  OT     -1.015
+ATOM 4H1   HT      0.337
+GROUP                  
+ATOM 5CG   CA      -0.343  ! for bond btw TYR237 and HSE233 with deprotonated Tyr 237 QM
+GROUP                    ! ankewa added, adapted for cco_ba3 
+ATOM 5CD1  CA     -0.026 !       |        HD1  HE1 
+ATOM 5HD1  HP      0.065 !    HN-N         |    | 
+GROUP                    !       |   HB1  CD1--CE1
+ATOM 5CE1  CA     -0.353 !       |   |   //      \\
+ATOM 5HE1  HP      0.101 !    HA-CA--CB--CG      CZ--OH
+GROUP                    !       |   |    \  __  /     
+ATOM 5CZ   CA      0.469  !       |   HB2  CD2--CE2     
+ATOM 5OH   OH1    -0.663  !     O=C         |    | 
+GROUP                            |        HD2   | 
+ATOM 5CD2  CA     -0.047 !                      |
+ATOM 5HD2  HP      0.091 !     |          HD2   | 
+GROUP                    !   O=C           |    |
+ATOM 5CE2  CA      -0.156 !     |   HB2    CD2--NE2
+GROUP                    !     |   |     //     |
+ATOM 6CB   CT2    -0.07  !  HA-CA--CB--CG       |
+ATOM 6HB1  HA      0.09  !     |   |     \   __ | 
+ATOM 6HB2  HA      0.09  !     |   HB1    ND1--CE1 
+ATOM 6ND1  NR2    -0.272 !  HN-N                \ 
+ATOM 6CG   CPH1   -0.12  !     |                 HE1
+ATOM 6CE1  CPH2    0.239 !
+ATOM 6HE1  HR1     0.074 !
+GROUP                    !
+ATOM 6NE2  NR1    0.018
+ATOM 6CD2  CPH1   -0.14
+ATOM 6HD2  HR3     0.105
+DELEte ATOM 5HE2
+DELEte ATOM 6HE2
+DELEte ATOM 5HH
+BOND 5CE2 6NE2
+
+
+

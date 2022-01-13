@@ -1,0 +1,41 @@
+
+### The following changes have been applied to the structure. ###
+# Residue of type HOH must be renamed in order to be recognised by Charmm.
+  Decision: rename__HOH_TIP3
+  Options:  rename - Rename to TIP3 (default)
+            keep   - Do nothing.
+  Chosen:   keep
+
+# Capping of termini will be decided here. Should they be caped?
+  Decision: cap_termini
+  Options:  cap - Apply patches in Charmm to cap termini if not true termini. (default)
+            dont_cap  - Do nothing, apply regular termini patches!
+
+  Chosen:   dont_cap for segname ACHA
+
+  Chosen:   dont_cap for segname BCHA
+
+  Chosen:   dont_cap for segname EHEM
+
+  Chosen:   dont_cap for segname FEOH
+
+  Chosen:   dont_cap for segname GHEM
+
+  Chosen:   dont_cap for segname HOHC
+
+  Chosen:   dont_cap for segname MEMB
+
+  Chosen:   dont_cap for segname META
+
+# There are 1 disulphide bridges in the structure. Should they be closed?
+  Decision: disu_bridges
+  Options:  closed - Apply patches in Charmm to connect the CYS pairs. (default)
+            open   - Do nothing, CYS pairs will NOT be bound! 
+  Chosen:   closed
+
+# There are 116 protein, 0 ligand and 0 water hydrogens missing. Should they be modelled?:
+  Decision: missing_hydrogens
+  Options:  model - Model and optimize all hydrogens. (default)
+            [keep  - Do not model any hydrogen.] option currently not available
+  Chosen:   model
+

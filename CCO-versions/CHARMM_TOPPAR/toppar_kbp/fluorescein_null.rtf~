@@ -1,0 +1,58 @@
+* For use with CGenFF version 2b7
+*
+
+! "penalty" is the highest penalty score of the associated parameters.
+! Penalties lower than 10 indicate the analogy is fair; penalties between 10
+! and 50 mean some basic validation is recommended; penalties higher than
+! 50 indicate poor analogy and mandate extensive validation/optimization.
+
+
+PRES FLUN    0.00 ! patch for fluorescin protonated originak sside as residue FLU, 1. cys, 2. FLU - modified by jovandragelj
+GROUP			!all charges set to 0
+ATOM 1CB     CT2     0.0
+ATOM 1HB1    HA      0.0
+ATOM 1HB2    HA      0.0
+ATOM 1SG     S       0.0
+ATOM 2C2     CG321   0.0
+ATOM 2C3     CG2O1   0.0
+ATOM 2O1     OG2D1   0.0
+ATOM 2N      NG2S1   0.0
+ATOM 2C4     CG2R61  0.0
+ATOM 2C5     CG2R61  0.0
+ATOM 2C6     CG2R61  0.0
+ATOM 2C7     CG2R67  0.0
+ATOM 2C8     CG2R61  0.0
+ATOM 2C9     CG2R61  0.0
+ATOM 2C10    CG2O3   0.0
+ATOM 2O2     OG2D2   0.0
+ATOM 2O3     OG2D2   0.0
+ATOM 2C11    CG2R67  0.0
+ATOM 2C12    CG2DC1  0.0
+ATOM 2C13    CG2DC1  0.0
+ATOM 2C14    CG2O5   0.0
+ATOM 2C15    CG2DC1  0.0
+ATOM 2C16    CG2R61  0.0
+ATOM 2C17    CG2R61  0.0
+ATOM 2C18    CG2R61  0.0
+ATOM 2C19    CG2R61  0.0
+ATOM 2C20    CG2R61  0.0
+ATOM 2C21    CG2R61  0.0
+ATOM 2C22    CG2R61  0.0
+ATOM 2C23    CG2R61  0.0
+ATOM 2O4     OG3R60  0.0
+ATOM 2O5     OG2D3   0.0
+ATOM 2O6     OG311   0.0
+ATOM 2H4     HGP1    0.0
+ATOM 2H5     HGR61   0.0
+ATOM 2H6     HGR61   0.0
+ATOM 2H7     HGR61   0.0
+ATOM 2H8     HGA4    0.0
+ATOM 2H9     HGA4    0.0
+ATOM 2H10    HGA4    0.0
+ATOM 2H11    HGR61   0.0
+ATOM 2H12    HGR61   0.0
+ATOM 2H13    HGR61   0.0
+ATOM 2H14    HGP1    0.0
+ATOM 2H15    HGA2    0.0
+ATOM 2H16    HGA2    0.0
+ATOM 2H17    HGP1    0.0

@@ -1,0 +1,123 @@
+OPEN READ UNIT 42 CARD NAME "top_alw_kb_glt.inp"
+READ rtf CARD UNIT 42 
+close unit 42
+
+OPEN READ UNIT 42 CARD NAME "par_all22_prot_plus_heme_and_Cu_kb.inp"
+READ PARAMETERS UNIT 42 CARD
+close unit 42
+
+
+!read coordinates
+
+OPEN READ UNIT 42 CARD NAME "glt_test"
+READ SEQUENCE PDB  UNIT 42  
+GENERATE  ACHAIN SETUP
+REWIND UNIT 42
+READ COORD PDB UNIT 42
+CLOSE UNIT 42
+
+hbuild
+
+OPEN WRITE UNIT 08 CARD NAME "cco.crd"
+WRITE COORDINATES UNIT 08 CARD
+CLOSE UNIT 08
+
+OPEN WRITE UNIT 08 CARD NAME "cco.psf"
+WRITE PSF UNIT 08 CARD
+CLOS UNIT 08
+
+
+OPEN WRITE UNIT 08 CARD NAME "cco.psf.xplor"
+WRITE PSF XPLOR UNIT 08 CARD
+CLOS UNIT 08
+
+OPEN WRITE UNIT 08 CARD NAME "cco.pdb"
+WRITE COORDINATES UNIT 08 CARD
+CLOS UNIT 08
+
+stop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
