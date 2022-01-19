@@ -551,7 +551,7 @@ FORMUL   7   CU    CU 2+
 FORMUL   8   CA    CA 2+                                                        
 FORMUL   9  OXY    6(O2)                                                        
 FORMUL  15  PEO    H2 O2                                                        
-FORMUL  16   MN    MN 2+                                                        
+FORMUL  16   MG    MG 2+                                                        
 FORMUL  17  CUA    CU2                                                          
 FORMUL  18  PC1    2(C44 H88 N O8 P)                                            
 FORMUL  20  HOH   *148(H2 O)                                                    
@@ -620,8 +620,8 @@ LINK         NE2 HIS A  94                FE   HEA A 601     1555   1555  2.03
 LINK         ND1 HIS A 276                CU    CU A 603     1555   1555  2.22  
 LINK         NE2 HIS A 325                CU    CU A 603     1555   1555  2.23  
 LINK         NE2 HIS A 326                CU    CU A 603     1555   1555  2.26  
-LINK         NE2 HIS A 403                MN    MN A 612     1555   1555  2.40  
-LINK         OD2 ASP A 404                MN    MN A 612     1555   1555  2.14  
+LINK         NE2 HIS A 403                MG    MG A 612     1555   1555  2.40  
+LINK         OD2 ASP A 404                MG    MG A 612     1555   1555  2.14  
 LINK         NE2 HIS A 411                FE   HEA A 602     1555   1555  2.38  
 LINK         NE2 HIS A 413                FE   HEA A 601     1555   1555  2.53  
 LINK        FE   HEA A 602                 O1  PEO A 611     1555   1555  2.47  
@@ -630,10 +630,10 @@ LINK        CU    CU A 603                 O1  PEO A 611     1555   1555  2.55
 LINK        CU    CU A 603                 O2  PEO A 611     1555   1555  2.00  
 LINK        CA    CA A 604                 O   HOH A 714     1555   1555  2.69  
 LINK        CA    CA A 604                 O   HOH A 758     1555   1555  2.75  
-LINK        MN    MN A 612                 OE2 GLU B 218     1555   1555  2.61  
-LINK        MN    MN A 612                 O   HOH B 403     1555   1555  2.67  
-LINK        MN    MN A 612                 O   HOH B 410     1555   1555  2.58  
-LINK        MN    MN A 612                 O   HOH B 436     1555   1555  2.74  
+LINK        MG    MG A 612                 OE2 GLU B 218     1555   1555  2.61  
+LINK        MG    MG A 612                 O   HOH B 403     1555   1555  2.67  
+LINK        MG    MG A 612                 O   HOH B 410     1555   1555  2.58  
+LINK        MG    MG A 612                 O   HOH B 436     1555   1555  2.74  
 LINK         ND1 HIS B 181                CU2  CUA B 301     1555   1555  2.57  
 LINK         O   GLU B 218                CU1  CUA B 301     1555   1555  2.43  
 LINK         ND1 HIS B 224                CU1  CUA B 301     1555   1555  2.35  
@@ -9430,7 +9430,7 @@ HETATM 8779  O1  OXY A 610     110.763 111.570 110.824  1.00  9.20           O
 HETATM 8780  O2  OXY A 610     109.917 111.629 109.985  1.00  9.20           O  
 HETATM 8781  O1  PEO A 611      98.254 111.480 113.166  1.00  8.42           O  
 HETATM 8782  O2  PEO A 611      99.308 112.147 113.844  1.00  8.42           O  
-HETATM 8783 MN    MN A 612     107.457 118.285 121.618  1.00 10.22          MN  
+HETATM 8783 MG    MG A 612     107.457 118.285 121.618  1.00 10.22          MG  
 HETATM 8784 CU1  CUA B 301     114.268 117.943 127.483  1.00  8.25          CU  
 HETATM 8785 CU2  CUA B 301     115.673 119.994 128.306  1.00  8.25          CU  
 HETATM 8786  O12 PC1 C 301     103.480 131.629 109.672  1.00 10.14           O  

@@ -907,7 +907,7 @@ SEQRES  10 D  120  ASP LEU MET
 HET    HEA  A 559      60                                                       
 HET    HEA  A 560      60                                                       
 HET    CU1  A 561       1                                                       
-HET     MN  A 562       1                                                       
+HET     MG  A 562       1                                                       
 HET     CA  A 563       1                                                       
 HET    LDA  A 564      16                                                       
 HET    LDA  A 565      16                                                       
@@ -945,7 +945,7 @@ HETNAM     LMT DODECYL-BETA-D-MALTOSIDE
 HETNAM     PEO HYDROGEN PEROXIDE                                                
 FORMUL   5  HEA    2(C49 H56 FE N4 O6)                                          
 FORMUL   7  CU1    3(CU 1+)                                                     
-FORMUL   8   MN    MN 2+                                                        
+FORMUL   8   MG    MG 2+                                                        
 FORMUL   9   CA    CA 2+                                                        
 FORMUL  10  LDA    10(C14 H31 N O)                                              
 FORMUL  14  LMT    14(C24 H46 O11)                                              
@@ -1035,18 +1035,18 @@ LINK         NE2 HIS A  94                FE   HEA A 559     1555   1555  1.94
 LINK         ND1 HIS A 276                CU   CU1 A 561     1555   1555  2.02  
 LINK         NE2 HIS A 325                CU   CU1 A 561     1555   1555  2.03  
 LINK         NE2 HIS A 326                CU   CU1 A 561     1555   1555  2.02  
-LINK         OD1 ASP A 404                MN    MN A 562     1555   1555  2.17  
+LINK         OD1 ASP A 404                MG    MG A 562     1555   1555  2.17  
 LINK         NE2 HIS A 411                FE   HEA A 560     1555   1555  1.94  
 LINK         NE2 HIS A 413                FE   HEA A 559     1555   1555  1.95  
 LINK         ND1 HIS B 181                CU   CU1 B 271     1555   1555  1.96  
 LINK         O   GLU B 218                CU   CU1 B 270     1555   1555  1.97  
-LINK         OE1 GLU B 218                MN    MN A 562     1555   1555  2.19  
+LINK         OE1 GLU B 218                MG    MG A 562     1555   1555  2.19  
 LINK         ND1 HIS B 224                CU   CU1 B 270     1555   1555  2.02  
 LINK        FE   HEA A 560                 O1  PEO A 576     1555   1555  1.93  
 LINK        CU   CU1 A 561                 O2  PEO A 576     1555   1555  1.92  
-LINK        MN    MN A 562                 O   HOH B 285     1555   1555  2.14  
-LINK        MN    MN A 562                 O   HOH A 578     1555   1555  2.20  
-LINK        MN    MN A 562                 O   HOH B 884     1555   1555  2.11  
+LINK        MG    MG A 562                 O   HOH B 285     1555   1555  2.14  
+LINK        MG    MG A 562                 O   HOH A 578     1555   1555  2.20  
+LINK        MG    MG A 562                 O   HOH B 884     1555   1555  2.11  
 LINK        CA    CA A 563                 O   HOH A 851     1555   1555  2.28  
 LINK        CA    CA A 563                 O   HOH A 965     1555   1555  2.74  
 CISPEP   1 PRO A  168    PRO A  169          0        -3.34                     
@@ -9205,7 +9205,7 @@ HETATM 8078  C25 HEA A 560      83.806  79.178  25.072  1.00 42.01           C
 HETATM 8079  C26 HEA A 560      81.043  76.872  30.125  1.00 23.97           C  
 HETATM 8080  C27 HEA A 560      83.687  80.974  30.924  1.00 27.83           C  
 HETATM 8081 CU   CUB A 561      72.334  67.642  32.724  1.00 43.42          CU  
-HETATM 8082 MN    MN A 562      75.362  54.858  31.444  1.00 34.57          MN  
+HETATM 8082 MG    MG A 562      75.362  54.858  31.444  1.00 34.57          MG  
 HETATM 8083 CA    CA A 563      90.975  49.176  47.889  1.00 35.03          CA  
 HETATM 8084  N1  LDA A 564     107.128  63.457  45.906  1.00111.72           N  
 HETATM 8085  O1  LDA A 564     107.842  62.800  45.111  1.00113.14           O  

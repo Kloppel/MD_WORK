@@ -544,7 +544,7 @@ HETNAM   2 PGV  PHOSPHORYL]OXY}-1-[(PALMITOYLOXY)METHYL]ETHYL (11E)-
 HETNAM   3 PGV  OCTADEC-11-ENOATE                                               
 HETSYN     PGV PHOSPHATIDYLGLYCEROL; 2-VACCENOYL-1-PALMITOYL-SN-                
 HETSYN   2 PGV  GLYCEROL-3-PHOSPHOGLYCEROL                                      
-FORMUL   5   MN    MN 2+                                                        
+FORMUL   5   MG    MG 2+                                                        
 FORMUL   6  HEA    2(C49 H56 FE N4 O6)                                          
 FORMUL   8   CU    CU 2+                                                        
 FORMUL   9   CA    CA 2+                                                        
@@ -620,12 +620,12 @@ LINK         NE2 HIS A  94                FE   HEA A 602     1555   1555  2.02
 LINK         ND1 HIS A 276                CU    CU A 604     1555   1555  2.27  
 LINK         NE2 HIS A 325                CU    CU A 604     1555   1555  2.06  
 LINK         NE2 HIS A 326                CU    CU A 604     1555   1555  2.24  
-LINK         NE2 HIS A 403                MN    MN A 601     1555   1555  2.37  
-LINK         OD2 ASP A 404                MN    MN A 601     1555   1555  2.08  
+LINK         NE2 HIS A 403                MG    Mg A 601     1555   1555  2.37  
+LINK         OD2 ASP A 404                MG    Mg A 601     1555   1555  2.08  
 LINK         NE2 HIS A 411                FE   HEA A 603     1555   1555  2.17  
 LINK         NE2 HIS A 413                FE   HEA A 602     1555   1555  2.22  
-LINK        MN    MN A 601                 OE2 GLU B 218     1555   1555  1.92  
-LINK        MN    MN A 601                 O   HOH B 440     1555   1555  2.41  
+LINK        MG    MG A 601                 OE2 GLU B 218     1555   1555  1.92  
+LINK        MG    MG A 601                 O   HOH B 440     1555   1555  2.41  
 LINK        CA    CA A 605                 O   HOH A 710     1555   1555  3.03  
 LINK        CA    CA A 605                 O   HOH A 718     1555   1555  3.02  
 LINK         ND1 HIS B 181                CU2  CUA B 301     1555   1555  1.99  
@@ -9320,7 +9320,7 @@ ATOM   8672  CB  SER D  49     100.201 137.792 105.186  1.00  9.80           C
 ATOM   8673  OG  SER D  49     101.483 138.317 104.874  1.00  9.80           O  
 ATOM   8674  OXT SER D  49     101.746 135.972 103.192  1.00  9.80           O  
 TER    8675      SER D  49                                                      
-HETATM 8676 MN    MN A 601     107.456 118.303 121.618  1.00  9.99          MN  
+HETATM 8676 MG    MG A 601     107.456 118.303 121.618  1.00  9.99          MG  
 HETATM 8677 FE   HEA A 602     107.205 101.621 119.674  1.00  5.34          FE  
 HETATM 8678  CHA HEA A 602     108.184 104.673 120.780  1.00  5.34           C  
 HETATM 8679  CHB HEA A 602     107.361 100.358 122.838  1.00  5.34           C  
