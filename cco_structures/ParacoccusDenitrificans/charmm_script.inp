@@ -13,9 +13,9 @@ close unit 42
 
 
 !read coordinates
-read sequence coor resid name "KetteA"  
-GENERATE  ACHAIN SETUP
-read coor card name "KetteA"
+read sequence coor resid name 1ar1.pdb 
+GENERATE  1AR1 SETUP
+read coor card name "1AR1"
 
 
 
