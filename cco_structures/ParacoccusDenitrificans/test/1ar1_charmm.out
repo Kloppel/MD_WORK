@@ -5,7 +5,7 @@
        Copyright(c) 1984-2020  President and Fellows of Harvard College
                               All Rights Reserved
         Current operating system: Linux-5.13.0-27-generic(x86_64)@london        
-                 Created on  1/25/22 at 14:25:15 by user: pbuser      
+                 Created on  1/27/22 at 17:16:49 by user: pbuser      
 
             Maximum number of ATOMS:    360720, and RESidues:      120240
  RDTITL>  
@@ -1839,13 +1839,13 @@ MAXCRT      120240      333333
   
  CHARMM>     
   
- CHARMM>    read sequence coor name "1ar1_in_A.crd" resid
- VOPEN> Attempting to open::1ar1_in_A.crd::
+ CHARMM>    read sequence coor name "1ar1_in_ACHA.crd" resid
+ VOPEN> Attempting to open::1ar1_in_ACHA.crd::
  MAINIO> Sequence information being read from unit  90.
- TITLE> 4185  EXT
+ TITLE> 4183  EXT
  RDTITL> No title read.
 
-          RESIDUE SEQUENCE --   531 RESIDUES
+          RESIDUE SEQUENCE --   529 RESIDUES
           GLY PHE PHE THR ARG TRP PHE MET SER THR ASN HSE LYS ASP ILE GLY ILE LEU TYR LEU 
           PHE THR ALA GLY ILE VAL GLY LEU ILE SER VAL CYS PHE THR VAL TYR MET ARG MET GLU 
           LEU GLN HSE PRO GLY VAL GLN TYR MET CYS LEU GLU GLY ALA ARG LEU ILE ALA ASP ALA 
@@ -1872,294 +1872,22 @@ MAXCRT      120240      333333
           ASP TYR PRO VAL GLU PHE ALA TYR TRP ASN ASN ILE SER SER ILE GLY ALA TYR ILE SER 
           PHE ALA SER PHE LEU PHE PHE ILE GLY ILE VAL PHE TYR THR LEU PHE ALA GLY LYS ARG 
           VAL ASN VAL PRO ASN TYR TRP ASN GLU HSE ALA ASP THR LEU GLU TRP THR LEU PRO SER 
-          PRO PRO PRO GLU HSE THR PHE GLU THR MG  CA  
+          PRO PRO PRO GLU HSE THR PHE GLU THR 
  ***** Message from SEQRDR ***** THE SYSTEM CONTAINS 77 TITRATABLE GROUPS
  THE USER MUST PREDETERMINE THE PROTONATION STATE THROUGH THE SEQUENCE AND RTF
  HIS -  0  HSD -  0  HSE - 18  HSP -  0  ASP - 12  GLU - 12  LYS -  8  TYR - 27
  VCLOSE: Closing unit   90 with status "KEEP"
   
- CHARMM>    generate setup A first ACE last CT1
+ CHARMM>    generate setup ACHA first ACE last CT1
  THE PATCH 'ACE' WILL BE USED FOR THE FIRST RESIDUE
  THE PATCH 'CT1' WILL BE USED FOR THE LAST  RESIDUE
- GENPSF> Segment   1 has been generated. Its identifier is A.
- PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
- PSFSUM> Summary of the structure file counters :
-         Number of segments      =        1   Number of residues   =      531
-         Number of atoms         =     8375   Number of groups     =     2681
-         Number of bonds         =     8528   Number of angles     =    15369
-         Number of dihedrals     =    22595   Number of impropers  =     1316
-         Number of cross-terms   =      527
-         Number of HB acceptors  =      710   Number of HB donors  =      762
-         Number of NB exclusions =        0   Total charge =   -3.00000
- QXFORM> Expanded format used.
-         More than 4 character atom type used.
-  
- CHARMM>     
-  
- CHARMM>    read sequence coor name "1ar1_in_B.crd" resid
- VOPEN> Attempting to open::1ar1_in_B.crd::
- MAINIO> Sequence information being read from unit  90.
- TITLE> 1976  EXT
- RDTITL> No title read.
+ <CODES>: No angle parameters for 15203 ( CT1  CT1  CD  )
+ <CODES>: A TOTAL OF    1 MISSING PARAMETERS
 
-          RESIDUE SEQUENCE --   252 RESIDUES
-          GLN     ASP     VAL     LEU     GLY     ASP     LEU     PRO     VAL     ILE     GLY     LYS     PRO     VAL     ASN     GLY     GLY     MET     ASN     PHE     
-          GLN     PRO     ALA     SER     SER     PRO     LEU     ALA     HSE     ASP     GLN     GLN     TRP     LEU     ASP     HSE     PHE     VAL     LEU     TYR     
-          ILE     ILE     THR     ALA     VAL     THR     ILE     PHE     VAL     CYS     LEU     LEU     LEU     LEU     ILE     CYS     ILE     VAL     ARG     PHE     
-          ASN     ARG     ARG     ALA     ASN     PRO     VAL     PRO     ALA     ARG     PHE     THR     HSE     ASN     THR     PRO     ILE     GLU     VAL     ILE     
-          TRP     THR     LEU     VAL     PRO     VAL     LEU     ILE     LEU     VAL     ALA     ILE     GLY     ALA     PHE     SER     LEU     PRO     ILE     LEU     
-          PHE     ARG     SER     GLN     GLU     MET     PRO     ASN     ASP     PRO     ASP     LEU     VAL     ILE     LYS     ALA     ILE     GLY     HSE     GLN     
-          TRP     TYR     TRP     SER     TYR     GLU     TYR     PRO     ASN     ASP     GLY     VAL     ALA     PHE     ASP     ALA     LEU     MET     LEU     GLU     
-          LYS     GLU     ALA     LEU     ALA     ASP     ALA     GLY     TYR     SER     GLU     ASP     GLU     TYR     LEU     LEU     ALA     THR     ASP     ASN     
-          PRO     VAL     VAL     VAL     PRO     VAL     GLY     LYS     LYS     VAL     LEU     VAL     GLN     VAL     THR     ALA     THR     ASP     VAL     ILE     
-          HSE     ALA     TRP     THR     ILE     PRO     ALA     PHE     ALA     VAL     LYS     GLN     ASP     ALA     VAL     PRO     GLY     ARG     ILE     ALA     
-          GLN     LEU     TRP     PHE     SER     VAL     ASP     GLN     GLU     GLY     VAL     TYR     PHE     GLY     GLN     CYS     SER     GLU     LEU     CYS     
-          GLY     ILE     ASN     HSE     ALA     TYR     MET     PRO     ILE     VAL     VAL     LYS     ALA     VAL     SER     GLN     GLU     LYS     TYR     GLU     
-          ALA     TRP     LEU     ALA     GLY     ALA     LYS     GLU     GLU     PHE     ALA     ALA     
- ***** Message from SEQRDR ***** THE SYSTEM CONTAINS 51 TITRATABLE GROUPS
- THE USER MUST PREDETERMINE THE PROTONATION STATE THROUGH THE SEQUENCE AND RTF
- HIS -  0  HSD -  0  HSE -  6  HSP -  0  ASP - 14  GLU - 13  LYS -  9  TYR -  9
- VCLOSE: Closing unit   90 with status "KEEP"
-  
- CHARMM>    generate setup B first NTER last CT1
- THE PATCH 'NTER' WILL BE USED FOR THE FIRST RESIDUE
- THE PATCH 'CT1' WILL BE USED FOR THE LAST  RESIDUE
- GENPSF> Segment   2 has been generated. Its identifier is B.
- PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
- PSFSUM> Summary of the structure file counters :
-         Number of segments      =        2   Number of residues   =      783
-         Number of atoms         =    12321   Number of groups     =     3910
-         Number of bonds         =    12531   Number of angles     =    22638
-         Number of dihedrals     =    33283   Number of impropers  =     1972
-         Number of cross-terms   =      777
-         Number of HB acceptors  =     1071   Number of HB donors  =     1142
-         Number of NB exclusions =        0   Total charge =  -14.00000
-  
- CHARMM>     
-  
- CHARMM>    patch disu A 66 A 80
- ATOM  A        66       CYS      HG1      AND ALL REFERENCES TO IT DELETED.
- ATOM  A        80       CYS      HG1      AND ALL REFERENCES TO IT DELETED.
-
- Message from MAPIC: Atom numbers are changed.
- DELTIC:         2 bonds deleted
- DELTIC:         2 angles deleted
- DELTIC:         6 dihedrals deleted
- DELTIC:         2 donors deleted
- PATCH: Check angles and dihedrals autogenerated.
- PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
- PSFSUM> Summary of the structure file counters :
-         Number of segments      =        2   Number of residues   =      783
-         Number of atoms         =    12319   Number of groups     =     3910
-         Number of bonds         =    12530   Number of angles     =    22636
-         Number of dihedrals     =    33277   Number of impropers  =     1972
-         Number of cross-terms   =      777
-         Number of HB acceptors  =     1071   Number of HB donors  =     1140
-         Number of NB exclusions =        0   Total charge =  -14.00000
-  
- CHARMM>     
-  
- CHARMM>    AUTOgenerate ANGLes DIHEdrals
- AUTOGEN: All angles are removed and regenerated.
- AUTOGEN: All dihedrals are removed and regenerated.
- PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
- PSFSUM> Summary of the structure file counters :
-         Number of segments      =        2   Number of residues   =      783
-         Number of atoms         =    12319   Number of groups     =     3910
-         Number of bonds         =    12530   Number of angles     =    22638
-         Number of dihedrals     =    33284   Number of impropers  =     1972
-         Number of cross-terms   =      777
-         Number of HB acceptors  =     1071   Number of HB donors  =     1140
-         Number of NB exclusions =        0   Total charge =  -14.00000
-  
- CHARMM>     
-  
- CHARMM>    read sequence coor name "1ar1_in_HOH.crd" resid
- VOPEN> Attempting to open::1ar1_in_HOH.crd::
- MAINIO> Sequence information being read from unit  90.
- TITLE> 21  EXT
- RDTITL> No title read.
-
-          RESIDUE SEQUENCE --    21 RESIDUES
-          TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    
-          TIP3    
- VCLOSE: Closing unit   90 with status "KEEP"
-  
- CHARMM>    generate setup HOH noangle nodihedral
- NO PATCHING WILL BE DONE ON THE FIRST RESIDUE
- NO PATCHING WILL BE DONE ON THE LAST  RESIDUE
- GENPSF> Segment   3 has been generated. Its identifier is HOH.
- PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
- PSFSUM> Summary of the structure file counters :
-         Number of segments      =        3   Number of residues   =      804
-         Number of atoms         =    12382   Number of groups     =     3931
-         Number of bonds         =    12593   Number of angles     =    22659
-         Number of dihedrals     =    33284   Number of impropers  =     1972
-         Number of cross-terms   =      777
-         Number of HB acceptors  =     1092   Number of HB donors  =     1140
-         Number of NB exclusions =        0   Total charge =  -14.00000
-  
- CHARMM>     
-  
- CHARMM>    read sequence coor name "1ar1_in_HOH1.crd" resid
- VOPEN> Attempting to open::1ar1_in_HOH1.crd::
- MAINIO> Sequence information being read from unit  90.
- TITLE> 21  EXT
- RDTITL> No title read.
-
-          RESIDUE SEQUENCE --    21 RESIDUES
-          TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    TIP3    
-          TIP3    
- VCLOSE: Closing unit   90 with status "KEEP"
-  
- CHARMM>    generate setup HOH1 noangle nodihedral
- NO PATCHING WILL BE DONE ON THE FIRST RESIDUE
- NO PATCHING WILL BE DONE ON THE LAST  RESIDUE
- GENPSF> Segment   4 has been generated. Its identifier is HOH1.
- PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
- PSFSUM> Summary of the structure file counters :
-         Number of segments      =        4   Number of residues   =      825
-         Number of atoms         =    12445   Number of groups     =     3952
-         Number of bonds         =    12656   Number of angles     =    22680
-         Number of dihedrals     =    33284   Number of impropers  =     1972
-         Number of cross-terms   =      777
-         Number of HB acceptors  =     1113   Number of HB donors  =     1140
-         Number of NB exclusions =        0   Total charge =  -14.00000
-  
- CHARMM>     
-  
- CHARMM>    read coor card name "1ar1_in_A.crd"
- VOPEN> Attempting to open::1ar1_in_A.crd::
-          SPATIAL COORDINATES BEING READ FROM UNIT 90
- TITLE> 4185  EXT
- RDTITL> No title read.
-
- ** WARNING ** For atom in coordinate file, the corresponding residue in the PSF lacks that atom:
- INDEX= 4180 IRES=  529 RESID=545      RES=THR      ATOM=OT2     
- ** WARNING ** After reading, there are no coordinates for selected atom:     1     1 GLY      CAY     
- ** WARNING ** After reading, there are no coordinates for selected atom:     2     1 GLY      HY1     
- ** WARNING ** After reading, there are no coordinates for selected atom:     3     1 GLY      HY2     
- ** WARNING ** After reading, there are no coordinates for selected atom:     4     1 GLY      HY3     
- ** WARNING ** After reading, there are no coordinates for selected atom:     5     1 GLY      CY      
- ** WARNING ** After reading, there are no coordinates for selected atom:     6     1 GLY      OY      
- ** WARNING ** After reading, there are no coordinates for selected atom:     8     1 GLY      HN      
- ** WARNING ** After reading, there are no coordinates for selected atom:    10     1 GLY      HA1     
- ** WARNING ** After reading, there are no coordinates for selected atom:    11     1 GLY      HA2     
- ** WARNING ** After reading, there are no coordinates for selected atom:    15     2 PHE      HN      
-
- ** A total of  8261 selected atoms have no coordinates
- *** LEVEL  2 WARNING *** BOMLEV IS    0
- VCLOSE: Closing unit   90 with status "KEEP"
-  
- CHARMM>    read coor card name "1ar1_in_B.crd" resid
- VOPEN> Attempting to open::1ar1_in_B.crd::
-          SPATIAL COORDINATES BEING READ FROM UNIT 90
- TITLE> 1976  EXT
- RDTITL> No title read.
- ** WARNING ** After reading, there are no coordinates for selected atom:     1     1 GLY      CAY     
- ** WARNING ** After reading, there are no coordinates for selected atom:     2     1 GLY      HY1     
- ** WARNING ** After reading, there are no coordinates for selected atom:     3     1 GLY      HY2     
- ** WARNING ** After reading, there are no coordinates for selected atom:     4     1 GLY      HY3     
- ** WARNING ** After reading, there are no coordinates for selected atom:     5     1 GLY      CY      
- ** WARNING ** After reading, there are no coordinates for selected atom:     6     1 GLY      OY      
- ** WARNING ** After reading, there are no coordinates for selected atom:     8     1 GLY      HN      
- ** WARNING ** After reading, there are no coordinates for selected atom:    10     1 GLY      HA1     
- ** WARNING ** After reading, there are no coordinates for selected atom:    11     1 GLY      HA2     
- ** WARNING ** After reading, there are no coordinates for selected atom:    15     2 PHE      HN      
-
- ** A total of  6285 selected atoms have no coordinates
- *** LEVEL  2 WARNING *** BOMLEV IS    0
- VCLOSE: Closing unit   90 with status "KEEP"
-  
- CHARMM>     
-  
- CHARMM>    read coor card name "1ar1_in_HOH.crd" resid
- VOPEN> Attempting to open::1ar1_in_HOH.crd::
-          SPATIAL COORDINATES BEING READ FROM UNIT 90
- TITLE> 21  EXT
- RDTITL> No title read.
- ** WARNING ** After reading, there are no coordinates for selected atom:     1     1 GLY      CAY     
- ** WARNING ** After reading, there are no coordinates for selected atom:     2     1 GLY      HY1     
- ** WARNING ** After reading, there are no coordinates for selected atom:     3     1 GLY      HY2     
- ** WARNING ** After reading, there are no coordinates for selected atom:     4     1 GLY      HY3     
- ** WARNING ** After reading, there are no coordinates for selected atom:     5     1 GLY      CY      
- ** WARNING ** After reading, there are no coordinates for selected atom:     6     1 GLY      OY      
- ** WARNING ** After reading, there are no coordinates for selected atom:     8     1 GLY      HN      
- ** WARNING ** After reading, there are no coordinates for selected atom:    10     1 GLY      HA1     
- ** WARNING ** After reading, there are no coordinates for selected atom:    11     1 GLY      HA2     
- ** WARNING ** After reading, there are no coordinates for selected atom:    15     2 PHE      HN      
-
- ** A total of  6264 selected atoms have no coordinates
- *** LEVEL  2 WARNING *** BOMLEV IS    0
- VCLOSE: Closing unit   90 with status "KEEP"
-  
- CHARMM>    read coor card name "1ar1_in_HOH1.crd" resid
- VOPEN> Attempting to open::1ar1_in_HOH1.crd::
-          SPATIAL COORDINATES BEING READ FROM UNIT 90
- TITLE> 21  EXT
- RDTITL> No title read.
- ** WARNING ** After reading, there are no coordinates for selected atom:     1     1 GLY      CAY     
- ** WARNING ** After reading, there are no coordinates for selected atom:     2     1 GLY      HY1     
- ** WARNING ** After reading, there are no coordinates for selected atom:     3     1 GLY      HY2     
- ** WARNING ** After reading, there are no coordinates for selected atom:     4     1 GLY      HY3     
- ** WARNING ** After reading, there are no coordinates for selected atom:     5     1 GLY      CY      
- ** WARNING ** After reading, there are no coordinates for selected atom:     6     1 GLY      OY      
- ** WARNING ** After reading, there are no coordinates for selected atom:     8     1 GLY      HN      
- ** WARNING ** After reading, there are no coordinates for selected atom:    10     1 GLY      HA1     
- ** WARNING ** After reading, there are no coordinates for selected atom:    11     1 GLY      HA2     
- ** WARNING ** After reading, there are no coordinates for selected atom:    15     2 PHE      HN      
-
- ** A total of  6243 selected atoms have no coordinates
- *** LEVEL  2 WARNING *** BOMLEV IS    0
- VCLOSE: Closing unit   90 with status "KEEP"
-  
- CHARMM>     
-  
- CHARMM>    ic para
-  
- CHARMM>    ic build
-
-      ***** LEVEL  1 WARNING FROM <BUILDC> *****
-      ***** SOME COORDINATES NOT BUILT
+      ***** LEVEL -1 WARNING FROM <CODES> *****
+      ***** CODES> MISSING PARAMETERS
       ******************************************
-      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
-
- ****  WARNING  ****  163 COORDINATES ARE STILL UNDEFINED
-  
- CHARMM>     
-  
- CHARMM>    hbuild
- PRNHBD: CUToff Hydrogen Bond  distance =    0.5000   Angle =   90.0000
-         CuT switching ON HB dist. =     3.5000  OFf HB dist. =    4.0000
-         CuT switching ON Hb Angle =    50.0000  OFf Hb Angle =   70.0000
-         ACCEptor antecedents included
-         All hydrogen bonds for each hydrogen will be found
-         Hydrogen bonds between excluded atoms will be kept
-
-
- NONBOND OPTION FLAGS: 
-     ELEC     VDW      ATOMs    CDIElec  FSHIft   VATOm    VFSWIt  
-     BYGRoup  NOEXtnd  NOEWald 
- CUTNB  = 14.000 CTEXNB =999.000 CTONNB = 10.000 CTOFNB = 12.000
- CGONNB =  0.000 CGOFNB = 10.000
- WMIN   =  1.500 WRNMXD =  0.500 E14FAC =  1.000 EPS    =  1.000
- NBXMOD =      5
- There are        0 atom  pairs and        0 atom  exclusions.
- There are        0 group pairs and        0 group exclusions.
- <MAKINB> with mode   5 found  35294 exclusions and  32435 interactions(1-4)
- <MAKGRP> found  11747 group exclusions.
-
- CUToff Hydrogen Bond  distance =    0.5000           Angle =   90.0000
- CuT switching ON HB dist. =     3.5000 OFf HB dist. =    4.0000
- CuT switching ON Hb Angle =    50.0000 OFf Hb Angle =   70.0000
- ACCEptor antecedents included
- dihedral PHI STePs for spin =   10.0000
- cutoff for water acceptor search CUTWat=    7.5000
-
- WARNING FROM HBUILD:
- Attempt to construct a hydrogen bonded to the atom A        561      CA       O3       with unknown coordinates.
- *** LEVEL  0 WARNING *** BOMLEV IS    0
- BOMLEV HAS BEEN SATISFIED. TERMINATING.
+      BOMLEV (  0) IS REACHED - TERMINATING. WRNLEV IS  5
 
 
                                                   
@@ -2196,8 +1924,8 @@ MAXCRT      120240      333333
  Execution terminated due to the detection of a fatal error.
 
                     ABNORMAL TERMINATION
-                    MOST SEVERE WARNING WAS AT LEVEL  0
+                    MOST SEVERE WARNING WAS AT LEVEL -1
 
                     $$$$$ JOB ACCOUNTING INFORMATION $$$$$
-                     ELAPSED TIME:     1.04  SECONDS 
-                         CPU TIME:     1.03  SECONDS 
+                     ELAPSED TIME:     0.50  SECONDS 
+                         CPU TIME:     0.49  SECONDS 

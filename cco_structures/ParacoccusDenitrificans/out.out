@@ -5,7 +5,7 @@
        Copyright(c) 1984-2020  President and Fellows of Harvard College
                               All Rights Reserved
         Current operating system: Linux-5.13.0-27-generic(x86_64)@london        
-                 Created on  1/25/22 at 11:30:08 by user: pbuser      
+                 Created on  1/27/22 at 11:10:48 by user: pbuser      
 
             Maximum number of ATOMS:    360720, and RESidues:      120240
  RDTITL> * THIS IS THE CHARMM PROGRAM THAT BUILDS CCO
@@ -333,7 +333,7 @@
  CHARMM>    read sequence coor resid name 1ar1.pdb
  VOPEN> Attempting to open::1ar1.pdb::
  MAINIO> Sequence information being read from unit  90.
- TITLE> ATOM      1  N   GLY A  17      -6.787   9.994  72.775  1.00100.00           N
+ TITLE> ATOM      1  N   GLY A  17      -6.787   9.994  72.775  1.00100.00      ACHA N
  RDTITL> No title read.
  WARNING FROM DECODF - COULD NOT CONVERT STRING
  ATOM
@@ -381,5 +381,5 @@
                     MOST SEVERE WARNING WAS AT LEVEL  0
 
                     $$$$$ JOB ACCOUNTING INFORMATION $$$$$
-                     ELAPSED TIME:     0.07  SECONDS 
+                     ELAPSED TIME:     0.10  SECONDS 
                          CPU TIME:     0.07  SECONDS 

@@ -11,49 +11,30 @@ read para card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_exampl
 read para card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par_all36_cgenff.prm" append
 
 
-read sequence coor name "1ar1_in_A.crd" resid 
-generate setup A first ACE last CT1
+read sequence coor name "1ar1_in_ACHA.crd" resid 
+generate setup ACHA first ACE last CT1
 
-read sequence coor name "1ar1_in_B.crd" resid 
-generate setup B first NTER last CT1
+read sequence coor name "1ar1_in_BCHA.crd" resid 
+generate setup BCHA first NTER last CT1
 
-patch disu A 66 A 80
+patch disu ACHA 66 ACHA 80
 
 AUTOgenerate ANGLes DIHEdrals
 
 read sequence coor name "1ar1_in_HOH.crd" resid 
 generate setup HOH noangle nodihedral
 
-read sequence coor name "1ar1_in_HOH1.crd" resid 
-generate setup HOH1 noangle nodihedral
-
-read coor card name "1ar1_in_A.crd"
-read coor card name "1ar1_in_B.crd" resid
+read coor card name "1ar1_in_ACHA.crd"
+read coor card name "1ar1_in_BCHA.crd" resid
 
 read coor card name "1ar1_in_HOH.crd" resid
-read coor card name "1ar1_in_HOH1.crd" resid
 
 ic para
 ic build
 
 hbuild
 
-define sel_1 select (segid A .and. resid 561 .and. type C3) .or. (segid A .and. resid 561 .and. type O3) -
-               .or. (segid A .and. resid 561 .and. type C4) .or. (segid A .and. resid 561 .and. type C5) -
-               .or. (segid A .and. resid 561 .and. type C6) .or. (segid A .and. resid 561 .and. type C7) -
-               .or. (segid A .and. resid 561 .and. type O7) .or. (segid A .and. resid 561 .and. type C8) -
-               .or. (segid A .and. resid 561 .and. type C14) .or. (segid A .and. resid 561 .and. type C15) -
-               .or. (segid A .and. resid 561 .and. type C16) .or. (segid A .and. resid 561 .and. type C17) -
-               .or. (segid A .and. resid 561 .and. type C13) .or. (segid A .and. resid 561 .and. type C18) -
-               .or. (segid A .and. resid 561 .and. type C12) .or. (segid A .and. resid 561 .and. type O12) -
-               .or. (segid A .and. resid 561 .and. type C11) .or. (segid A .and. resid 561 .and. type C9) -
-               .or. (segid A .and. resid 561 .and. type C10) .or. (segid A .and. resid 561 .and. type C19) -
-               .or. (segid A .and. resid 561 .and. type C1) .or. (segid A .and. resid 561 .and. type C2) -
-               .or. (segid A .and. resid 561 .and. type C20) .or. (segid A .and. resid 561 .and. type C21) -
-               .or. (segid A .and. resid 561 .and. type C22) .or. (segid A .and. resid 561 .and. type C23) -
-               .or. (segid A .and. resid 561 .and. type CD) .or. (segid A .and. resid 561 .and. type OE1) -
-               .or. (segid A .and. resid 561 .and. type OE2) end
-cons fix select .not. ( sel_1 .or. hydrogens )   end
+cons fix select .not. ( none .or. hydrogens )   end
 minimize sd nsteps 1000 tolg 0.1
 minimize abnr nsteps 5000 tolg 0.01
 
