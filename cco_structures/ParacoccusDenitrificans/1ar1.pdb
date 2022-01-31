@@ -6159,17 +6159,17 @@ ATOM   6158  C   ALA B 252      18.977  57.248  28.026  1.00 87.93      BCHA C
 ATOM   6159  O   ALA B 252      19.897  57.842  27.420  1.00 91.80      BCHA O  
 ATOM   6160  CB  ALA B 252      19.049  55.111  26.707  1.00 82.06      BCHA C  
 TER    6161      ALA B 252                                                
-HETATM 7927  CU  CU1 M   1      12.257  15.959  40.919  1.00 47.11      META CU  
-HETATM 8146  CU  CU1 M   2       6.410  36.944  39.012  1.00 40.39      META CU  
-HETATM 8147  CU  CU1 M   3       7.949  38.932  38.615  1.00 44.84      META CU  
+HETATM 7927  CU  CU1 M   1      12.257  15.959  40.919  1.00 47.11      META CU 
+HETATM 8146  CU  CU1 M   2       6.410  36.944  39.012  1.00 40.39      META CU 
+HETATM 8147  CU  CU1 M   3       7.949  38.932  38.615  1.00 44.84      META CU 
 HETATM 7928  MG  MG  M   4      10.287  28.910  37.768  1.00 12.89      META MG 
-HETATM 7929  CAL CAL M   5     -10.621  34.167  40.559  1.00 22.70      META CA  
+HETATM 7929  CAL CAL M   5     -10.621  34.167  40.559  1.00 22.70      META CA 
 HETATM 7943  CBA PRA A 562      -1.404  26.464  43.029  1.00 43.59      EHEM C  
 HETATM 7944  CGA PRA A 562      -0.655  27.578  42.318  1.00 47.20      EHEM C  
 HETATM 7945  O1A PRA A 562      -1.299  28.586  41.918  1.00 48.88      EHEM O  
 HETATM 7946  O2A PRA A 562       0.580  27.433  42.153  1.00 44.15      EHEM O  
 HETATM 7942  CAA PRA A 562      -1.017  25.072  42.521  1.00 29.21      EHEM C  
-HETATM 7930  FE  HEM A 562      -1.578  20.504  45.736  1.00 32.18      EHEM FE  
+HETATM 7930  FE  HEM A 562      -1.578  20.504  45.736  1.00 32.18      EHEM FE 
 HETATM 7935  NA  HEM A 562      -1.954  22.086  44.663  1.00 27.06      EHEM N  
 HETATM 7947  NB  HEM A 562      -3.422  20.007  45.715  1.00 15.00      EHEM N  
 HETATM 7953  NC  HEM A 562      -1.155  18.861  46.671  1.00 24.21      EHEM N  
@@ -6284,8 +6284,6 @@ HETATM 8028  CBD PRD A 563       8.081  20.558  42.563  1.00 60.94      GHEM C
 HETATM 8029  CGD PRD A 563       7.765  22.037  42.604  1.00 62.71      GHEM C  
 HETATM 8030  O1D PRD A 563       6.730  22.411  43.210  1.00 61.25      GHEM O  
 HETATM 8031  O2D PRD A 563       8.534  22.815  41.997  1.00 56.35      GHEM O  
-
-
 CONECT  322 7929                                                                
 CONECT  327 7929                                                                
 CONECT  348 7929                                                                
