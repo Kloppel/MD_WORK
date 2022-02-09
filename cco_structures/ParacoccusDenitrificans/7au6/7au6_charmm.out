@@ -1,0 +1,2559 @@
+1
+                 Chemistry at HARvard Macromolecular Mechanics
+                (CHARMM) - Free Version 46b1     August 15, 2021                
+                                   bde556660                                    
+       Copyright(c) 1984-2020  President and Fellows of Harvard College
+                              All Rights Reserved
+        Current operating system: Linux-5.13.0-28-generic(x86_64)@london        
+                 Created on  2/9/22 at 14:50:46 by user: pbuser      
+
+            Maximum number of ATOMS:    360720, and RESidues:      120240
+ RDTITL>  
+ RDTITL> No title read.
+
+      ***** LEVEL  1 WARNING FROM <RDTITL> *****
+      ***** Title expected.
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+  
+ CHARMM>     
+  
+ CHARMM>    dimension chsize 999999
+Size      Original         New
+MAXA        360720      999999
+MAXB        360720      999999
+MAXT        721440     1999998
+MAXP       1082160     2999997
+MAXIMP      180360      499999
+MAXNB        90180      249999
+MAXPAD      360720      999999
+MAXRES      120240      333333
+MAXSEG       45090      124999
+MAXATC        1400
+MAXCB         3000
+MAXCT        50000
+MAXCP        20000
+MAXCI         1200
+MAXCH         6400
+MAXCN       502503
+MAXCRT      120240      333333
+  
+ CHARMM>    read rtf card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top_alw_clean_kb.inp"
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top_alw_clean_kb.inp::
+ MAINIO> Residue topology file being read from unit  90.
+ TITLE> *>>>>>>>>CHARMM22 ALL-HYDROGEN TOPOLOGY FILE FOR PROTEINS <<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>> AND NUCLEIC ACIDS <<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> *>>>>> INCLUDES PHI, PSI CROSS TERM MAP (CMAP) CORRECTION <<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>>>>   JULY, 2004    <<<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> * ALL COMMENTS TO ADM JR. VIA THE CHARMM WEB SITE: WWW.CHARMM.ORG
+ TITLE> *               PARAMETER SET DISCUSSION FORUM
+ TITLE> *
+
+      ***** LEVEL  2 WARNING FROM <RTFRDR> *****
+      ***** Duplicate atom type index. replacing
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+          MASS   107 CU   65.370000 CU
+ **** WARNING from RTFRDR **** The total charge of the residue, PRDP,  -0.0000000,
+ does not equal the expected charge,  -1.0000000.
+          PRES CHAR   -3.00
+ **** WARNING from RTFRDR **** The total charge of the residue, CHAR,  -2.8000000,
+ does not equal the expected charge,  -3.0000000.
+          PRES PRAH   0.00
+ **** WARNING from RTFRDR **** The total charge of the residue, 5PO3,  -2.1800000,
+ does not equal the expected charge,  -2.0000000.
+          PRES DELB         0.00
+
+      ***** LEVEL  1 WARNING FROM <DECODF> *****
+      ***** Zero length string
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+ WARNING from DECODF -- Zero length string being converted to 0.
+
+      ***** LEVEL  1 WARNING FROM <DECODF> *****
+      ***** Zero length string
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+ WARNING from DECODF -- Zero length string being converted to 0.
+
+      ***** LEVEL  1 WARNING FROM <DECODF> *****
+      ***** Zero length string
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+ WARNING from DECODF -- Zero length string being converted to 0.
+
+      ***** LEVEL  1 WARNING FROM <DECODF> *****
+      ***** Zero length string
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+ WARNING from DECODF -- Zero length string being converted to 0.
+*** WARNING **** residue DELH already exists (old one deleted)
+
+      ***** LEVEL  1 WARNING FROM <RTFRDR> *****
+      ***** Residue already exists.
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+
+      ***** LEVEL  1 WARNING FROM <DECODF> *****
+      ***** Zero length string
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+ WARNING from DECODF -- Zero length string being converted to 0.
+          PRES DELH
+
+      ***** LEVEL  1 WARNING FROM <DECODF> *****
+      ***** Zero length string
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+ WARNING from DECODF -- Zero length string being converted to 0.
+
+      ***** LEVEL  1 WARNING FROM <DECODF> *****
+      ***** Zero length string
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+ WARNING from DECODF -- Zero length string being converted to 0.
+
+      ***** LEVEL  1 WARNING FROM <DECODF> *****
+      ***** Zero length string
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+ WARNING from DECODF -- Zero length string being converted to 0.
+
+      ***** LEVEL  1 WARNING FROM <DECODF> *****
+      ***** Zero length string
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+ WARNING from DECODF -- Zero length string being converted to 0.
+ **** WARNING from RTFRDR **** The total charge of the residue, CUBA,  -0.3410000,
+ does not equal the expected charge,   0.0000000.
+
+      ***** LEVEL  1 WARNING FROM <DECODF> *****
+      ***** Zero length string
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+ WARNING from DECODF -- Zero length string being converted to 0.
+          PRES CUAP
+
+      ***** LEVEL  1 WARNING FROM <DECODF> *****
+      ***** Zero length string
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+ WARNING from DECODF -- Zero length string being converted to 0.
+ **** WARNING from RTFRDR **** The total charge of the residue, CA21,   1.0000000,
+ does not equal the expected charge,   0.0000000.
+          PRES CB1    1.00
+ **** WARNING from RTFRDR **** The total charge of the residue, CBN1,  -1.0000000,
+ does not equal the expected charge,   0.0000000.
+          PRES CBPP    1.00
+ There were   8 warning(s) from RTFRDR.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    read rtf card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.rtf" append
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.rtf::
+ MAINIO> Residue topology file being read from unit  90.
+ TITLE> * SPECIFIC REFERENCE CHARGE STATES
+ TITLE> * BY GERNOT KIESERITZKY 2006
+ TITLE> *
+*** WARNING **** residue TYRD already exists (old one deleted)
+
+      ***** LEVEL  1 WARNING FROM <RTFRDR> *****
+      ***** Residue already exists.
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+          PRES TYRD        -1.000
+*** WARNING **** residue SEPD already exists (old one deleted)
+
+      ***** LEVEL  1 WARNING FROM <RTFRDR> *****
+      ***** Residue already exists.
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+          PRES SEPD        -1.18
+ **** WARNING from RTFRDR **** The total charge of the residue, CT1N,  -0.7300000,
+ does not equal the expected charge,   0.0000000.
+ There were   3 warning(s) from RTFRDR.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    read rtf card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top_all36_lipid.rtf" append
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top_all36_lipid.rtf::
+ MAINIO> Residue topology file being read from unit  90.
+ TITLE> *  \\\\\\\ CHARMM36 ALL-HYDROGEN LIPID TOPOLOGY FILE ///////
+ TITLE> *  ALL COMMENTS AND QUESTIONS SHOULD BE SUBMITTED TO THE
+ TITLE> *  PARAMETER FORUM AT THE CHARMM WEBSITE: WWW.CHARMM.ORG
+ TITLE> *
+*** WARNING **** residue TIP3 already exists (old one deleted)
+
+      ***** LEVEL  1 WARNING FROM <RTFRDR> *****
+      ***** Residue already exists.
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+          RESI TIP3         0.00
+*** WARNING **** residue SOD  already exists (old one deleted)
+
+      ***** LEVEL  1 WARNING FROM <RTFRDR> *****
+      ***** Residue already exists.
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+          RESI SOD          1.00
+*** WARNING **** residue CLA  already exists (old one deleted)
+
+      ***** LEVEL  1 WARNING FROM <RTFRDR> *****
+      ***** Residue already exists.
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+          RESI CLA         -1.00
+*** WARNING **** residue MG   already exists (old one deleted)
+
+      ***** LEVEL  1 WARNING FROM <RTFRDR> *****
+      ***** Residue already exists.
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+          RESI MG           2.00
+*** WARNING **** residue POT  already exists (old one deleted)
+
+      ***** LEVEL  1 WARNING FROM <RTFRDR> *****
+      ***** Residue already exists.
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+          RESI POT       1.00
+*** WARNING **** residue CES  already exists (old one deleted)
+
+      ***** LEVEL  1 WARNING FROM <RTFRDR> *****
+      ***** Residue already exists.
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+          RESI CES       1.00
+*** WARNING **** residue CAL  already exists (old one deleted)
+
+      ***** LEVEL  1 WARNING FROM <RTFRDR> *****
+      ***** Residue already exists.
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+          RESI CAL       2.00
+*** WARNING **** residue ZN2  already exists (old one deleted)
+
+      ***** LEVEL  1 WARNING FROM <RTFRDR> *****
+      ***** Residue already exists.
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+          RESI ZN2       2.00
+ There were   8 warning(s) from RTFRDR.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    read rtf card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top_all36_cgenff.rtf" append
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/top_all36_cgenff.rtf::
+ MAINIO> Residue topology file being read from unit  90.
+ TITLE> *  --------------------------------------------------------------------------  *
+ TITLE> *          CGENFF: TOPOLOGY FOR THE CHARMM GENERAL FORCE FIELD V. 2B6          *
+ TITLE> *                    FOR SMALL MOLECULE DRUG DESIGN                            *
+ TITLE> *  --------------------------------------------------------------------------  *
+ TITLE> *
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    read para card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par_all22_prot_plus_heme_and_Cu_kb.inp"
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par_all22_prot_plus_heme_and_Cu_kb.inp::
+
+          PARAMETER FILE BEING READ FROM UNIT 90
+ TITLE> *>>>>> CHARMM22 ALL-HYDROGEN PARAMETER FILE FOR PROTEINS <<<<<<<<
+ TITLE> *>>>>> INCLUDES PHI, PSI CROSS TERM MAP (CMAP) CORRECTION <<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>>>> DECEMBER, 2003 <<<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> * ALL COMMENTS TO ADM JR. VIA THE CHARMM WEB SITE: WWW.CHARMM.ORG
+ TITLE> *               PARAMETER SET DISCUSSION FORUM
+ TITLE> *
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 102  HN1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 103  HN2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 104  HN3 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 105  HN3B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 106  HN3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 108  HN4 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 109  HN5 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 110  HN6 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 111  HN7 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 112  HN8 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 113  HN9 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 114  HNE1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 115  HNE2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 120  CN1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 121  CN1A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 122  CN1T
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 123  CN2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 124  CN3 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 125  CN3A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 126  CN3B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 127  CN3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 128  CN3D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 129  CN3T
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 130  CN4 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 131  CN5 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 132  CN5G
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 133  CN7 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 134  CN7B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 135  CN7C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 136  CN7D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 137  CN8 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 138  CN8B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 139  CN9 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 140  CNE1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 141  CNE2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 142  CNA 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 143  CNA2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 144  CN6 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 145  CN7E
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 150  NN1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 151  NN1C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 152  NN2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 153  NN2B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 154  NN2C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 155  NN2U
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 156  NN2G
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 157  NN3 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 158  NN3A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 159  NN3I
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 160  NN3G
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 161  NN4 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 162  NN5 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 163  NN6 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 171  ON1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 172  ON1C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 173  ON2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 174  ON3 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 175  ON4 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 176  ON5 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 177  ON6 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 178  ON6B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 179  ON2B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 180  FN1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 181  FNA 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 182  P   
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 183  P2  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 184  P3  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 222  SP  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 224  HL  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 225  HCL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 227  HOL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 228  HAL1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 229  HAL2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 230  HAL3
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 231  HEL1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 232  HEL2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 233  HBL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 234  CL  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 235  CTL1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 236  CTL2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 237  CTL3
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 238  CTL5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 239  CEL1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 240  CEL2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 241  CCL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 242  NTL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 243  NH3L
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 244  OBL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 245  OCL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 247  OSL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 248  O2L 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 249  OHL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 250  OSLP
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 251  PL  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 252  SL  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 256  HGA1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 257  HGA2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 258  HGA3
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 259  HGA4
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 260  HGA5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 261  HGA6
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 262  HGA7
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 263  HGAA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 264  HGAA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 265  HGAA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 266  HGP1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 267  HGP2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 268  HGP3
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 269  HGP4
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 270  HGP5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 271  HGPA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 272  HGPA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 273  HGPA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 274  HGR5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 275  HGR5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 276  HGR5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 277  HGR6
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 278  HGR6
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 279  HGR6
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 280  HGR7
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 281  CG1T
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 282  CG1N
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 283  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 284  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 285  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 286  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 287  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 288  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 289  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 290  CG2N
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 291  CG2N
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 292  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 293  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 294  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 295  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 296  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 297  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 298  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 299  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 300  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 301  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 302  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 303  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 304  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 305  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 306  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 307  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 308  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 309  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 310  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 311  CG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 312  CG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 313  CG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 314  CG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 315  CG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 316  CG32
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 317  CG32
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 318  CG32
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 319  CG32
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 320  CG33
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 321  CG33
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 322  CG3A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 323  CG3A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 324  CG3A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 325  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 327  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 328  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 329  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 330  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 331  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 332  CG3R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 333  NG1T
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 334  NG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 335  NG2S
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 336  NG2S
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 337  NG2S
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 338  NG2S
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 339  NG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 340  NG2P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 341  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 342  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 343  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 344  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 345  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 346  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 347  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 348  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 349  NG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 350  NG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 351  NG32
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 352  NG33
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 353  NG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 354  NG3N
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 355  NG3P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 356  NG3P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 357  NG3P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 358  NG3P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 359  OG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 360  OG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 361  OG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 362  OG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 363  OG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 364  OG2N
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 365  OG2P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 366  OG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 367  OG3R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 368  OG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 369  OG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 370  OG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 371  OG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 372  OG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 373  OG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 374  OG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 375  OG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 376  SG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 377  SG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 378  SG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 379  SG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 380  SG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 381  SG3O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 382  SG3O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 383  SG3O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 384  CLGA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 385  CLGA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 386  CLGR
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 387  BRGA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 388  BRGA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 389  BRGA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 390  BRGR
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 391  IGR1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 392  FGA1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 393  FGA2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 394  FGA3
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 395  FGP1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 396  FGR1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 397  PG0 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 398  PG1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 399  PG2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 400  ALG1
+ NO nonbond interactions will be computed for this atom type.
+ PARMIO> NONBOND, HBOND lists and IMAGE atoms cleared.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    read para card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.prm" append
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/patches.prm::
+
+          PARAMETER FILE BEING READ FROM UNIT 90
+ TITLE> * ADDITIONAL PARAMETERS FOR SPECIAL RESIDUES
+ TITLE> * GERNOT KIESERITZKY
+ TITLE>  
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 102  HN1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 103  HN2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 104  HN3 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 105  HN3B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 106  HN3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 108  HN4 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 109  HN5 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 110  HN6 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 111  HN7 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 112  HN8 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 113  HN9 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 114  HNE1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 115  HNE2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 120  CN1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 121  CN1A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 122  CN1T
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 123  CN2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 124  CN3 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 125  CN3A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 126  CN3B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 127  CN3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 128  CN3D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 129  CN3T
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 130  CN4 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 131  CN5 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 132  CN5G
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 133  CN7 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 134  CN7B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 135  CN7C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 136  CN7D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 137  CN8 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 138  CN8B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 139  CN9 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 140  CNE1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 141  CNE2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 142  CNA 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 143  CNA2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 144  CN6 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 145  CN7E
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 150  NN1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 151  NN1C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 152  NN2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 153  NN2B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 154  NN2C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 155  NN2U
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 156  NN2G
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 157  NN3 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 158  NN3A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 159  NN3I
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 160  NN3G
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 161  NN4 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 162  NN5 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 163  NN6 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 171  ON1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 172  ON1C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 173  ON2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 174  ON3 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 175  ON4 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 176  ON5 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 177  ON6 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 178  ON6B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 179  ON2B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 180  FN1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 181  FNA 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 182  P   
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 183  P2  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 184  P3  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 222  SP  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 224  HL  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 225  HCL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 227  HOL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 228  HAL1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 229  HAL2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 230  HAL3
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 231  HEL1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 232  HEL2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 233  HBL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 234  CL  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 235  CTL1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 236  CTL2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 237  CTL3
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 238  CTL5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 239  CEL1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 240  CEL2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 241  CCL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 242  NTL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 243  NH3L
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 244  OBL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 245  OCL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 247  OSL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 248  O2L 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 249  OHL 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 250  OSLP
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 251  PL  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 252  SL  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 256  HGA1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 257  HGA2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 258  HGA3
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 259  HGA4
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 260  HGA5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 261  HGA6
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 262  HGA7
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 263  HGAA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 264  HGAA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 265  HGAA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 266  HGP1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 267  HGP2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 268  HGP3
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 269  HGP4
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 270  HGP5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 271  HGPA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 272  HGPA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 273  HGPA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 274  HGR5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 275  HGR5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 276  HGR5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 277  HGR6
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 278  HGR6
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 279  HGR6
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 280  HGR7
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 281  CG1T
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 282  CG1N
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 283  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 284  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 285  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 286  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 287  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 288  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 289  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 290  CG2N
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 291  CG2N
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 292  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 293  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 294  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 295  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 296  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 297  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 298  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 299  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 300  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 301  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 302  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 303  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 304  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 305  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 306  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 307  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 308  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 309  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 310  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 311  CG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 312  CG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 313  CG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 314  CG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 315  CG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 316  CG32
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 317  CG32
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 318  CG32
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 319  CG32
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 320  CG33
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 321  CG33
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 322  CG3A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 323  CG3A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 324  CG3A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 325  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 327  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 328  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 329  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 330  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 331  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 332  CG3R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 333  NG1T
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 334  NG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 335  NG2S
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 336  NG2S
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 337  NG2S
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 338  NG2S
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 339  NG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 340  NG2P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 341  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 342  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 343  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 344  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 345  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 346  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 347  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 348  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 349  NG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 350  NG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 351  NG32
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 352  NG33
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 353  NG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 354  NG3N
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 355  NG3P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 356  NG3P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 357  NG3P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 358  NG3P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 359  OG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 360  OG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 361  OG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 362  OG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 363  OG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 364  OG2N
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 365  OG2P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 366  OG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 367  OG3R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 368  OG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 369  OG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 370  OG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 371  OG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 372  OG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 373  OG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 374  OG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 375  OG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 376  SG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 377  SG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 378  SG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 379  SG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 380  SG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 381  SG3O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 382  SG3O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 383  SG3O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 384  CLGA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 385  CLGA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 386  CLGR
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 387  BRGA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 388  BRGA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 389  BRGA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 390  BRGR
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 391  IGR1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 392  FGA1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 393  FGA2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 394  FGA3
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 395  FGP1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 396  FGR1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 397  PG0 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 398  PG1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 399  PG2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 400  ALG1
+ NO nonbond interactions will be computed for this atom type.
+ PARMIO> NONBOND, HBOND lists and IMAGE atoms cleared.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    read para card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par_all36_lipid.prm" append
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par_all36_lipid.prm::
+
+          PARAMETER FILE BEING READ FROM UNIT 90
+ TITLE> *  \\\\\\\ CHARMM36 ALL-HYDROGEN LIPID PARAMETER FILE ///////
+ TITLE> *  ALL COMMENTS AND QUESTIONS SHOULD BE SUBMITTED TO THE
+ TITLE> *  PARAMETER FORUM AT THE CHARMM WEBSITE: WWW.CHARMM.ORG
+ TITLE> *
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 102  HN1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 103  HN2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 104  HN3 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 105  HN3B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 106  HN3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 108  HN4 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 109  HN5 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 110  HN6 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 111  HN7 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 112  HN8 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 113  HN9 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 114  HNE1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 115  HNE2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 120  CN1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 121  CN1A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 122  CN1T
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 123  CN2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 124  CN3 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 125  CN3A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 126  CN3B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 127  CN3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 128  CN3D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 129  CN3T
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 130  CN4 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 131  CN5 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 132  CN5G
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 133  CN7 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 134  CN7B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 135  CN7C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 136  CN7D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 137  CN8 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 138  CN8B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 139  CN9 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 140  CNE1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 141  CNE2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 142  CNA 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 143  CNA2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 144  CN6 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 145  CN7E
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 150  NN1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 151  NN1C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 152  NN2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 153  NN2B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 154  NN2C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 155  NN2U
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 156  NN2G
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 157  NN3 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 158  NN3A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 159  NN3I
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 160  NN3G
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 161  NN4 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 162  NN5 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 163  NN6 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 171  ON1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 172  ON1C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 173  ON2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 174  ON3 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 175  ON4 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 176  ON5 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 177  ON6 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 178  ON6B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 179  ON2B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 180  FN1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 181  FNA 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 182  P   
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 183  P2  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 184  P3  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 222  SP  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 256  HGA1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 257  HGA2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 258  HGA3
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 259  HGA4
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 260  HGA5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 261  HGA6
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 262  HGA7
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 263  HGAA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 264  HGAA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 265  HGAA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 266  HGP1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 267  HGP2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 268  HGP3
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 269  HGP4
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 270  HGP5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 271  HGPA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 272  HGPA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 273  HGPA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 274  HGR5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 275  HGR5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 276  HGR5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 277  HGR6
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 278  HGR6
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 279  HGR6
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 280  HGR7
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 281  CG1T
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 282  CG1N
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 283  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 284  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 285  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 286  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 287  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 288  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 289  CG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 290  CG2N
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 291  CG2N
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 292  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 293  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 294  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 295  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 296  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 297  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 298  CG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 299  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 300  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 301  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 302  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 303  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 304  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 305  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 306  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 307  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 308  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 309  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 310  CG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 311  CG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 312  CG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 313  CG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 314  CG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 315  CG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 316  CG32
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 317  CG32
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 318  CG32
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 319  CG32
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 320  CG33
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 321  CG33
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 322  CG3A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 323  CG3A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 324  CG3A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 325  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 327  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 328  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 329  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 330  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 331  CG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 332  CG3R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 333  NG1T
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 334  NG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 335  NG2S
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 336  NG2S
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 337  NG2S
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 338  NG2S
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 339  NG2O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 340  NG2P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 341  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 342  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 343  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 344  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 345  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 346  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 347  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 348  NG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 349  NG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 350  NG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 351  NG32
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 352  NG33
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 353  NG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 354  NG3N
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 355  NG3P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 356  NG3P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 357  NG3P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 358  NG3P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 359  OG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 360  OG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 361  OG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 362  OG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 363  OG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 364  OG2N
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 365  OG2P
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 366  OG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 367  OG3R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 368  OG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 369  OG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 370  OG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 371  OG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 372  OG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 373  OG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 374  OG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 375  OG3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 376  SG2D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 377  SG2R
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 378  SG31
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 379  SG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 380  SG30
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 381  SG3O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 382  SG3O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 383  SG3O
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 384  CLGA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 385  CLGA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 386  CLGR
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 387  BRGA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 388  BRGA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 389  BRGA
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 390  BRGR
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 391  IGR1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 392  FGA1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 393  FGA2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 394  FGA3
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 395  FGP1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 396  FGR1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 397  PG0 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 398  PG1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 399  PG2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 400  ALG1
+ NO nonbond interactions will be computed for this atom type.
+ PARMIO> NONBOND, HBOND lists and IMAGE atoms cleared.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    read para card name "/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par_all36_cgenff.prm" append
+ VOPEN> Attempting to open::/home/pbuser/Desktop/PhD_WORK/MD_WORK/Karlsberg/test_example/toppar27/par_all36_cgenff.prm::
+
+          PARAMETER FILE BEING READ FROM UNIT 90
+ TITLE> *  --------------------------------------------------------------------------  *
+ TITLE> *         CGENFF: PARAMETERS FOR THE CHARMM GENERAL FORCE FIELD V. 2B6         *
+ TITLE> *                    FOR SMALL MOLECULE DRUG DESIGN                            *
+ TITLE> *  --------------------------------------------------------------------------  *
+ TITLE> *
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 102  HN1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 103  HN2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 104  HN3 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 105  HN3B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 106  HN3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 108  HN4 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 109  HN5 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 110  HN6 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 111  HN7 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 112  HN8 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 113  HN9 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 114  HNE1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 115  HNE2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 120  CN1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 121  CN1A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 122  CN1T
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 123  CN2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 124  CN3 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 125  CN3A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 126  CN3B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 127  CN3C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 128  CN3D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 129  CN3T
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 130  CN4 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 131  CN5 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 132  CN5G
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 133  CN7 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 134  CN7B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 135  CN7C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 136  CN7D
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 137  CN8 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 138  CN8B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 139  CN9 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 140  CNE1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 141  CNE2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 142  CNA 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 143  CNA2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 144  CN6 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 145  CN7E
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 150  NN1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 151  NN1C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 152  NN2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 153  NN2B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 154  NN2C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 155  NN2U
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 156  NN2G
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 157  NN3 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 158  NN3A
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 159  NN3I
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 160  NN3G
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 161  NN4 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 162  NN5 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 163  NN6 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 171  ON1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 172  ON1C
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 173  ON2 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 174  ON3 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 175  ON4 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 176  ON5 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 177  ON6 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 178  ON6B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 179  ON2B
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 180  FN1 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 181  FNA 
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 182  P   
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 183  P2  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 184  P3  
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 222  SP  
+ NO nonbond interactions will be computed for this atom type.
+ PARMIO> NONBOND, HBOND lists and IMAGE atoms cleared.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>     
+  
+ CHARMM>    read sequence coor name "7au6_in_ACHA.crd" resid
+ VOPEN> Attempting to open::7au6_in_ACHA.crd::
+ MAINIO> Sequence information being read from unit  90.
+ TITLE> 4257  EXT
+ RDTITL> No title read.
+
+          RESIDUE SEQUENCE --   537 RESIDUES
+          GLY PHE PHE THR ARG TRP PHE MET SER THR ASN HSE LYS ASP ILE GLY ILE LEU TYR LEU 
+          PHE THR ALA GLY ILE VAL GLY LEU ILE SER VAL CYS PHE THR VAL TYR MET ARG MET GLU 
+          LEU GLN HSE PRO GLY VAL GLN TYR MET CYS LEU GLU GLY ALA ARG LEU ILE ALA ASP ALA 
+          SER ALA GLU CYS THR PRO ASN GLY HSE LEU TRP ASN VAL MET ILE THR TYR HSE GLY VAL 
+          LEU MET MET PHE PHE VAL VAL ILE PRO ALA LEU PHE GLY GLY PHE GLY ASN TYR PHE MET 
+          PRO LEU HSE ILE GLY ALA PRO ASP MET ALA PHE PRO ARG LEU ASN ASN LEU SER TYR TRP 
+          MET TYR VAL CYS GLY VAL ALA LEU GLY VAL ALA SER LEU LEU ALA PRO GLY GLY ASN ASP 
+          GLN MET GLY SER GLY VAL GLY TRP VAL LEU TYR PRO PRO LEU SER THR THR GLU ALA GLY 
+          TYR SER MET ASP LEU ALA ILE PHE ALA VAL HSE VAL SER GLY ALA SER SER ILE LEU GLY 
+          ALA ILE ASN ILE ILE THR THR PHE LEU ASN MET ARG ALA PRO GLY MET THR LEU PHE LYS 
+          VAL PRO LEU PHE ALA TRP SER VAL PHE ILE THR ALA TRP LEU ILE LEU LEU SER LEU PRO 
+          VAL LEU ALA GLY ALA ILE THR MET LEU LEU MET ASP ARG ASN PHE GLY THR GLN PHE PHE 
+          ASP PRO ALA GLY GLY GLY ASP PRO VAL LEU TYR GLN HSE ILE LEU TRP PHE PHE GLY HSE 
+          PRO GLU VAL TYR ILE ILE ILE LEU PRO GLY PHE GLY ILE ILE SER HSE VAL ILE SER THR 
+          PHE ALA LYS LYS PRO ILE PHE GLY TYR LEU PRO MET VAL LEU ALA MET ALA ALA ILE GLY 
+          ILE LEU GLY PHE VAL VAL TRP ALA HSE HSE MET TYR THR ALA GLY MET SER LEU THR GLN 
+          GLN ALA TYR PHE MET LEU ALA THR MET THR ILE ALA VAL PRO THR GLY ILE LYS VAL PHE 
+          SER TRP ILE ALA THR MET TRP GLY GLY SER ILE GLU PHE LYS THR PRO MET LEU TRP ALA 
+          PHE GLY PHE LEU PHE LEU PHE THR VAL GLY GLY VAL THR GLY VAL VAL LEU SER GLN ALA 
+          PRO LEU ASP ARG VAL TYR HSE ASP THR TYR TYR VAL VAL ALA HSE PHE HSE TYR VAL MET 
+          SER LEU GLY ALA VAL PHE GLY ILE PHE ALA GLY VAL TYR TYR TRP ILE GLY LYS MET SER 
+          GLY ARG GLN TYR PRO GLU TRP ALA GLY GLN LEU HSE PHE TRP MET MET PHE ILE GLY SER 
+          ASN LEU ILE PHE PHE PRO GLN HSE PHE LEU GLY ARG GLN GLY MET PRO ARG ARG TYR ILE 
+          ASP TYR PRO VAL GLU PHE ALA TYR TRP ASN ASN ILE SER SER ILE GLY ALA TYR ILE SER 
+          PHE ALA SER PHE LEU PHE PHE ILE GLY ILE VAL PHE TYR THR LEU PHE ALA GLY LYS ARG 
+          VAL ASN VAL PRO ASN TYR TRP ASN GLU HSE ALA ASP THR LEU GLU TRP THR LEU PRO SER 
+          PRO PRO PRO GLU HSE THR PHE GLU THR LEU PRO LYS ARG GLU ASP TRP ASP 
+ ***** Message from SEQRDR ***** THE SYSTEM CONTAINS 81 TITRATABLE GROUPS
+ THE USER MUST PREDETERMINE THE PROTONATION STATE THROUGH THE SEQUENCE AND RTF
+ HIS -  0  HSD -  0  HSE - 18  HSP -  0  ASP - 14  GLU - 13  LYS -  9  TYR - 27
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    generate setup ACHA first ACE last CT1
+ THE PATCH 'ACE' WILL BE USED FOR THE FIRST RESIDUE
+ THE PATCH 'CT1' WILL BE USED FOR THE LAST  RESIDUE
+ GENPSF> Segment   1 has been generated. Its identifier is ACHA.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =      537
+         Number of atoms         =     8442   Number of groups     =     2694
+         Number of bonds         =     8601   Number of angles     =    15490
+         Number of dihedrals     =    22746   Number of impropers  =     1335
+         Number of cross-terms   =      535
+         Number of HB acceptors  =      723   Number of HB donors  =      778
+         Number of NB exclusions =        0   Total charge =   -5.00000
+ QXFORM> Expanded format used.
+         More than 4 character atom type used.
+  
+ CHARMM>     
+  
+ CHARMM>    read sequence coor name "7au6_in_BCHA.crd" resid
+ VOPEN> Attempting to open::7au6_in_BCHA.crd::
+ MAINIO> Sequence information being read from unit  90.
+ TITLE> 1947  EXT
+ RDTITL> No title read.
+
+          RESIDUE SEQUENCE --   248 RESIDUES
+          LEU     GLY     ASP     LEU     PRO     VAL     ILE     GLY     LYS     PRO     VAL     ASN     GLY     GLY     MET     ASN     PHE     GLN     PRO     ALA     
+          SER     SER     PRO     LEU     ALA     HSE     ASP     GLN     GLN     TRP     LEU     ASP     HSE     PHE     VAL     LEU     TYR     ILE     ILE     THR     
+          ALA     VAL     THR     ILE     PHE     VAL     CYS     LEU     LEU     LEU     LEU     ILE     CYS     ILE     VAL     ARG     PHE     ASN     ARG     ARG     
+          ALA     ASN     PRO     VAL     PRO     ALA     ARG     PHE     THR     HSE     ASN     THR     PRO     ILE     GLU     VAL     ILE     TRP     THR     LEU     
+          VAL     PRO     VAL     LEU     ILE     LEU     VAL     ALA     ILE     GLY     ALA     PHE     SER     LEU     PRO     ILE     LEU     PHE     ARG     SER     
+          GLN     GLU     MET     PRO     ASN     ASP     PRO     ASP     LEU     VAL     ILE     LYS     ALA     ILE     GLY     HSE     GLN     TRP     TYR     TRP     
+          SER     TYR     GLU     TYR     PRO     ASN     ASP     GLY     VAL     ALA     PHE     ASP     ALA     LEU     MET     LEU     GLU     LYS     GLU     ALA     
+          LEU     ALA     ASP     ALA     GLY     TYR     SER     GLU     ASP     GLU     TYR     LEU     LEU     ALA     THR     ASP     ASN     PRO     VAL     VAL     
+          VAL     PRO     VAL     GLY     LYS     LYS     VAL     LEU     VAL     GLN     VAL     THR     ALA     THR     ASP     VAL     ILE     HSE     ALA     TRP     
+          THR     ILE     PRO     ALA     PHE     ALA     VAL     LYS     GLN     ASP     ALA     VAL     PRO     GLY     ARG     ILE     ALA     GLN     LEU     TRP     
+          PHE     SER     VAL     ASP     GLN     GLU     GLY     VAL     TYR     PHE     GLY     GLN     CYS     SER     GLU     LEU     CYS     GLY     ILE     ASN     
+          HSE     ALA     TYR     MET     PRO     ILE     VAL     VAL     LYS     ALA     VAL     SER     GLN     GLU     LYS     TYR     GLU     ALA     TRP     LEU     
+          ALA     GLY     ALA     LYS     GLU     GLU     PHE     ALA     
+ ***** Message from SEQRDR ***** THE SYSTEM CONTAINS 50 TITRATABLE GROUPS
+ THE USER MUST PREDETERMINE THE PROTONATION STATE THROUGH THE SEQUENCE AND RTF
+ HIS -  0  HSD -  0  HSE -  6  HSP -  0  ASP - 13  GLU - 13  LYS -  9  TYR -  9
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    generate setup BCHA first ACE last CT1
+ THE PATCH 'ACE' WILL BE USED FOR THE FIRST RESIDUE
+ THE PATCH 'CT1' WILL BE USED FOR THE LAST  RESIDUE
+ GENPSF> Segment   2 has been generated. Its identifier is BCHA.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        2   Number of residues   =      785
+         Number of atoms         =    12337   Number of groups     =     3908
+         Number of bonds         =    12553   Number of angles     =    22666
+         Number of dihedrals     =    33298   Number of impropers  =     1980
+         Number of cross-terms   =      781
+         Number of HB acceptors  =     1078   Number of HB donors  =     1150
+         Number of NB exclusions =        0   Total charge =  -16.00000
+  
+ CHARMM>     
+  
+ CHARMM>    read sequence coor name "7au6_in_META.crd" resid
+ VOPEN> Attempting to open::7au6_in_META.crd::
+ MAINIO> Sequence information being read from unit  90.
+ TITLE> 5  EXT
+ RDTITL> No title read.
+
+          RESIDUE SEQUENCE --     5 RESIDUES
+          CU1     CU1     CU1     MG      CAL     
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    generate setup META first NONE last NONE
+ NO PATCHING WILL BE DONE ON THE FIRST RESIDUE
+ NO PATCHING WILL BE DONE ON THE LAST  RESIDUE
+ GENPSF> Segment   3 has been generated. Its identifier is META.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        3   Number of residues   =      790
+         Number of atoms         =    12342   Number of groups     =     3913
+         Number of bonds         =    12553   Number of angles     =    22666
+         Number of dihedrals     =    33298   Number of impropers  =     1980
+         Number of cross-terms   =      781
+         Number of HB acceptors  =     1078   Number of HB donors  =     1150
+         Number of NB exclusions =        0   Total charge =   -9.00000
+  
+ CHARMM>     
+  
+ CHARMM>    patch disu ACHA 66 ACHA 80
+ ATOM  ACHA     66       CYS      HG1      AND ALL REFERENCES TO IT DELETED.
+ ATOM  ACHA     80       CYS      HG1      AND ALL REFERENCES TO IT DELETED.
+
+ Message from MAPIC: Atom numbers are changed.
+ DELTIC:         2 bonds deleted
+ DELTIC:         2 angles deleted
+ DELTIC:         6 dihedrals deleted
+ DELTIC:         2 donors deleted
+ PATCH: Check angles and dihedrals autogenerated.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        3   Number of residues   =      790
+         Number of atoms         =    12340   Number of groups     =     3913
+         Number of bonds         =    12552   Number of angles     =    22664
+         Number of dihedrals     =    33292   Number of impropers  =     1980
+         Number of cross-terms   =      781
+         Number of HB acceptors  =     1078   Number of HB donors  =     1148
+         Number of NB exclusions =        0   Total charge =   -9.00000
+  
+ CHARMM>     
+  
+ CHARMM>    AUTOgenerate ANGLes DIHEdrals
+ AUTOGEN: All angles are removed and regenerated.
+ AUTOGEN: All dihedrals are removed and regenerated.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        3   Number of residues   =      790
+         Number of atoms         =    12340   Number of groups     =     3913
+         Number of bonds         =    12552   Number of angles     =    22666
+         Number of dihedrals     =    33299   Number of impropers  =     1980
+         Number of cross-terms   =      781
+         Number of HB acceptors  =     1078   Number of HB donors  =     1148
+         Number of NB exclusions =        0   Total charge =   -9.00000
+  
+ CHARMM>     
+  
+ CHARMM>    read coor card name "7au6_in_ACHA.crd"
+ VOPEN> Attempting to open::7au6_in_ACHA.crd::
+          SPATIAL COORDINATES BEING READ FROM UNIT 90
+ TITLE> 4257  EXT
+ RDTITL> No title read.
+ ** WARNING ** After reading, there are no coordinates for selected atom:     1     1 GLY      CAY     
+ ** WARNING ** After reading, there are no coordinates for selected atom:     2     1 GLY      HY1     
+ ** WARNING ** After reading, there are no coordinates for selected atom:     3     1 GLY      HY2     
+ ** WARNING ** After reading, there are no coordinates for selected atom:     4     1 GLY      HY3     
+ ** WARNING ** After reading, there are no coordinates for selected atom:     5     1 GLY      CY      
+ ** WARNING ** After reading, there are no coordinates for selected atom:     6     1 GLY      OY      
+ ** WARNING ** After reading, there are no coordinates for selected atom:     8     1 GLY      HN      
+ ** WARNING ** After reading, there are no coordinates for selected atom:    10     1 GLY      HA1     
+ ** WARNING ** After reading, there are no coordinates for selected atom:    11     1 GLY      HA2     
+ ** WARNING ** After reading, there are no coordinates for selected atom:    15     2 PHE      HN      
+
+ ** A total of  8083 selected atoms have no coordinates
+ *** LEVEL  2 WARNING *** BOMLEV IS    0
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    read coor card name "7au6_in_BCHA.crd" resid
+ VOPEN> Attempting to open::7au6_in_BCHA.crd::
+          SPATIAL COORDINATES BEING READ FROM UNIT 90
+ TITLE> 1947  EXT
+ RDTITL> No title read.
+ ** WARNING ** After reading, there are no coordinates for selected atom:     1     1 GLY      CAY     
+ ** WARNING ** After reading, there are no coordinates for selected atom:     2     1 GLY      HY1     
+ ** WARNING ** After reading, there are no coordinates for selected atom:     3     1 GLY      HY2     
+ ** WARNING ** After reading, there are no coordinates for selected atom:     4     1 GLY      HY3     
+ ** WARNING ** After reading, there are no coordinates for selected atom:     5     1 GLY      CY      
+ ** WARNING ** After reading, there are no coordinates for selected atom:     6     1 GLY      OY      
+ ** WARNING ** After reading, there are no coordinates for selected atom:     8     1 GLY      HN      
+ ** WARNING ** After reading, there are no coordinates for selected atom:    10     1 GLY      HA1     
+ ** WARNING ** After reading, there are no coordinates for selected atom:    11     1 GLY      HA2     
+ ** WARNING ** After reading, there are no coordinates for selected atom:    15     2 PHE      HN      
+
+ ** A total of  6136 selected atoms have no coordinates
+ *** LEVEL  2 WARNING *** BOMLEV IS    0
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    read coor card name "7au6_in_META.crd" resid
+ VOPEN> Attempting to open::7au6_in_META.crd::
+          SPATIAL COORDINATES BEING READ FROM UNIT 90
+ TITLE> 5  EXT
+ RDTITL> No title read.
+ ** WARNING ** After reading, there are no coordinates for selected atom:     1     1 GLY      CAY     
+ ** WARNING ** After reading, there are no coordinates for selected atom:     2     1 GLY      HY1     
+ ** WARNING ** After reading, there are no coordinates for selected atom:     3     1 GLY      HY2     
+ ** WARNING ** After reading, there are no coordinates for selected atom:     4     1 GLY      HY3     
+ ** WARNING ** After reading, there are no coordinates for selected atom:     5     1 GLY      CY      
+ ** WARNING ** After reading, there are no coordinates for selected atom:     6     1 GLY      OY      
+ ** WARNING ** After reading, there are no coordinates for selected atom:     8     1 GLY      HN      
+ ** WARNING ** After reading, there are no coordinates for selected atom:    10     1 GLY      HA1     
+ ** WARNING ** After reading, there are no coordinates for selected atom:    11     1 GLY      HA2     
+ ** WARNING ** After reading, there are no coordinates for selected atom:    15     2 PHE      HN      
+
+ ** A total of  6131 selected atoms have no coordinates
+ *** LEVEL  2 WARNING *** BOMLEV IS    0
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>     
+  
+ CHARMM>    ic para
+  
+ CHARMM>    ic build
+  
+ CHARMM>     
+  
+ CHARMM>    hbuild
+
+      ***** LEVEL  4 WARNING FROM <GTHBUI> *****
+      ***** Zero selection specified
+      ******************************************
+      BOMLEV (  0) IS NOT REACHED. WRNLEV IS  5
+
+  
+ CHARMM>     
+  
+ CHARMM>    cons fix select .not. ( none .or. hydrogens )   end
+ SELRPN>   6219 atoms have been selected out of  12340
+  
+ CHARMM>    minimize sd nsteps 1000 tolg 0.1
+
+ NONBOND OPTION FLAGS: 
+     ELEC     VDW      ATOMs    CDIElec  FSHIft   VATOm    VFSWIt  
+     BYGRoup  NOEXtnd  NOEWald 
+ CUTNB  = 14.000 CTEXNB =999.000 CTONNB = 10.000 CTOFNB = 12.000
+ CGONNB =  0.000 CGOFNB = 10.000
+ WMIN   =  1.500 WRNMXD =  0.500 E14FAC =  1.000 EPS    =  1.000
+ NBXMOD =      5
+ There are        0 atom  pairs and        0 atom  exclusions.
+ There are        0 group pairs and        0 group exclusions.
+ <MAKINB> with mode   5 found  35218 exclusions and  32451 interactions(1-4)
+ <MAKGRP> found  11696 group exclusions.
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  3545919 ATOM PAIRS AND        0 GROUP PAIRS
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3594004 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   282442 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+
+
+ STEEPD> An energy minimization has been requested.
+
+ NSTEP  =         1000   NPRINT =           10
+ STEP   =    0.0200000   TOLFUN =    0.0000000
+ TOLGRD =    0.1000000   TOLSTP =    0.0000000
+
+MINI MIN: Cycle      ENERgy      Delta-E         GRMS    Step-size
+MINI INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+MINI EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>        0 -99508.08250      0.00000    122.94150      0.02000
+MINI INTERN>       15.75240   5172.58944   1801.38399   1025.14787      0.09749
+MINI EXTERN>     8000.30950-115523.36319      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+ UPDECI: Nonbond update at step         6
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3593219 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   282742 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+ UPDECI: Nonbond update at step         7
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3592922 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   282930 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+ UPDECI: Nonbond update at step         8
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3592833 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   282901 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+ UPDECI: Nonbond update at step         9
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3592814 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   282898 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+MINI>       10-113435.27002  13927.18752      2.74267      0.00896
+MINI INTERN>      116.10709   1892.10219    458.47467   1056.27905     20.98859
+MINI EXTERN>     -783.83019-116195.39142      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+ UPDECI: Nonbond update at step        11
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3592830 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   283003 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+ UPDECI: Nonbond update at step        19
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3592870 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   283048 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+MINI>       20-114587.72264   1152.45262      1.74346      0.00401
+MINI INTERN>       77.37429   1103.54189    236.79603   1119.28950     38.47524
+MINI EXTERN>     -811.20664-116351.99295      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       30-115114.43287    526.71023      2.66037      0.00431
+MINI INTERN>      100.14075    769.55381    142.43662   1089.64047     45.70620
+MINI EXTERN>     -808.81620-116453.09451      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+ UPDECI: Nonbond update at step        38
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3592942 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   283119 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+MINI>       40-115304.61779    190.18492      0.65202      0.00193
+MINI INTERN>       59.76192    724.34912    127.10526   1071.30499     47.51243
+MINI EXTERN>     -830.04122-116504.61029      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       50-115370.97376     66.35597      1.35011      0.00208
+MINI INTERN>       69.22381    710.37318    123.93938   1065.22712     48.27091
+MINI EXTERN>     -839.73283-116548.27532      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       60-115431.24771     60.27395      1.45972      0.00223
+MINI INTERN>       69.63416    704.85912    122.27457   1066.96467     48.54997
+MINI EXTERN>     -856.65495-116586.87525      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       70-115483.22358     51.97587      0.48284      0.00100
+MINI INTERN>       59.00068    703.68264    121.81294   1071.30955     48.59632
+MINI EXTERN>     -862.06078-116625.56494      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+ UPDECI: Nonbond update at step        79
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3593063 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   283115 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+MINI>       80-115512.88164     29.65806      0.76558      0.00107
+MINI INTERN>       61.66479    702.63876    121.74634   1076.21056     48.57998
+MINI EXTERN>     -867.07064-116656.65143      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       90-115537.11925     24.23762      0.80602      0.00116
+MINI INTERN>       62.31087    701.88965    121.64431   1081.97394     48.53876
+MINI EXTERN>     -871.57750-116681.89929      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      100-115551.61967     14.50041      0.89757      0.00124
+MINI INTERN>       63.28033    701.47291    121.57534   1087.44236     48.49047
+MINI EXTERN>     -874.58421-116699.29687      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      110-115569.87509     18.25542      0.20500      0.00056
+MINI INTERN>       57.09085    701.21344    121.52565   1092.93390     48.43476
+MINI EXTERN>     -881.10958-116709.96411      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      120-115581.79439     11.91930      0.20649      0.00060
+MINI INTERN>       57.04108    701.05677    121.48848   1098.15859     48.37989
+MINI EXTERN>     -883.78230-116724.13688      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      130-115593.39177     11.59738      0.20991      0.00064
+MINI INTERN>       57.02806    700.99807    121.45970   1103.00095     48.32735
+MINI EXTERN>     -886.11807-116738.08785      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      140-115604.49342     11.10165      0.46173      0.00069
+MINI INTERN>       57.41436    701.01389    121.43640   1107.23251     48.27433
+MINI EXTERN>     -888.83091-116751.03400      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+ UPDECI: Nonbond update at step       146
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3593180 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   283188 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+MINI>      150-115617.03337     12.53994      0.49874      0.00074
+MINI INTERN>       57.58816    701.05261    121.41705   1110.39840     48.22328
+MINI EXTERN>     -890.65068-116765.06218      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      160-115631.15307     14.11971      0.54047      0.00080
+MINI INTERN>       57.83359    701.04350    121.40053   1112.49026     48.17131
+MINI EXTERN>     -892.32046-116779.77181      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      170-115648.08746     16.93439      0.57252      0.00086
+MINI INTERN>       58.10464    700.90333    121.38716   1113.16664     48.11643
+MINI EXTERN>     -893.84413-116795.92154      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      180-115666.85348     18.76602      0.62990      0.00092
+MINI INTERN>       58.68575    700.56903    121.37655   1112.56767     48.05519
+MINI EXTERN>     -895.18694-116812.92074      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+ UPDECI: Nonbond update at step       188
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3593238 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   283196 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+MINI>      190-115682.43339     15.57991      0.65067      0.00099
+MINI INTERN>       59.18736    700.05092    121.36756   1111.87519     47.99384
+MINI EXTERN>     -896.08829-116826.81996      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      200-115697.56389     15.13050      0.22986      0.00044
+MINI INTERN>       58.90247    699.25878    121.35652   1111.79183     47.93066
+MINI EXTERN>     -895.27171-116841.53243      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      210-115705.46167      7.89778      0.28784      0.00048
+MINI INTERN>       59.46589    698.24900    121.34392   1112.57177     47.87076
+MINI EXTERN>     -896.08450-116848.87851      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      220-115711.04405      5.58238      0.33900      0.00051
+MINI INTERN>       59.82927    697.22065    121.33249   1113.62975     47.81359
+MINI EXTERN>     -897.06222-116853.80758      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      230-115716.45627      5.41223      0.39435      0.00055
+MINI INTERN>       60.22262    696.13263    121.32207   1114.73010     47.74627
+MINI EXTERN>     -898.09585-116858.51412      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      240-115721.85791      5.40163      0.39595      0.00059
+MINI INTERN>       60.22576    695.13549    121.31384   1115.67390     47.67390
+MINI EXTERN>     -899.25500-116862.62579      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      250-115728.07496      6.21705      0.13561      0.00027
+MINI INTERN>       58.35612    694.25898    121.30670   1116.41700     47.59813
+MINI EXTERN>     -901.64620-116864.36569      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      260-115733.39573      5.32077      0.13938      0.00029
+MINI INTERN>       58.35678    693.44263    121.29827   1117.06469     47.51239
+MINI EXTERN>     -902.67042-116868.40007      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      270-115738.18518      4.78945      0.11308      0.00031
+MINI INTERN>       58.44817    692.73010    121.28794   1117.74761     47.41699
+MINI EXTERN>     -903.47727-116872.33872      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+ UPDECI: Nonbond update at step       278
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3593253 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   283188 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+MINI>      280-115741.87304      3.68786      0.22138      0.00033
+MINI INTERN>       58.32264    692.13779    121.27607   1118.55638     47.30807
+MINI EXTERN>     -904.67339-116874.80059      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+
+ STEEPD> Minimization exiting with gradient tolerance ( 0.1000000) satisfied.
+
+STPD MIN: Cycle      ENERgy      Delta-E         GRMS    Step-size
+STPD INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+STPD EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ ----------       ---------    ---------    ---------    ---------    ---------
+STPD>      284-115743.13012      1.25709      0.09364      0.00034
+STPD INTERN>       58.62211    691.99953    121.27257   1118.79892     47.27589
+STPD EXTERN>     -904.32871-116876.77044      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+  
+ CHARMM>    minimize abnr nsteps 5000 tolg 0.01
+
+ NONBOND OPTION FLAGS: 
+     ELEC     VDW      ATOMs    CDIElec  FSHIft   VATOm    VFSWIt  
+     BYGRoup  NOEXtnd  NOEWald 
+ CUTNB  = 14.000 CTEXNB =999.000 CTONNB = 10.000 CTOFNB = 12.000
+ CGONNB =  0.000 CGOFNB = 10.000
+ WMIN   =  1.500 WRNMXD =  0.500 E14FAC =  1.000 EPS    =  1.000
+ NBXMOD =      5
+ There are  3593253 atom  pairs and    67669 atom  exclusions.
+ There are        0 group pairs and    11696 group exclusions.
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3593239 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   283191 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+
+
+ ABNER> An energy minimization has been requested.
+
+ EIGRNG =    0.0005000   MINDIM =            5
+ NPRINT =           10   NSTEP  =         5000
+ PSTRCT =    0.0000000   SDSTP  =    0.0200000
+ STPLIM =    1.0000000   STRICT =    0.1000000
+ TOLFUN =    0.0000000   TOLGRD =    0.0100000
+ TOLITR =          100   TOLSTP =    0.0000000
+ FMEM   =    0.0000000
+MINI MIN: Cycle      ENERgy      Delta-E         GRMS    Step-size
+MINI INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+MINI EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>        0-115743.13012      1.25709      0.09364      0.00000
+MINI INTERN>       58.62211    691.99953    121.27257   1118.79892     47.27589
+MINI EXTERN>     -904.32871-116876.77044      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       10-115753.10840      9.97828      0.25140      0.04724
+MINI INTERN>       59.81263    690.46932    121.22050   1123.32890     46.73689
+MINI EXTERN>     -906.52360-116888.15303      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+ UPDECI: Nonbond update at step        17
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3593301 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   283229 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+MINI>       20-115720.48641    -32.62199      2.55869      0.06695
+MINI INTERN>      115.25194    690.44791    121.17344   1123.11315     46.60161
+MINI EXTERN>     -904.77531-116912.29916      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       30-115769.23370     48.74729      0.50879      0.07028
+MINI INTERN>       59.97887    690.33210    121.16029   1123.72233     46.64374
+MINI EXTERN>     -907.55647-116903.51457      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       40-115779.01881      9.78511      0.21507      0.05465
+MINI INTERN>       59.48089    690.00875    121.14599   1122.45218     46.73175
+MINI EXTERN>     -906.65787-116912.18050      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+ UPDECI: Nonbond update at step        46
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3593311 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   283242 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+MINI>       50-115785.03092      6.01210      0.15030      0.03442
+MINI INTERN>       58.58082    689.91878    121.15426   1121.28126     46.58053
+MINI EXTERN>     -906.29956-116916.24699      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       60-115787.33021      2.29929      0.35564      0.05139
+MINI INTERN>       59.75389    689.97136    121.16221   1120.88770     46.47488
+MINI EXTERN>     -906.63279-116918.94746      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       70-115789.55666      2.22645      0.20689      0.03330
+MINI INTERN>       59.31700    689.99724    121.16393   1120.74943     46.49643
+MINI EXTERN>     -906.48768-116920.79300      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>       80-115793.24394      3.68728      0.26901      0.04773
+MINI INTERN>       59.17502    690.08270    121.17059   1119.80590     46.49827
+MINI EXTERN>     -907.33774-116922.63868      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+ UPDECI: Nonbond update at step        85
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3593355 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   283247 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+MINI>       90-115784.30309     -8.94085      1.56922      0.04566
+MINI INTERN>       81.81618    691.45767    121.27738   1119.70926     47.25760
+MINI EXTERN>     -908.18404-116937.63714      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      100-115765.18649    -19.11660      2.22915      0.03834
+MINI INTERN>      106.31107    691.34514    121.25015   1119.49163     46.66523
+MINI EXTERN>     -907.44712-116942.80258      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      110-115763.46973     -1.71676      2.34726      0.03220
+MINI INTERN>      108.63657    690.25155    121.21175   1118.35223     45.90972
+MINI EXTERN>     -907.48806-116940.34350      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      120-115811.85448     48.38475      0.37487      0.06677
+MINI INTERN>       58.96478    690.37336    121.21769   1116.16723     46.34073
+MINI EXTERN>     -907.23317-116937.68510      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      130-115813.90308      2.04860      0.11450      0.02629
+MINI INTERN>       58.93385    690.44173    121.18436   1115.35428     46.37740
+MINI EXTERN>     -907.11365-116939.08105      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+ UPDECI: Nonbond update at step       133
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3593432 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   283237 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+MINI>      140-115813.01874     -0.88434      0.38696      0.01131
+MINI INTERN>       60.09945    690.26843    121.16013   1114.88858     46.37426
+MINI EXTERN>     -907.09744-116938.71215      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      150-115814.54312      1.52438      0.08388      0.01385
+MINI INTERN>       58.67074    690.33198    121.15419   1114.84593     46.35477
+MINI EXTERN>     -907.28905-116938.61169      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+ UPDECI: Nonbond update at step       157
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR  5318898 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+  3593389 ATOM PAIRS WERE FOUND FOR ATOM LIST
+   283237 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+MINI>      160-115792.62490    -21.91822      1.64939      0.01060
+MINI INTERN>       83.89323    690.41973    121.16655   1115.17701     46.45756
+MINI EXTERN>     -906.80213-116942.93686      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      170-115815.28127     22.65637      0.10247      0.01127
+MINI INTERN>       58.70714    690.44193    121.16059   1115.16345     46.34082
+MINI EXTERN>     -907.17453-116939.92067      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      180-115816.92205      1.64077      0.14674      0.02957
+MINI INTERN>       58.72135    690.50384    121.17736   1114.98313     46.33755
+MINI EXTERN>     -907.16967-116941.47560      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      190-115817.74923      0.82719      0.09941      0.02263
+MINI INTERN>       59.14923    690.56783    121.17800   1115.11073     46.30624
+MINI EXTERN>     -907.14377-116942.91750      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      200-115818.01478      0.26554      0.04312      0.00877
+MINI INTERN>       58.91106    690.46203    121.15359   1115.05616     46.33131
+MINI EXTERN>     -907.10462-116942.82432      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+MINI>      210-115818.04432      0.02954      0.01761      0.00306
+MINI INTERN>       58.83968    690.45416    121.15743   1114.99923     46.30781
+MINI EXTERN>     -907.14489-116942.65774      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+
+ ABNER> Minimization exiting with gradient tolerance ( 0.0100000) satisfied.
+
+ABNR MIN: Cycle      ENERgy      Delta-E         GRMS    Step-size
+ABNR INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+ABNR EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ ----------       ---------    ---------    ---------    ---------    ---------
+ABNR>      215-115818.04710      0.00278      0.00862      0.00162
+ABNR INTERN>       58.83666    690.45670    121.15309   1114.99499     46.30668
+ABNR EXTERN>     -907.19297-116942.60225      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+  
+ CHARMM>     
+  
+ CHARMM>    ioformat exten
+ MISCOM> Expanded I/O format is used.
+  
+ CHARMM>    write coord pdb name "7au6_out.pdb"
+ VOPEN> Attempting to open::7au6_out.pdb::
+ RDTITL> WRITE COORD CARD NAME "7au6_out.crd"
+ RDTITL> No title read.
+  Write CHARMM-pdb format
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    write coord card name "7au6_out.crd"
+ VOPEN> Attempting to open::7au6_out.crd::
+ RDTITL> WRITE PSF CARD NAME "7au6_out.psf"
+ RDTITL> No title read.
+ VCLOSE: Closing unit   90 with status "KEEP"
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    write psf card name "7au6_out.psf"
+ VOPEN> Attempting to open::7au6_out.psf::
+ RDTITL> WRITE PSF XPLOR CARD NAME "7au6_out.xplor.psf"
+ RDTITL> No title read.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>    write psf xplor card name "7au6_out.xplor.psf"
+ VOPEN> Attempting to open::7au6_out.xplor.psf::
+ RDTITL>  
+ RDTITL> No title read.
+ VCLOSE: Closing unit   90 with status "KEEP"
+  
+ CHARMM>     
+  
+ CHARMM>    stop
+$$$$$$  New timer profile $$$$$
+      NBONDS                          2.77 Other:            0.00
+   List time                       2.77 Other:            0.00
+      Nonbond force                  24.60 Other:            0.00
+         Bond energy                     0.05 Other:            0.00
+         Angle energy                    0.36 Other:            0.00
+         Dihedral energy                 0.69 Other:            0.00
+         Restraints energy               0.00 Other:            0.00
+      INTRNL energy                   1.12 Other:            0.02
+   Energy time                    25.79 Other:            0.07
+ Total time                     30.76 Other:            2.20
+
+                    NORMAL TERMINATION BY NORMAL STOP
+                    MOST SEVERE WARNING WAS AT LEVEL  1
+
+                    $$$$$ JOB ACCOUNTING INFORMATION $$$$$
+                     ELAPSED TIME:    30.76  SECONDS 
+                         CPU TIME:    30.55  SECONDS 

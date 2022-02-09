@@ -1,0 +1,40 @@
+
+### The following changes have been applied to the structure. ###
+# There are 24 HIS residues in the structure. The default setting will be used for 24 of them.
+  Decision: prot__<RESNAME>-<RESID>_<SEGNAME/CHAIN>
+  Options:  HSE - Set to HSE. (default)
+            HSD - Set to HSD.
+            HSP - Set to HSP.
+  Chosen:   HSE-28_ACHA:HSE HSE-59_ACHA:HSE HSE-85_ACHA:HSE HSE-94_ACHA:HSE HSE-119_ACHA:HSE
+            HSE-187_ACHA:HSE HSE-269_ACHA:HSE HSE-276_ACHA:HSE HSE-292_ACHA:HSE HSE-325_ACHA:HSE
+            HSE-326_ACHA:HSE HSE-403_ACHA:HSE HSE-411_ACHA:HSE HSE-413_ACHA:HSE HSE-448_ACHA:HSE
+            HSE-464_ACHA:HSE HSE-526_ACHA:HSE HSE-541_ACHA:HSE HSE-29_BCHA:HSE HSE-36_BCHA:HSE
+            HSE-73_BCHA:HSE HSE-119_BCHA:HSE HSE-181_BCHA:HSE HSE-224_BCHA:HSE
+
+# Capping of termini will be decided here. Should they be caped?
+  Decision: cap_termini
+  Options:  cap - Apply patches in Charmm to cap termini if not true termini. (default)
+            dont_cap  - Do nothing, apply regular termini patches!
+
+  Chosen:   cap for segname ACHA
+
+  Chosen:   cap for segname BCHA
+
+  Chosen:   cap for segname EHEM
+
+  Chosen:   cap for segname GHEM
+
+  Chosen:   cap for segname META
+
+# There are 1 disulphide bridges in the structure. Should they be closed?
+  Decision: disu_bridges
+  Options:  closed - Apply patches in Charmm to connect the CYS pairs. (default)
+            open   - Do nothing, CYS pairs will NOT be bound! 
+  Chosen:   closed
+
+# There are 6065 protein, 12 ligand and 0 water hydrogens missing. Should they be modelled?:
+  Decision: missing_hydrogens
+  Options:  model - Model and optimize all hydrogens. (default)
+            [keep  - Do not model any hydrogen.] option currently not available
+  Chosen:   model
+
