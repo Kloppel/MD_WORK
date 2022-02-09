@@ -17,6 +17,12 @@ generate setup ACHA first ACE last CT1
 read sequence coor name "7au6_in_BCHA.crd" resid 
 generate setup BCHA first ACE last CT1
 
+read sequence coor name "7au6_in_EHEM.crd" resid 
+generate setup EHEM first NONE last NONE
+
+read sequence coor name "7au6_in_GHEM.crd" resid 
+generate setup GHEM first NONE last NONE
+
 read sequence coor name "7au6_in_META.crd" resid 
 generate setup META first NONE last NONE
 
@@ -26,6 +32,8 @@ AUTOgenerate ANGLes DIHEdrals
 
 read coor card name "7au6_in_ACHA.crd"
 read coor card name "7au6_in_BCHA.crd" resid
+read coor card name "7au6_in_EHEM.crd" resid
+read coor card name "7au6_in_GHEM.crd" resid
 read coor card name "7au6_in_META.crd" resid
 
 

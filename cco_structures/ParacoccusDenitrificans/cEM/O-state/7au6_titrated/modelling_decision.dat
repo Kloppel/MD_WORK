@@ -11,12 +11,6 @@
             HSE-464_ACHA:HSE HSE-526_ACHA:HSE HSE-541_ACHA:HSE HSE-29_BCHA:HSE HSE-36_BCHA:HSE
             HSE-73_BCHA:HSE HSE-119_BCHA:HSE HSE-181_BCHA:HSE HSE-224_BCHA:HSE
 
-# Some residues have been found that are not known to Charmm. (2xHEA)
-  Decision: delete_unknown
-  Options:  yes - Delete the residues. (default)
-            no  - Keep them.
-  Chosen:   yes
-
 # Capping of termini will be decided here. Should they be caped?
   Decision: cap_termini
   Options:  cap - Apply patches in Charmm to cap termini if not true termini. (default)
@@ -26,6 +20,10 @@
 
   Chosen:   cap for segname BCHA
 
+  Chosen:   cap for segname EHEM
+
+  Chosen:   cap for segname GHEM
+
   Chosen:   cap for segname META
 
 # There are 1 disulphide bridges in the structure. Should they be closed?
@@ -34,7 +32,7 @@
             open   - Do nothing, CYS pairs will NOT be bound! 
   Chosen:   closed
 
-# There are 6107 protein, 0 ligand and 0 water hydrogens missing. Should they be modelled?:
+# There are 6107 protein, 92 ligand and 0 water hydrogens missing. Should they be modelled?:
   Decision: missing_hydrogens
   Options:  model - Model and optimize all hydrogens. (default)
             [keep  - Do not model any hydrogen.] option currently not available
