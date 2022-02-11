@@ -8,8 +8,8 @@ import os
 # pdb_filename = '/scratch/scratch/tmeyer/md_pka/mod_bio/2ibx_m.pdb1'
 # modelling_dir = '/scratch/scratch/tmeyer/md_pka/mod_bio/2ibx_m_charmm/'
 # modelling_dir = '/scratch/scratch/tmeyer/md_pka/mod_bio/2ibx_m_charmm2/'
-pdb_filename = '/home/pbuser/Desktop/PhD_WORK/MD_WORK/cco_structures/ParacoccusDenitrificans/7au6.pdb'
-modelling_dir = '/home/pbuser/Desktop/PhD_WORK/MD_WORK/cco_structures/ParacoccusDenitrificans/7au6/'
+pdb_filename = '/home/pbuser/Desktop/PhD_WORK/MD_WORK/cco_structures/ParacoccusDenitrificans/3hb3.pdb'
+modelling_dir = '/home/pbuser/Desktop/PhD_WORK/MD_WORK/cco_structures/ParacoccusDenitrificans/3hb3/'
 # pdb_filename = '/scratch/scratch/tmeyer/md_pka/mod_bio/1hng.pdb1'
 # modelling_dir = '/scratch/scratch/tmeyer/md_pka/mod_bio/1hng_charmm/'
 
