@@ -2449,7 +2449,7 @@ GROUP
 ATOM CU   CU   1.00
 PATCHING FIRST NONE LAST NONE
 
-RESI HEM        0.00 ! 6-liganded planar heme, annalenawoelke
+RESI HEM        0.00 ! 6-liganded planar heme, annalenawoelke XXX
 GROUP   
 ATOM FE   FE      0.24 !           
 ATOM NA   NPH    -0.18 !           
@@ -3200,7 +3200,7 @@ PATCHING FIRS NONE LAST NONE
 
 
 
-RESI PRA	 -1.00 ! 
+RESI PRA	 -1.00 ! XXX
 GROUP   	       !    H2A      H1A
 ATOM CBA  CT2    -0.28 !     \       /
 ATOM HBA1 HA      0.09 !     O2A   O1A   
@@ -3246,7 +3246,7 @@ IMPR O1A CBA O2A CGA
 PATCHING FIRS NONE LAST NONE 
 
 
-RESI PRD 	 -1.00 !  H2D       H1D
+RESI PRD 	 -1.00 !  H2D       H1D                                      XXX
 GROUP   	       !    \       /
 ATOM CAD  CT2    -0.18 !    O2D  O1D
 ATOM HAD1 HA      0.09 !      \   /
