@@ -32,7 +32,7 @@
             open   - Do nothing, CYS pairs will NOT be bound! 
   Chosen:   closed
 
-# There are 6065 protein, 92 ligand and 0 water hydrogens missing. Should they be modelled?:
+# There are 6065 protein, 116 ligand and 0 water hydrogens missing. Should they be modelled?:
   Decision: missing_hydrogens
   Options:  model - Model and optimize all hydrogens. (default)
             [keep  - Do not model any hydrogen.] option currently not available
