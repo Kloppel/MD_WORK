@@ -1,0 +1,118 @@
+# sample NAMD configuration file for INITIAL Dynamics w/ fixed atoms, PBC, PME
+
+timestep                2.0
+stepspercycle           20
+
+fullElectFrequency      2
+nonbondedFreq           1
+
+# molecular system
+coordinates		        output_building/gag_ma_popc_ionized_solvated_clean.pdb
+structure 		        output_building/gag_ma_popc_ionized_solvated_clean.psf
+temperature             300
+
+# restraints
+
+fixedAtoms              on
+fixedAtomsForces        on
+fixedAtomsFile          output_building/gag_ma_popc_ionized_solvated_clean_fixed_lipid_head_groups.pdb 
+fixedAtomsCol           B
+
+# force field
+paratypecharmm          on
+parameters              par_all36_prot.prm
+parameters              par_all36_lipid.prm
+parameters              toppar_water_ions_namd.str
+
+# approximations
+exclude                 scaled1-4
+1-4scaling              1.0
+switching               on
+switchdist              10
+cutoff                  12
+
+# neighbor lists
+
+pairlistdist            12
+margin                  2
+
+# shake
+
+rigidBonds              all
+
+# temperature control
+
+langevin                on
+langevinDamping         1
+langevinTemp            300
+langevinHydrogen        no
+
+# pressure control
+
+#useGroupPressure        yes
+#useFlexibleCell         no
+#LangevinPiston          on
+#LangevinPistonTarget    1.01325
+#LangevinPistonPeriod    100
+#LangevinPistonDecay     50
+#LangevinPistonTemp      300
+
+# pbc
+
+cellBasisVector1        74.0 0.0 0.0
+cellBasisVector2        0.0 60.0 0.0
+cellBasisVector3        0.0 0.0 139.0
+
+# electrostatics
+
+PME                    on
+PMEGridSpacing         1.0
+
+# output
+
+outputname              output/dyn0
+binaryoutput            no
+
+DCDfile                 output/dyn0.dcd
+DCDfreq                 1000
+DCDUnitCell             yes
+#velDCDfile              output/dyn0.vel.dcd
+#velDCDfreq              1000
+#XstFile                 output/dyn0.xst
+#XstFreq                 1000
+wrapAll                 on
+
+# restart files
+
+binaryrestart           no
+restartsave             no
+restartname             output/dyn0.rest.pdb
+restartfreq             10000
+
+# interactive MD
+
+IMDon                   yes  
+IMDport                 1085 
+IMDfreq                 10   
+IMDwait                 no   
+
+# screen output
+
+outputenergies          20
+outputtiming            100
+
+
+# set constraints 
+
+constraints on
+consexp 2
+consref output_building/gag_ma_popc_ionized_solvated_clean.pdb
+conskfile output_building/gag_ma_popc_ionized_solvated_clean_constrained_water_and_protein.pdb
+conskcol B
+
+# run control
+minimize    1000
+run			100000
+
+
+
