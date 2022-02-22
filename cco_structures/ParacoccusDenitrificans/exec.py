@@ -2,8 +2,8 @@
 import kbp2
 import os
 
-pdb_filename = '/home/pbuser/Desktop/PhD_WORK/MD_WORK/cco_structures/ParacoccusDenitrificans/1ar1.pdb'
-modelling_dir = '/home/pbuser/Desktop/PhD_WORK/MD_WORK/cco_structures/ParacoccusDenitrificans/x-ray/O-state/1ar1/'
+pdb_filename = '/home/pbuser/Desktop/PhD_WORK/MD_WORK/cco_structures/ParacoccusDenitrificans/7au6.pdb'
+modelling_dir = '/home/pbuser/Desktop/PhD_WORK/MD_WORK/cco_structures/ParacoccusDenitrificans/cEM/O-state/7au6/'
 
 if not os.path.exists(modelling_dir):
     os.mkdir(modelling_dir)
