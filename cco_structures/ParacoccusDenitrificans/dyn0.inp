@@ -20,7 +20,7 @@ fixedAtomsCol           B
 
 # force field
 paratypecharmm          on
-parameters              par_all22_prot:plus_heme_and_Cu.inp
+parameters              par_all22_prot_plus_heme_and_Cu.inp
 parameters              par_all36_lipid.prm
 #parameters              toppar_water_ions_namd.str
 
