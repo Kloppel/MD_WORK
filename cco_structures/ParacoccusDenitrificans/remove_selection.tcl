@@ -2,9 +2,9 @@
 #After startup of VMD, often a single Enter will show this console in the shell.)
 
 #set your workfolder here, leave empty if current directory
-set path cEM/O-state/7au6
+set path x-ray/O-state/3hb3
 #set your selection of atoms to delete
-set sel [atomselect top "lipid within 2 of protein"]
+set sel [atomselect top "water within 2 of protein or water within 2 of lipid"]
 
 set atomList [lsort -unique [$sel get {segname resid}]]
 $sel delete
@@ -12,11 +12,11 @@ package require psfgen
 resetpsf
 
 #set your input names here again
-readpsf $path/7au6_memb_or_solv.psf
-coordpdb $path/7au6_memb_or_solv.pdb
+readpsf $path/3hb3_memb_or_solv_del.psf
+coordpdb $path/3hb3_memb_or_solv_del.pdb
 
 foreach atom $atomList {delatom [lindex $atom 0] [lindex $atom 1]}
 
 #set your output names here
-writepsf $path/7au6_memb_or_solv_del.psf
-writepdb $path/7au6_memb_or_solv_del.pdb
+writepsf $path/3hb3_memb_or_solv_del.psf
+writepdb $path/3hb3_memb_or_solv_del.pdb
