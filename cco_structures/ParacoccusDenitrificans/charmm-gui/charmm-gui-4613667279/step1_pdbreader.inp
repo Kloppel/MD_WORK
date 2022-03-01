@@ -27,7 +27,8 @@ open read card unit 10 name 7au6_out.crd
 read sequence coor card unit 10 resid
 generate PROA setup warn first GLYP last NONE
 
-open read unit 10 card name 7au6_out.crd
+
+open read unit 10 card name 7au6_out.pdb
 read coor unit 10 card resid
 
 

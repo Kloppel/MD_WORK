@@ -5,7 +5,22 @@
 DIMENS CHSIZE 5000000 MAXRES 3000000
 
 ! Read topology and parameter files
-stream toppar.str
+OPEN READ UNIT 42 CARD NAME "top_alw_clean.inp"
+READ rtf CARD UNIT 42 
+close unit 42
+
+OPEN READ UNIT 42 CARD NAME "top_all36_lipid.rtf"
+READ rtf CARD UNIT 42 APPEND
+close unit 42
+
+OPEN READ UNIT 42 CARD NAME "par_all22_prot_plus_heme_and_Cu.inp"
+READ PARAMETERS UNIT 42 CARD
+close unit 42
+
+OPEN READ UNIT 42 CARD NAME "par_all36_lipid.prm"
+READ PARAMETERS UNIT 42 CARD APPEND
+close unit 42
+
 
 ! Read PSF and Coordinates
 open read unit 10 card name step1_pdbreader.psf
