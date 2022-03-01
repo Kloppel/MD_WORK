@@ -1,0 +1,130 @@
+* THIS IS THE CHARMM PROGRAM THAT BUILDS CCO 
+* THIS IS ALSO A POSSIBLE TITLE 
+*
+
+
+OPEN READ UNIT 42 CARD NAME "top_alw_clean.inp"
+READ rtf CARD UNIT 42 
+close unit 42
+
+OPEN READ UNIT 42 CARD NAME "top_all36_lipid.rtf"
+READ rtf CARD UNIT 42 APPEND
+close unit 42
+
+OPEN READ UNIT 42 CARD NAME "par_all22_prot_plus_heme_and_Cu.inp"
+READ PARAMETERS UNIT 42 CARD
+close unit 42
+
+OPEN READ UNIT 42 CARD NAME "par_all36_lipid.prm"
+READ PARAMETERS UNIT 42 CARD APPEND
+close unit 42
+
+
+
+!read coordinates
+!read sequence coor resid name "ACHA"  
+!GENERATE  ACHA SETUP
+!read coor card name "ACHA"
+
+!read sequence coor resid name "BCHA"   
+!GENERATE BCHA SETUP
+!read coor card name "BCHA" append
+
+!IC PARA
+!IC FILL PRESERVE
+!IC BUILD
+
+!COOR PRINT 
+
+read sequence coor resid name "EHEM"
+GENERATE EHEM SETUP
+read coor card name "EHEM" append
+
+COOR PRINT 
+
+read sequence coor resid name "GHEM"
+GENERATE GHEM SETUP
+read coor card name "GHEM"
+
+read sequence coor resid name "META"
+GENERATE META SETUP
+read coor card name "META"
+
+!read sequence coor resid name "membrane"
+!GENERATE MEMBRANE SETUP
+!read coor card name "membrane"
+
+!make hydrogen
+!hbuild
+
+
+!Sulfur bridge
+!PATCH DISU ACHAIN 66 ACHAIN 80 SETUP
+!Protonation patches
+!PATCH GLUP ACHAIN 278 SETUP ! in some other cases was used GLUE, but GLUP more appropriate ?!
+!PATCH LSN ACHAIN 354 SETUP
+!PATCH ASPP ACHAIN 399 SETUP
+!PATCH GLUP ACHAIN 481 SETUP
+!generate angles and dihedrals
+!AUTOGENERATE ANGLES DIHEDRALS
+!charge patches
+!PATCH AHE3 GHEMEA 2  ACHAIN 94 ACHAIN  413 SETUP
+!PATCH CA21 METAL 2 METAL 3 BCHAIN 181 BCHAIN 216 BCHAIN 218 BCHAIN 220 BCHAIN 224 BCHAIN 227 SETUP
+!! PATCH CB4 METAL 1 ACHAIN 325 ACHAIN 326 HOHCU 1 ACHAIN 280 ACHAIN 276 SETUP
+!PATCH A3H3 EHEMEA3 2 ACHAIN 411 FEOH 1 SETUP
+!bonds towards heme and copper
+!PATCH PHEM  ACHAIN 411  EHEMEA3 2 SETUP
+!PATCH PHEM  ACHAIN  94 GHEMEA 2 SETUP
+!PATCH PHE2  ACHAIN 413 GHEMEA 2 SETUP
+!PATCH EISE  FEOH 1 EHEMEA3 2 SETUP
+!PATCH CUBP METAL 1 ACHAIN 276 ACHAIN 325 ACHAIN 326 HOHCU 1 SETUP
+!PATCH CUAP METAL 2 METAL 3 BCHAIN 181 BCHAIN 216 BCHAIN 218 BCHAIN 220 BCHAIN 224 BCHAIN 227 SETUP
+
+
+
+!read water coordinates
+
+!read sequence coor resid name "H2OA"  
+!GENERATE PAH2O SETUP noangle nodihedral
+!read coor card name "H2OA"
+
+!read sequence coor resid name "H2OB"
+!GENERATE QBH2O SETUP noangle nodihedral
+!read coor card name "H2OB"
+
+!read sequence coor resid name "waterm"  
+!GENERATE SWAT SETUP noangle nodihedral
+!read coor card name "waterm"
+
+
+!read sequence coor resid name "waterbox"
+!GENERATE WAT SETUP noangle nodihedral
+!read coor card name "waterbox"
+
+
+! Another hbuild to find possible H-atoms that may be included since the patches
+!hbuild
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!MINIMIZATION OF HYDROGENS AFTER THE STATE CHANGE WOULD BE RECOMMENDED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+OPEN WRITE UNIT 08 CARD NAME "3hb3.crd"
+WRITE COORDINATES UNIT 08 CARD
+CLOSE UNIT 08
+
+OPEN WRITE UNIT 08 CARD NAME "3hb3.psf"
+WRITE PSF UNIT 08 CARD
+CLOS UNIT 08
+
+
+OPEN WRITE UNIT 08 CARD NAME "3hb3.psf.xplor"
+WRITE PSF XPLOR UNIT 08 CARD
+CLOS UNIT 08
+
+OPEN WRITE UNIT 08 CARD NAME "3hb3.pdb"
+WRITE COORDINATES UNIT 08 PDB 
+CLOS UNIT 08
+
+stop
+
+
+
